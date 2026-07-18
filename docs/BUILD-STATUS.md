@@ -35,15 +35,20 @@ Add one row after each implementation-plan task.
 
 | Asset ID | Source received | Optimized | Integrated | Alt text reviewed |
 |---|---|---|---|---|
-| `hero-big-top` | No | No | No | No |
-| `act-funhouse` | No | No | No | No |
-| `act-hidden-capabilities` | No | No | No | No |
-| `act-three-rings` | No | No | No | No |
-| `act-high-wire` | No | No | No | No |
-| `act-control-plane` | No | No | No | No |
-| `act-paperwork` | No | No | No | No |
-| `act-backstage` | No | No | No | No |
-| `act-prize-booth` | No | No | No | No |
+| `hero-big-top` | Yes | No | No | No |
+| `act-funhouse` | Yes | No | No | No |
+| `act-hidden-capabilities` | Yes | No | No | No |
+| `act-three-rings` | Yes | No | No | No |
+| `act-high-wire` | Yes | No | No | No |
+| `act-control-plane` | Yes | No | No | No |
+| `act-paperwork` | Yes | No | No | No |
+| `act-backstage` | Yes | No | No | No |
+| `act-prize-booth` | Yes | No | No | No |
+
+Sources staged in `design/source-images/<asset-id>--wide.jpg` (2048px archival crops).
+An alternate homepage backdrop is also staged as `hero-big-top--alt--wide.jpg` (not a
+manifest slot — pending a hero-vs-alternate decision). Optimization to WebP and app
+integration remain Phase 3 work.
 
 ## Open decisions
 
