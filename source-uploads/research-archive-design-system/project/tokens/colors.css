@@ -1,0 +1,82 @@
+/* ============================================================
+   COLORS — Research Archive
+   Neutral zinc scale + blue (informational) / emerald (status) /
+   red (alert) accents, exactly as used in the source document.
+   ============================================================ */
+:root {
+  /* --- Neutral: zinc scale (the spine of the system) --- */
+  --zinc-50:  #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+
+  /* --- Blue: informational / "assistant" accent --- */
+  --blue-50:  #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-200: #bfdbfe;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-700: #1d4ed8;
+  --blue-900: #1e3a8a;
+
+  /* --- Emerald: positive / verified status --- */
+  --emerald-500: #10b981;
+
+  /* --- Red: alert / critical evidence --- */
+  --red-50:  #fef2f2;
+  --red-500: #ef4444;
+  --red-900: #7f1d1d;
+
+  /* ============================================================
+     SEMANTIC ALIASES — always prefer these in components.
+     ============================================================ */
+
+  /* Surfaces */
+  --surface-page:      var(--zinc-50);   /* app background */
+  --surface-card:      #ffffff;          /* raised cards, cells, rows */
+  --surface-sunken:    var(--zinc-50);   /* table headers, inset rows */
+  --surface-muted:     var(--zinc-100);  /* chips, code pills, quiet fills */
+  --surface-inverse:   var(--zinc-900);  /* assistant avatar, dark blocks */
+
+  /* Text */
+  --text-strong:   var(--zinc-900);  /* headings, emphasized values */
+  --text-body:     var(--zinc-800);  /* default body copy */
+  --text-muted:    var(--zinc-700);  /* secondary body, table cells */
+  --text-subtle:   var(--zinc-500);  /* labels, captions, meta */
+  --text-faint:    var(--zinc-400);  /* timestamps, disabled, dividers-as-text */
+  --text-ondark:   #ffffff;          /* text on inverse surfaces */
+
+  /* Borders / dividers */
+  --border-strong: var(--zinc-300);  /* avatar rings, prominent edges */
+  --border-default:var(--zinc-200);  /* card + table + input borders */
+  --border-subtle: var(--zinc-100);  /* row dividers, inner hairlines */
+  --rule:          var(--zinc-200);  /* <hr> and section rules */
+
+  /* Informational (blue) */
+  --info-surface:  color-mix(in srgb, var(--blue-50) 50%, #fff);  /* blue-50/50 callout bg */
+  --info-border:   var(--blue-100);
+  --info-accent:   var(--blue-400);  /* left accent bar */
+  --info-icon:     var(--blue-500);
+  --info-text:     var(--blue-900);
+  --info-tag-text: var(--blue-700);
+  --info-tag-bg:   var(--blue-50);
+  --info-tag-border: var(--blue-200);
+
+  /* Status (emerald) */
+  --status-ok:     var(--emerald-500);
+
+  /* Alert (red) */
+  --alert-accent:  var(--red-500);
+  --alert-text:    var(--red-900);
+  --alert-surface: var(--red-50);
+
+  /* Selection */
+  --selection-bg:  var(--zinc-200);
+  --selection-fg:  var(--zinc-900);
+}

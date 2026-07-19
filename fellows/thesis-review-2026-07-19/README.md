@@ -16,6 +16,7 @@ about exactly that failure class.
 ```
 thesis-review-2026-07-19/
 ├── README.md            ← you are here
+├── THESIS-VERSIONS-AND-ASSESSMENT.md  ← both thesis versions (verbatim) + assistant assessment of each
 ├── COST-ANALYSIS.md     ← spend ledger + waste analysis (the assistant's own failure account)
 └── transcripts/
     ├── session/

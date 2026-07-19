@@ -81,6 +81,8 @@ The repository separates **spectacle from evidence** and **product from research
 | `fellows/evidence-availability-use-gap/` | The Fellows research corpus: `THESIS.md`, `REPORT.md`, nine investigation lanes, deliverables, and full transcripts. Start at `fellows/README.md`. |
 | `fellows/thesis-review-2026-07-19/` | The record of the 2026-07-19 multi-agent review of the Fellows thesis: all 35 session/subagent transcripts, a spend ledger, and the assistant's own waste analysis. Start at its `README.md`. |
 | `anthropic_experience_review_pack/` | The clean-room review pack authored during the ChatGPT/Codex handoff: archive disposition, release gates, owner decisions, the machine-read claims register and archive audit. Start at its `README.md`. |
+| `source-uploads/` | The raw material as delivered by the operator — chat exports, both deep-research reports, `generated-page.html`, the design system, and the PDF. Preserved so every provided document is in the repository. Private; quarantined for public. See its `README.md`. |
+| `fellows/thesis-review-2026-07-19/THESIS-VERSIONS-AND-ASSESSMENT.md` | Both thesis formulations ("From Prompting to Governance"; "The Delegation Governance Gap") preserved verbatim, with the assistant's assessment of each. |
 
 > **Privacy status.** This repository is **private**. The `fellows/` subtree and this review pack are **quarantined from any public release** per `anthropic_experience_review_pack/ARCHIVE-DISPOSITION.md`. If the repository is ever made public, that material must be re-reviewed or removed first.
 

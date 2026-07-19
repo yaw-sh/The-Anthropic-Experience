@@ -1,0 +1,17 @@
+<!-- @dsCard group="Effects" viewport="700x170" name="Elevation & glass" subtitle="Two soft shadow steps + the backdrop-blur nav glass" -->
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>body{margin:0;padding:26px 22px;background:var(--surface-page);font-family:var(--font-sans)}
+.row{display:flex;gap:24px;align-items:center}
+.item{display:flex;flex-direction:column;align-items:center;gap:10px}
+.box{width:120px;height:60px;background:#fff;border:1px solid var(--border-default);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;font:var(--fw-medium) 12px/1 var(--font-sans);color:var(--text-subtle)}
+.lab{font:var(--fw-regular) 11px/1 var(--font-mono);color:var(--text-subtle)}
+.glass{width:120px;height:60px;border:1px solid var(--border-default);border-radius:var(--radius-lg);background:var(--glass-bg);backdrop-filter:blur(var(--blur-nav));display:flex;align-items:center;justify-content:center;font:var(--fw-medium) 12px/1 var(--font-sans);color:var(--text-subtle)}
+.stripe{position:absolute;inset:0;background:repeating-linear-gradient(45deg,var(--zinc-300) 0 6px,transparent 6px 12px);border-radius:var(--radius-lg);z-index:-1}
+</style></head><body>
+<div class="row">
+<div class="item"><div class="box" style="box-shadow:var(--shadow-xs)">card</div><span class="lab">--shadow-xs</span></div>
+<div class="item"><div class="box" style="box-shadow:var(--shadow-sm)">raised</div><span class="lab">--shadow-sm</span></div>
+<div class="item" style="position:relative"><div class="stripe"></div><div class="glass">nav</div><span class="lab">--glass-bg + blur</span></div>
+</div>
+</body></html>
