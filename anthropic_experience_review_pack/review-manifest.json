@@ -1,0 +1,96 @@
+{
+  "manifestVersion": "1.2",
+  "generatedAt": "2026-07-19T03:01:12.878728+00:00",
+  "inputArchive": {
+    "filename": "the_anthropic_experience(2).zip",
+    "bytes": 57097137,
+    "sha256": "92fe161bb2d28cd1a65bffaf3f3ee28ef2405215ef4845cd34469c77df1a2bf2"
+  },
+  "reviewScope": {
+    "originalFiles": 108,
+    "originalBytes": 59730000,
+    "textReadableFiles": 88,
+    "externalWebResearchPerformed": false,
+    "gitHistoryAvailableInArchive": false
+  },
+  "files": [
+    {
+      "path": "ARCHIVE-DISPOSITION.md",
+      "bytes": 12659,
+      "sha256": "48bdaf6910220ba4f4b245c4425b2c0429cd2f68334109b7ff69f6996ccd6f5a",
+      "lines": 160
+    },
+    {
+      "path": "ARCHIVE-INVENTORY.csv",
+      "bytes": 17117,
+      "sha256": "54b2eecef7b1f6ebf64b04408255815fdc19baf25896395283de24955356d7c8",
+      "lines": 110
+    },
+    {
+      "path": "AUDIT-RECEIPTS.md",
+      "bytes": 5214,
+      "sha256": "1716b83cc8cef83211b51edb219d2de7de1c207db039e15a125a56cef3a9c9f1",
+      "lines": 189
+    },
+    {
+      "path": "CODEX-BUILD-DIRECTIVE.md",
+      "bytes": 21599,
+      "sha256": "f5265160dd1d3d79a231c08b4f04a3c743774541917733036d0d3d589b55fa94",
+      "lines": 765
+    },
+    {
+      "path": "CODEX-HANDOFF-README.md",
+      "bytes": 1472,
+      "sha256": "1593ddca3fa240a50771da1997f7bca887c5f0b6222bed8f980deae64701fcb2",
+      "lines": 28
+    },
+    {
+      "path": "OUTWARD-RESEARCH-MERGE-GUIDE.md",
+      "bytes": 7410,
+      "sha256": "67e9209945a97a384fd61a8f3d33b9ded4b6273722f5907c4b87a84d6ce7aab1",
+      "lines": 215
+    },
+    {
+      "path": "OWNER-DECISIONS.md",
+      "bytes": 1848,
+      "sha256": "9682b8fccc0871e75a6222a17b4c24d3fea1cdbfcbb7a7ef112432056d7f3bc7",
+      "lines": 44
+    },
+    {
+      "path": "README.md",
+      "bytes": 2674,
+      "sha256": "ece2cbd465efc8d6437e0a275d8ea28a3f9c1b9c3f21b68a8ffb5c865d1be9c3",
+      "lines": 37
+    },
+    {
+      "path": "RELEASE-GATES.md",
+      "bytes": 8222,
+      "sha256": "54d507b10c2474d1cab0d094779bf403f6aef5cff01bf993c42075e788f3d1fa",
+      "lines": 190
+    },
+    {
+      "path": "THE-ANTHROPIC-EXPERIENCE-PRO-REVIEW.md",
+      "bytes": 46476,
+      "sha256": "7ebb29e4c2ff710c7c189cd3c19fb5d096c40f790960be7674e8a0bfe1ed41fd",
+      "lines": 1031
+    },
+    {
+      "path": "archive-audit.json",
+      "bytes": 418801,
+      "sha256": "b134297358d2dc3ed6b1de157797997e53da576c3318904eac860cb2145f8c21",
+      "lines": 11036
+    },
+    {
+      "path": "codex-handoff-manifest.json",
+      "bytes": 1644,
+      "sha256": "776e948a1afb0d916809be492559842863cd5c14bd3b09ff11d27ec6cdd71183",
+      "lines": 53
+    },
+    {
+      "path": "public-claims-register.seed.json",
+      "bytes": 36338,
+      "sha256": "6a27cffe13b4def2461102908cd54cd1d3ffca468fbd646c44ce8b0286e96961",
+      "lines": 1007
+    }
+  ]
+}

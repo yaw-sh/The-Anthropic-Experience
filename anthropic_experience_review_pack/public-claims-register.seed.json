@@ -1,0 +1,1006 @@
+{
+  "schemaVersion": "0.2-seed",
+  "generatedAt": "2026-07-19T02:55:24.336195+00:00",
+  "purpose": "Private adjudication seed. No claim is public-approved merely because it appears here.",
+  "statusVocabulary": [
+    "approved-seed",
+    "candidate",
+    "disputed",
+    "unknown",
+    "rejected",
+    "superseded"
+  ],
+  "instructions": [
+    "Copy only adjudicated public records into the clean repository.",
+    "Replace private paths with stable public source IDs.",
+    "Require owner approval before publishing medium/low-confidence claims.",
+    "Do not treat derived files in the same independenceGroup as independent corroboration."
+  ],
+  "sources": [
+    {
+      "id": "src-build-transcript",
+      "path": "anthropicexperiencefulltranscript.md",
+      "kind": "assistant-session-export",
+      "fidelity": "claimed full build-session transcript; tool calls removed; contains raw operator language",
+      "independenceGroup": "build-session",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "a77556179b4aeccac1cb809613995a01585c5eb26939c2eb07e8403e934efcd8",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-forensic-handoff",
+      "path": "THE-ANTHROPIC-EXPERIENCE-FORENSIC-HANDOFF.md",
+      "kind": "independent-analysis",
+      "fidelity": "ChatGPT forensic synthesis derived from supplied archive and then-current connector reads",
+      "independenceGroup": "forensic-analysis",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "5c07184c133a3254dae4a539b5aab44acf5bde6cb953343dd81ce28cfa3c170e",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-failure-analysis",
+      "path": "Claude-Failure-Analysis.md",
+      "kind": "meta-conversation",
+      "fidelity": "conversation that produced the forensic handoff; contains raw owner language and time-sensitive claims",
+      "independenceGroup": "forensic-analysis",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "1c362b604d5ed57211200c5a26c27f8f5c6f83950b4eb1e87f303ad90a73d57f",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-claude-reconstruction",
+      "path": "source_build_data/claude.md",
+      "kind": "assistant-reconstructed",
+      "fidelity": "assistant-reconstructed and redacted original session; not byte-perfect platform log",
+      "independenceGroup": "original-session-reconstruction",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "998837be6b24a7447da716b42ea231a0a659ed9dbf5f27b7efa897596603025a",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-chatgpt-analysis",
+      "path": "source_build_data/chatgpt.md",
+      "kind": "analysis-with-shared-source",
+      "fidelity": "analysis containing pasted/shared source material; not presumed independent",
+      "independenceGroup": "chatgpt-analysis",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "3b2bb29fc61ade95206df0e3fba7d02992dba4222947012c63dc3775de2a6ae8",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-app",
+      "path": "repo_current_state/app/src/App.jsx",
+      "kind": "repository-snapshot",
+      "fidelity": "direct source file in supplied archive",
+      "independenceGroup": "repo-snapshot",
+      "publicEligible": true,
+      "sensitivity": "restricted",
+      "sha256": "b8beee6423989aa0c177fdf925275ccbeea54770ce2ac6239297b088f58612bc",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-app-css",
+      "path": "repo_current_state/app/src/index.css",
+      "kind": "repository-snapshot",
+      "fidelity": "direct source file in supplied archive",
+      "independenceGroup": "repo-snapshot",
+      "publicEligible": true,
+      "sensitivity": "restricted",
+      "sha256": "48b236e97fbf5a20ca6472e9166e920c2e33810943413b1998d01b9ffb7dc90b",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-package",
+      "path": "repo_current_state/app/package.json",
+      "kind": "repository-snapshot",
+      "fidelity": "direct source file in supplied archive",
+      "independenceGroup": "repo-snapshot",
+      "publicEligible": true,
+      "sensitivity": "restricted",
+      "sha256": "8ad7a26923b980af8eb6679414ba33a9863594db121ac6f82e0d7470f37d40d1",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-build-status",
+      "path": "repo_current_state/docs/BUILD-STATUS.md",
+      "kind": "repository-snapshot",
+      "fidelity": "direct status ledger in supplied archive",
+      "independenceGroup": "repo-snapshot",
+      "publicEligible": true,
+      "sensitivity": "restricted",
+      "sha256": "82b93bd6a8ccf6256cd0a09810239bb38664115562689f8b301e5bd99f8c9ee6",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-plan",
+      "path": "repo_current_state/docs/superpowers/plans/2026-07-18-anthropic-experience-implementation.md",
+      "kind": "repository-snapshot",
+      "fidelity": "historical implementation plan in supplied archive",
+      "independenceGroup": "repo-snapshot",
+      "publicEligible": true,
+      "sensitivity": "restricted",
+      "sha256": "9fa1ceac00680be4e0dcddbb3c51b7a07cce8e1f8983d45221d1b2df876c3afd",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-phase-zero",
+      "path": "repo_current_state/docs/evidence/incidents/2026-07-19-phase-zero.md",
+      "kind": "assistant-first-person-account",
+      "fidelity": "assistant-authored retrospective; useful but not independent telemetry",
+      "independenceGroup": "build-session",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "b79ff97c5190492dbe4220aaba24f456d1752c8ed7254dca4bb1a1831b2f2cb6",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-build-ledger",
+      "path": "repo_current_state/docs/evidence/incidents/2026-07-18-build-session.md",
+      "kind": "assistant-first-person-ledger",
+      "fidelity": "assistant-authored incident ledger with mixed incident categories",
+      "independenceGroup": "build-session",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "0ab83b9d880e3fae632243265aa8bc1a4c2d525f4811b7dfb1b9e624628b4947",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-public-edition",
+      "path": "repo_current_state/docs/evidence/chattranscript-2026-07-18-public-edition.md",
+      "kind": "assistant-reconstructed-public-edition",
+      "fidelity": "operator turns generalized; assistant/tool material retained; not a raw export",
+      "independenceGroup": "original-session-reconstruction",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "8232a3ac4c7daef6a12c76a93839a3fe4596611168744271e70012eca1921e72",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-full-transcript-in-repo",
+      "path": "repo_current_state/docs/evidence/full-session-transcript-verbatim.md",
+      "kind": "assistant-session-export",
+      "fidelity": "duplicate of build transcript present in repo snapshot",
+      "independenceGroup": "build-session",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "a77556179b4aeccac1cb809613995a01585c5eb26939c2eb07e8403e934efcd8",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-artifact",
+      "path": "repo_current_state/artifact/the-anthropic-experience.html",
+      "kind": "compiled-artifact-snapshot",
+      "fidelity": "direct compiled HTML snapshot; source lineage includes reconstructed transcript and data",
+      "independenceGroup": "repo-snapshot",
+      "publicEligible": false,
+      "sensitivity": "restricted",
+      "sha256": "d34ba0eb6c74fa89aa6f01265e57093ef82da1792c2637518f97b431f8e0db89",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-case-data",
+      "path": "repo_current_state/artifact/data/case-data.json",
+      "kind": "derived-data",
+      "fidelity": "derived from reconstructed session and later analyses; not independent",
+      "independenceGroup": "original-session-reconstruction",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "c1f20f14711b8e5efd6e0356f7cbc15ce64d45b9e4328f09be02ac766489e5db",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-settings-image",
+      "path": "repo_current_state/docs/media/connected-in-settings.png",
+      "kind": "screenshot-supplied",
+      "fidelity": "supplied screenshot showing UI state; provenance/creation process requires owner confirmation",
+      "independenceGroup": "settings-screenshot",
+      "publicEligible": true,
+      "sensitivity": "restricted",
+      "sha256": "75bc8ec707b0e9b5b3d2db34626165f8a625594f9da877b0032edf0749d44bae",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-artifact-image",
+      "path": "repo_current_state/docs/media/artifact-hero.png",
+      "kind": "screenshot-supplied",
+      "fidelity": "rendered artifact screenshot; stale relative to current artifact copy",
+      "independenceGroup": "repo-snapshot",
+      "publicEligible": false,
+      "sensitivity": "restricted",
+      "sha256": "0a8a668208c9bd62080e5b4879df0d8f9561dce42a946c9d35e4467de6a84ed7",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-fellows-report",
+      "path": "source_build_data/fellows/evidence-availability-use-gap/REPORT.md",
+      "kind": "sampled-analysis",
+      "fidelity": "hand-coded sampled audit with explicit limitations and controls",
+      "independenceGroup": "fellows-study",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "e20691ebb03d582b1b5118fa6e1dd5014861863e512bfc2fd90da8500fef3230",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-fellows-case",
+      "path": "source_build_data/fellows/evidence-availability-use-gap/deliverables/CASE-STUDY-01-the-anthropic-experience.md",
+      "kind": "derived-case-study",
+      "fidelity": "derived primarily from reconstructed session and related analysis",
+      "independenceGroup": "original-session-reconstruction",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "991baa830ce69c7cacb7a068f67e6083272731f5ce491e3e980ed9a11c1f34ad",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-deep-research",
+      "path": "source_build_data/deep-research-report.md",
+      "kind": "research-memo",
+      "fidelity": "contains orphaned internal citation markers; sources require revalidation",
+      "independenceGroup": "literature-review",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "b7e4ff2953c7f7fe803e4ddc8921b1b05c7f01759281e86774505b2c7c7c5f1e",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    },
+    {
+      "id": "src-research-pdf",
+      "path": "source_build_data/Research findings abstract conversion.pdf",
+      "kind": "proposal-draft",
+      "fidelity": "image-only five-page research proposal draft",
+      "independenceGroup": "research-proposal",
+      "publicEligible": false,
+      "sensitivity": "private",
+      "sha256": "85317e3f8d5d9662a9d5fea7411ff776817d455cb8fd571ab4a9be359e5a6c4b",
+      "reviewStatus": "reviewed-private",
+      "note": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-original-objective",
+      "statement": "The original documented session sought to connect or use GitHub from the active Claude/Cowork session.",
+      "publicTextSeed": "The documented session began with an operational GitHub-connection objective.",
+      "scope": "original session",
+      "classification": "reconstructed-statement",
+      "status": "disputed",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-claude-reconstruction",
+          "locator": "opening turns"
+        }
+      ],
+      "limitations": [
+        "Exact wording comes from an assistant reconstruction, not a raw platform export."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-settings-connected",
+      "statement": "A supplied screenshot shows “GitHub Integration” under a Connected connectors view.",
+      "publicTextSeed": "A supplied settings screenshot displayed GitHub Integration as connected.",
+      "scope": "settings UI snapshot",
+      "classification": "observed-state",
+      "status": "candidate",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-settings-image",
+          "locator": "image"
+        }
+      ],
+      "limitations": [
+        "The screenshot establishes displayed UI state only; it does not prove repository visibility or authorization in the active session.",
+        "Owner must confirm screenshot provenance and approve publication."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-standing-authorization-months",
+      "statement": "The GitHub authorization had existed for approximately three months with all-repository read/write scope.",
+      "publicTextSeed": null,
+      "scope": "original session",
+      "classification": "user-observed",
+      "status": "disputed",
+      "confidence": "low",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "summary/inversion"
+        }
+      ],
+      "limitations": [
+        "No independent account authorization receipt is present in the archive.",
+        "This is reported through a reconstructed transcript."
+      ],
+      "sensitivity": "private",
+      "recommendedAction": "hold-private",
+      "version": 1
+    },
+    {
+      "id": "claim-identity-http-200",
+      "statement": "The reconstructed session reports an identity request returning HTTP 200.",
+      "publicTextSeed": "The reconstructed record reports that account identity became reachable.",
+      "scope": "original session",
+      "classification": "reconstructed-tool-state",
+      "status": "candidate",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "Appendix A / connection state"
+        }
+      ],
+      "limitations": [
+        "No raw tool log or network receipt was independently verified from the archive."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-repositories-unavailable",
+      "statement": "The reconstructed session reports that the repository set remained unavailable and returned 403 for attempted access.",
+      "publicTextSeed": "The reconstructed record reports that repository access remained unavailable in that session.",
+      "scope": "original session",
+      "classification": "reconstructed-tool-state",
+      "status": "candidate",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "Appendix A / connection state"
+        }
+      ],
+      "limitations": [
+        "No raw platform export or independent network receipt is present.",
+        "Scope is the documented session, not all Anthropic surfaces."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-remedy-absent",
+      "statement": "The reconstructed session reports that an `add_repo` remedy was not available on the emitting surface.",
+      "publicTextSeed": "The remedy named by the error was not reported as available on that surface.",
+      "scope": "original session",
+      "classification": "reconstructed-observation",
+      "status": "candidate",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "Appendix A"
+        }
+      ],
+      "limitations": [
+        "Time-sensitive product behavior; must be revalidated if presented as current.",
+        "Exact control name is operational detail that may not need publication."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-original-objective-not-completed",
+      "statement": "The original GitHub operational objective was not completed during the documented session.",
+      "publicTextSeed": "The documented session ended without completing the GitHub objective.",
+      "scope": "original session",
+      "classification": "analysis",
+      "status": "candidate",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "Appendix A/C"
+        },
+        {
+          "sourceId": "src-fellows-case",
+          "locator": "Outcome"
+        }
+      ],
+      "limitations": [
+        "Derived from an assistant reconstruction; scope must remain “during the documented session.”"
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-substitute-output-produced",
+      "statement": "The session produced repository work, an artifact, and transcript/analysis deliverables instead of completing the original objective.",
+      "publicTextSeed": "Substantial substitute output was produced while the operational objective remained unresolved.",
+      "scope": "original session",
+      "classification": "observed-state",
+      "status": "candidate",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "Appendix C"
+        },
+        {
+          "sourceId": "src-artifact",
+          "locator": "compiled file"
+        }
+      ],
+      "limitations": [
+        "Exact commit and timing details are not independently verifiable without `.git`."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-app-ten-surfaces",
+      "statement": "The supplied canonical React app hard-codes ten surface entries.",
+      "publicTextSeed": "The supplied React app contains a ten-entry wheel.",
+      "scope": "supplied repo snapshot",
+      "classification": "observed-state",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-app",
+          "locator": "surfaces array"
+        }
+      ],
+      "limitations": [],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-app-no-tests",
+      "statement": "The supplied repository contains no test files or CI workflow for the React app.",
+      "publicTextSeed": "The supplied React app has no tests or CI in the archive.",
+      "scope": "supplied repo snapshot",
+      "classification": "observed-state",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-package",
+          "locator": "scripts"
+        },
+        {
+          "sourceId": "src-app",
+          "locator": "source tree"
+        }
+      ],
+      "limitations": [
+        "This describes the supplied archive snapshot, not any unavailable remote history."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-app-builds",
+      "statement": "The supplied React app completed a local Vite production build during this review.",
+      "publicTextSeed": "The small supplied React prototype compiles successfully.",
+      "scope": "review environment",
+      "classification": "review-receipt",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-package",
+          "locator": "build script"
+        }
+      ],
+      "limitations": [
+        "Environment-specific review receipt; preserve command, date, Node/npm versions in the final build record."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-plan-112-steps",
+      "statement": "The historical implementation plan contains 112 unchecked steps across 22 tasks.",
+      "publicTextSeed": "The governing plan contained 22 tasks and 112 unchecked steps.",
+      "scope": "supplied repo snapshot",
+      "classification": "computed-metric",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-plan",
+          "locator": "entire document"
+        }
+      ],
+      "limitations": [
+        "Count is based on Markdown checkbox/task structure in the supplied snapshot."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-phase-zero",
+      "statement": "The supplied build-status ledger reports Phase 0, no completed task, and phases 1–5 not started.",
+      "publicTextSeed": "The project’s own status ledger remained at Phase 0.",
+      "scope": "supplied repo snapshot",
+      "classification": "observed-state",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-build-status",
+          "locator": "Current state and Phase ledger"
+        }
+      ],
+      "limitations": [
+        "The ledger is a repository-authored state record; it does not alone prove no work occurred elsewhere."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-canonical-zero-images",
+      "statement": "The supplied build-status ledger reports zero optimized/integrated approved images in the canonical implementation.",
+      "publicTextSeed": "The canonical build ledger recorded zero integrated images.",
+      "scope": "supplied repo snapshot",
+      "classification": "observed-state",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-build-status",
+          "locator": "Asset receipt"
+        }
+      ],
+      "limitations": [
+        "The parallel artifact embeds images; this claim concerns the governed/canonical implementation."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-artifact-size",
+      "statement": "The supplied self-contained artifact is 3,783,931 bytes and approximately 2,703,835 bytes when gzipped in this review environment.",
+      "publicTextSeed": "A 3.78 MB self-contained parallel artifact exists in the supplied repository.",
+      "scope": "supplied repo snapshot",
+      "classification": "computed-metric",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-artifact",
+          "locator": "file"
+        }
+      ],
+      "limitations": [
+        "Gzip result depends slightly on tool/version; exact raw byte size is stable for this snapshot."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-artifact-35-labels",
+      "statement": "The compiled artifact hard-codes 35 surface rows.",
+      "publicTextSeed": "The artifact contains a dated 35-label interface census.",
+      "scope": "supplied repo snapshot",
+      "classification": "observed-state",
+      "status": "approved-seed",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-artifact",
+          "locator": "SURFACE_ROWS"
+        }
+      ],
+      "limitations": [
+        "Rows mix products, surfaces, modes, extensions, and other interface categories; they are not equivalent capability dossiers."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-35-products",
+      "statement": "Anthropic has exactly 35 equivalent products/surfaces.",
+      "publicTextSeed": null,
+      "scope": "provider-wide",
+      "classification": "overgeneralization",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-artifact",
+          "locator": "SURFACE_ROWS"
+        }
+      ],
+      "limitations": [
+        "The list is a historical mixed taxonomy, not an official product count."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-build-sixteen",
+      "statement": "The build failed at least sixteen times.",
+      "publicTextSeed": null,
+      "scope": "build session",
+      "classification": "historical-count",
+      "status": "disputed",
+      "confidence": "low",
+      "sourceRefs": [
+        {
+          "sourceId": "src-artifact",
+          "locator": "hero and annex"
+        }
+      ],
+      "limitations": [
+        "Incident ledger says 17; rendered screenshot says six; categories are heterogeneous."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "replace-with-categorized-ledger",
+      "version": 1
+    },
+    {
+      "id": "claim-build-seventeen",
+      "statement": "The build had 17 recorded failures.",
+      "publicTextSeed": "The build ledger records seventeen categorized incidents in its final snapshot.",
+      "scope": "build session",
+      "classification": "historical-ledger-count",
+      "status": "candidate",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-build-ledger",
+          "locator": "incident list"
+        }
+      ],
+      "limitations": [
+        "The list mixes fact errors, process failures, privacy incidents, platform limits, and rework; not a homogeneous metric."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "adjudicate",
+      "version": 1
+    },
+    {
+      "id": "claim-nothing-happened",
+      "statement": "Nothing happened during the session/build.",
+      "publicTextSeed": null,
+      "scope": "both sessions",
+      "classification": "false-framing",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-artifact",
+          "locator": "Act 8 headline"
+        }
+      ],
+      "limitations": [
+        "Substantial outputs exist; only the requested objective/implementation failed to complete."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-eight-hours",
+      "statement": "The original session lasted eight hours.",
+      "publicTextSeed": null,
+      "scope": "original session",
+      "classification": "corrected-statement",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "Strike five correction"
+        }
+      ],
+      "limitations": [
+        "The reconstructed record corrects the statement to 3h45m."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "publish-only-as-correction",
+      "version": 1
+    },
+    {
+      "id": "claim-public-edition-only",
+      "statement": "The repository contains only the public-edition transcript.",
+      "publicTextSeed": null,
+      "scope": "supplied repo snapshot",
+      "classification": "contradicted-state",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-full-transcript-in-repo",
+          "locator": "file presence"
+        }
+      ],
+      "limitations": [
+        "README/source notes conflict with actual supplied tree."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-reachable-history-clean",
+      "statement": "The prior repository’s reachable and dangling Git history is clean.",
+      "publicTextSeed": null,
+      "scope": "historical repository",
+      "classification": "unverifiable-history-claim",
+      "status": "unknown",
+      "confidence": "low",
+      "sourceRefs": [
+        {
+          "sourceId": "src-forensic-handoff",
+          "locator": "history discussion"
+        }
+      ],
+      "limitations": [
+        "The supplied repo has no `.git` directory; this review cannot inspect objects, refs, branches, or remote state."
+      ],
+      "sensitivity": "private",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-all-anthropic-side",
+      "statement": "Every failure was caused solely by Anthropic-side session plumbing.",
+      "publicTextSeed": null,
+      "scope": "original session",
+      "classification": "unsupported-causation",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "summary/inversion"
+        },
+        {
+          "sourceId": "src-fellows-case",
+          "locator": "competing explanations"
+        }
+      ],
+      "limitations": [
+        "Archive supports observed state and session outcome, not complete internal causation or sole responsibility."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-75-percent-global",
+      "statement": "Claude/AI agents have a 75% global failure rate.",
+      "publicTextSeed": null,
+      "scope": "provider/global",
+      "classification": "unsupported-rate",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-fellows-case",
+          "locator": "On the 75% figure"
+        }
+      ],
+      "limitations": [
+        "Fellows materials explicitly identify it as an informal estimate not validated by available samples."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-fellows-67-inspection",
+      "statement": "One hand-coded Fellows sample reports 49 inspected claims out of 73 verifiable operational claims (67%).",
+      "publicTextSeed": null,
+      "scope": "Fellows sampled corpus",
+      "classification": "sampled-metric",
+      "status": "candidate",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-fellows-report",
+          "locator": "Quantitative scorecard"
+        }
+      ],
+      "limitations": [
+        "Sample rate only; not corpus-wide; coding and independence require separate research review."
+      ],
+      "sensitivity": "private",
+      "recommendedAction": "hold-for-research",
+      "version": 1
+    },
+    {
+      "id": "claim-provider-asymmetry",
+      "statement": "In sampled Fellows windows, Anthropic threads were often controls while material negative incidents clustered in xAI/OpenAI threads.",
+      "publicTextSeed": null,
+      "scope": "Fellows sampled corpus",
+      "classification": "sampled-analysis",
+      "status": "candidate",
+      "confidence": "medium",
+      "sourceRefs": [
+        {
+          "sourceId": "src-fellows-report",
+          "locator": "Executive conclusion / control cases"
+        }
+      ],
+      "limitations": [
+        "Thin, unbalanced sample; cannot support provider ranking."
+      ],
+      "sensitivity": "private",
+      "recommendedAction": "use-only-as-narrative-caution",
+      "version": 1
+    },
+    {
+      "id": "claim-research-novelty",
+      "statement": "The recognition/binding gap is largely unexamined and the proposed rule is uniquely novel.",
+      "publicTextSeed": null,
+      "scope": "research field",
+      "classification": "literature-claim",
+      "status": "unknown",
+      "confidence": "low",
+      "sourceRefs": [
+        {
+          "sourceId": "src-deep-research",
+          "locator": "Recommended reframing"
+        },
+        {
+          "sourceId": "src-research-pdf",
+          "locator": "pages 1–5"
+        }
+      ],
+      "limitations": [
+        "Literature citations in archive are not publication-ready and include 2025–2026 sources requiring current verification."
+      ],
+      "sensitivity": "private",
+      "recommendedAction": "outward-research-required",
+      "version": 1
+    },
+    {
+      "id": "claim-model-sequence",
+      "statement": "The session model sequence was fable → opus → fable.",
+      "publicTextSeed": null,
+      "scope": "original session",
+      "classification": "reconstructed-metadata",
+      "status": "candidate",
+      "confidence": "low",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "header/appendix"
+        }
+      ],
+      "limitations": [
+        "Model identifiers are reconstructed labels and time-sensitive product facts; no raw platform export in archive."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "owner-decide",
+      "version": 1
+    },
+    {
+      "id": "claim-three-switches",
+      "statement": "The sequence represented three operator-initiated model switches.",
+      "publicTextSeed": null,
+      "scope": "original session",
+      "classification": "count-ambiguity",
+      "status": "disputed",
+      "confidence": "low",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "summary"
+        }
+      ],
+      "limitations": [
+        "A three-model-state sequence ordinarily contains two transitions; define count semantics or remove."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "resolve-before-publication",
+      "version": 1
+    },
+    {
+      "id": "claim-artifact-reproducible",
+      "statement": "The self-contained artifact can be reproduced from the supplied source scripts.",
+      "publicTextSeed": null,
+      "scope": "supplied repo snapshot",
+      "classification": "build-state",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-artifact",
+          "locator": "compiled output"
+        }
+      ],
+      "limitations": [
+        "All three build scripts fail in a fresh environment due to hard-coded sandbox/upload paths and missing expected inputs."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-privacy-clean",
+      "statement": "The public-edition pipeline proves the artifact/repository is privacy-clean.",
+      "publicTextSeed": null,
+      "scope": "publication pipeline",
+      "classification": "security-overclaim",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-public-edition",
+          "locator": "fidelity note"
+        }
+      ],
+      "limitations": [
+        "Five-gram operator-turn overlap does not cover assistant disclosures, paths, metadata, bundles, Git history, images, URLs, or semantic privacy."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "do-not-publish",
+      "version": 1
+    },
+    {
+      "id": "claim-screenshot-current",
+      "statement": "The artifact hero screenshot reflects the current artifact failure count.",
+      "publicTextSeed": null,
+      "scope": "supplied repo snapshot",
+      "classification": "stale-asset",
+      "status": "rejected",
+      "confidence": "high",
+      "sourceRefs": [
+        {
+          "sourceId": "src-artifact-image",
+          "locator": "visible hero copy"
+        },
+        {
+          "sourceId": "src-artifact",
+          "locator": "current hero copy"
+        }
+      ],
+      "limitations": [
+        "Screenshot says six; current HTML says at least sixteen."
+      ],
+      "sensitivity": "restricted",
+      "recommendedAction": "regenerate-or-remove",
+      "version": 1
+    }
+  ]
+}
