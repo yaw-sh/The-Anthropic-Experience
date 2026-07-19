@@ -1,0 +1,48 @@
+{
+  "pack": "anthropic-experience-actual-blueprint",
+  "purpose": "Complete creative and technical blueprint for Codex implementation",
+  "primary": "THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md",
+  "fileCount": 8,
+  "files": [
+    {
+      "path": "CODEX-START-HERE.md",
+      "bytes": 566,
+      "sha256": "ccc9724875105e028b580f812df2247b612e35e59e1096b28b72a51a21e9896a"
+    },
+    {
+      "path": "CONTENT-SEED.json",
+      "bytes": 1761,
+      "sha256": "6979c8b624dbc41fc80c719950c4c5abfcbf77f0179715d5a48c2591f8941279"
+    },
+    {
+      "path": "README.md",
+      "bytes": 567,
+      "sha256": "09f18ef7825b7673c7d668dd22bdb61e49661750fc6af5879751d25b69480a4d"
+    },
+    {
+      "path": "THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md",
+      "bytes": 66938,
+      "sha256": "47fc883327ff99680dd78ef061cce0f44e3d179810368b72b9a61196b86b22d9"
+    },
+    {
+      "path": "TRANSCRIPT-INGESTION-SPEC.md",
+      "bytes": 1522,
+      "sha256": "f1b929c7913c2aea110ef4b7c10c199b42d845f71a081af31a5e54986d37567c"
+    },
+    {
+      "path": "evidence/Claude-Failure-Analysis.md",
+      "bytes": 23278,
+      "sha256": "1c362b604d5ed57211200c5a26c27f8f5c6f83950b4eb1e87f303ad90a73d57f"
+    },
+    {
+      "path": "evidence/PREVIOUS-PRO-REVIEW.md",
+      "bytes": 46476,
+      "sha256": "7ebb29e4c2ff710c7c189cd3c19fb5d096c40f790960be7674e8a0bfe1ed41fd"
+    },
+    {
+      "path": "evidence/PRIOR-FORENSIC-HANDOFF.md",
+      "bytes": 78200,
+      "sha256": "5c07184c133a3254dae4a539b5aab44acf5bde6cb953343dd81ce28cfa3c170e"
+    }
+  ]
+}
