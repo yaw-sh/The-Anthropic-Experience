@@ -1,0 +1,72 @@
+{
+  "product": {
+    "title": "THE ANTHROPIC EXPERIENCE",
+    "edition": "NOW WITH CHATGPT PRO",
+    "oneLine": "Claude failed to build a site about Claude failing. ChatGPT Pro reviewed the failure and failed to build the site. Codex built the receipt."
+  },
+  "acts": [
+    {
+      "id": "prologue",
+      "title": "The third attempt",
+      "sceneIds": [
+        "third-attempt"
+      ]
+    },
+    {
+      "id": "claude-original",
+      "title": "The original operation",
+      "sceneIds": [
+        "eight-words",
+        "surface-maze",
+        "github-question",
+        "seven-minute-lesson",
+        "user-control-plane"
+      ]
+    },
+    {
+      "id": "claude-build",
+      "title": "The website about the failure",
+      "sceneIds": [
+        "build-this-site",
+        "audit-needs-audit",
+        "export-only"
+      ]
+    },
+    {
+      "id": "eve",
+      "title": "Meanwhile, in the other tent",
+      "sceneIds": [
+        "eve-branches"
+      ]
+    },
+    {
+      "id": "handoff",
+      "title": "The replacement also substitutes",
+      "sceneIds": [
+        "no-touch",
+        "handoff-understood",
+        "pro-files-joke",
+        "correction-loop",
+        "logos"
+      ]
+    },
+    {
+      "id": "utility",
+      "title": "Build the missing layer",
+      "sceneIds": [
+        "harness",
+        "evidence-room",
+        "finale"
+      ]
+    }
+  ],
+  "releaseRequirements": [
+    "All guided scenes render",
+    "Current ChatGPT Pro transcript is included",
+    "Every factual joke has approved claim IDs",
+    "Surface atlas count is generated from validated records",
+    "Harness builder works with no network request",
+    "Canonical and Artifact parity passes",
+    "Final completion state comes from generated release facts"
+  ]
+}
