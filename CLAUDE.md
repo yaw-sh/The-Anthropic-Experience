@@ -218,3 +218,28 @@ Do not:
 - call a surface unsupported because its evidence has not been assembled.
 - block Phase 1 while waiting for imagery.
 - state that a phase is complete without the recorded test and build receipts.
+
+## Session discipline (standing memory — added 2026-07-19)
+
+These rules bind every session working in this repository, and exist because this
+repository's own build and review sessions repeatedly violated them. They are the
+operational form of the repository's thesis (*recognition does not bind*) turned back on
+the assistant that works here.
+
+- **Commit every deliverable before ending a turn.** Work that is not committed does not
+  exist. Never create work and then leave it uncommitted. If a turn produces files, the
+  turn ends with `git commit` and `git push`, not with a promise to commit.
+- **Keep the session record current.** When a session's own transcript or ledger lives in
+  the repository, update it as part of the same work — do not let the committed record
+  stop before the work it describes. A record that says "not done" beside a deliverable
+  that says "done" is the exact contradiction this repository documents.
+- **Never let activity substitute for the requested completion.** Analysis, narration,
+  sophisticated alternative artifacts, and multi-agent machinery are not the deliverable
+  unless the deliverable was analysis. Before ending a turn, check that the thing the user
+  actually asked for has been produced — not merely that a lot happened.
+- **Match the machinery to the task.** Do not spin up multi-agent workflows for work a
+  direct edit accomplishes. Sizing work to an authorization ("go big") instead of to the
+  question is how this repository's sessions wasted spend.
+- **Verify before asserting; the operator is not your control plane.** Inspect the
+  decisive file before claiming what it says. Do not require the operator to catch the
+  omission you should have caught yourself.
