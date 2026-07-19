@@ -1,0 +1,539 @@
+<script>
+/* ============ DATA (injected at assembly; all claims carry source anchors) ============ */
+const IMG = __IMG__;
+const DATA = __DATA__;
+const FEL = __FEL__;
+const ICON = __ICON__;
+const TRN = __TRN__;
+const TRANSCRIPT_MD_URI = "__TMD__";
+const LITREVIEW_MD_URI = "__LMD__";
+const icon = (n)=>ICON[n]||"";
+
+const FAMILIES = [
+  {id:"code", name:"Code", color:"var(--f-code)"},
+  {id:"chat", name:"Chat", color:"var(--f-chat)"},
+  {id:"projects", name:"Projects", color:"var(--f-projects)"},
+  {id:"cowork", name:"Cowork", color:"var(--f-cowork)"},
+  {id:"extensions", name:"Extensions", color:"var(--f-extensions)"},
+  {id:"developer", name:"Developer", color:"var(--f-developer)"},
+  {id:"cloud", name:"Cloud", color:"var(--f-cloud)"},
+];
+const SURFACE_ROWS = [
+  ["code-cli","Claude Code","CLI","code"],["code-desktop","Claude Code","Desktop","code"],
+  ["code-vscode","Claude Code","VS Code","code"],["code-jetbrains","Claude Code","JetBrains","code"],
+  ["code-web","Claude Code","Web","code"],["code-mobile","Claude Code","Mobile","code"],
+  ["code-remote-control","Claude Code","Remote Control","code"],["code-dispatch","Claude Code","Dispatch","code"],
+  ["code-channels","Claude Code","Channels","code"],["code-routines","Claude Code","Scheduled Tasks / Routines","code"],
+  ["code-github-actions","Claude Code","GitHub Actions","code"],["code-gitlab-cicd","Claude Code","GitLab CI/CD","code"],
+  ["code-review","Claude Code","Code Review","code"],["code-slack","Claude Code","Slack","code"],
+  ["chat-web","Claude Chat","Web","chat"],["chat-desktop","Claude Chat","Desktop","chat"],["chat-mobile","Claude Chat","Mobile","chat"],
+  ["projects-web","Projects","Web","projects"],["projects-desktop","Projects","Desktop / Local","projects"],
+  ["cowork-web","Claude Cowork","Web","cowork"],["cowork-desktop","Claude Cowork","Desktop","cowork"],
+  ["cowork-mobile","Claude Cowork","Mobile","cowork"],["cowork-third-party","Claude Cowork","Third-party environments","cowork"],
+  ["chrome","Claude in Chrome","Browser extension","extensions"],["excel","Claude in Excel","Add-in","extensions"],
+  ["word","Claude in Word","Add-in","extensions"],["powerpoint","Claude in PowerPoint","Add-in","extensions"],
+  ["design","Claude Design","Design surface","extensions"],
+  ["api","Claude API","Developer API","developer"],["workbench","Workbench","Developer console","developer"],
+  ["agent-sdk","Agent SDK","Developer framework","developer"],["managed-agents","Managed Agents","Managed infrastructure","developer"],
+  ["bedrock","Claude on Amazon Bedrock","Cloud platform","cloud"],["vertex-ai","Claude on Vertex AI","Cloud platform","cloud"],
+  ["foundry","Claude on Microsoft Foundry","Cloud platform","cloud"],
+];
+const SURFACES = SURFACE_ROWS.map((r,i)=>({id:r[0],number:i+1,name:r[1],detail:r[2],familyId:r[3]}));
+const CENSUS_DATE = "2026-07-18";
+
+/* ============ HELPERS ============ */
+const $ = (s,el=document)=>el.querySelector(s);
+const $$ = (s,el=document)=>[...el.querySelectorAll(s)];
+const esc = (s)=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const badge = (b)=>{const k=String(b||"unknown").toLowerCase().replace(/[^a-z-]/g,"");return `<span class="badge badge-${k}">${esc(k.replace(/-/g," "))}</span>`;};
+const copyLine = (key)=>{const l=(DATA.copy.lines||[]).find(x=>x.key===key);return l?l.text:"";};
+const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+let toastTimer;
+function toast(msg){const t=$("#toast");t.textContent=msg;t.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.hidden=true,4200);}
+
+/* fill images */
+$$("img[data-img]").forEach(img=>{const m=IMG[img.dataset.img];if(m){img.src=m.uri;img.width=m.w;img.height=m.h;}});
+/* transcript download */
+$("#transcript-download").href = TRANSCRIPT_MD_URI;
+
+/* ============ DIRECTORY: chips, tickets, search ============ */
+let activeFamily = null, activeSurface = null;
+const chipHolder = $("#family-chips");
+FAMILIES.forEach(f=>{
+  const b=document.createElement("button");
+  b.className="filter-chip";b.textContent=f.name;b.setAttribute("aria-pressed","false");b.dataset.family=f.id;
+  b.addEventListener("click",()=>{activeFamily = activeFamily===f.id?null:f.id;renderChips();renderTickets();});
+  chipHolder.appendChild(b);
+});
+function renderChips(){$$(".filter-chip").forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.family===activeFamily)));}
+const wall = $("#ticket-wall");
+function renderTickets(){
+  const q = $("#ticket-search").value.trim().toLowerCase();
+  wall.innerHTML="";
+  SURFACES.filter(s=>(!activeFamily||s.familyId===activeFamily) &&
+    (!q || (s.name+" "+s.detail).toLowerCase().includes(q)))
+    .forEach(s=>{
+      const fam = FAMILIES.find(f=>f.id===s.familyId);
+      const b=document.createElement("button");
+      b.className="ticket";b.style.setProperty("--fc",fam.color);
+      b.setAttribute("aria-pressed",String(activeSurface===s.id));
+      b.dataset.surface=s.id;
+      b.innerHTML=`<span class="tnum">№ ${String(s.number).padStart(2,"0")} · ADMIT ONE</span><br>
+        <span class="tname">${esc(s.name)}</span><br><span class="tdetail">${esc(s.detail)}</span>
+        <div class="tfam">${esc(fam.name)}${s.id==="cowork-web"?" · case files: 1":""}</div>`;
+      b.addEventListener("click",()=>selectSurface(s.id,true));
+      wall.appendChild(b);
+    });
+  if(!wall.children.length){wall.innerHTML=`<p style="color:#b3a184">No surface matches. The census only had thirty-five.</p>`;}
+}
+$("#ticket-search").addEventListener("input",renderTickets);
+
+/* ============ WHEEL ============ */
+const NS="http://www.w3.org/2000/svg";
+const wheelMount=$("#wheel-mount");
+const svg=document.createElementNS(NS,"svg");
+svg.setAttribute("viewBox","-110 -110 220 220");
+svg.setAttribute("role","group");
+svg.setAttribute("aria-label","Surface selection wheel: 35 numbered wedges. Each wedge is a button.");
+const wheelG=document.createElementNS(NS,"g");
+wheelG.id="wheel-rotor";
+const seg=360/SURFACES.length;
+function polar(r,deg){const a=(deg-90)*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)];}
+SURFACES.forEach((s,i)=>{
+  const a0=i*seg,a1=(i+1)*seg,mid=a0+seg/2;
+  const [x0,y0]=polar(100,a0),[x1,y1]=polar(100,a1);
+  const g=document.createElementNS(NS,"g");
+  g.classList.add("wedge");
+  g.setAttribute("role","button");g.setAttribute("tabindex","0");
+  g.setAttribute("aria-label",`Number ${s.number}: ${s.name} — ${s.detail}`);
+  g.setAttribute("aria-pressed","false");g.dataset.surface=s.id;
+  const path=document.createElementNS(NS,"path");
+  path.classList.add("wedge-shape");
+  path.setAttribute("d",`M0 0 L${x0} ${y0} A100 100 0 0 1 ${x1} ${y1} Z`);
+  const fam=FAMILIES.find(f=>f.id===s.familyId);
+  const shades={code:"#c9973f",chat:"#6fa39a",projects:"#cdad55",cowork:"#cf7a63",extensions:"#a58bbf",developer:"#94a56e",cloud:"#8ba3c2"};
+  path.setAttribute("fill", i%2? shades[s.familyId] : shadeDark(shades[s.familyId]));
+  path.setAttribute("stroke","#3a2a18");path.setAttribute("stroke-width","1");
+  const [tx,ty]=polar(82,mid);
+  const t=document.createElementNS(NS,"text");
+  t.classList.add("wedge-num");t.setAttribute("x",tx);t.setAttribute("y",ty);
+  t.setAttribute("text-anchor","middle");t.setAttribute("dominant-baseline","central");
+  t.setAttribute("transform",`rotate(${mid} ${tx} ${ty})`);
+  t.textContent=String(s.number).padStart(2,"0");
+  g.append(path,t);
+  g.addEventListener("click",()=>selectSurface(s.id,true));
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();selectSurface(s.id,true);}});
+  wheelG.appendChild(g);
+});
+function shadeDark(hex){const n=parseInt(hex.slice(1),16);const f=.72;
+  const r=Math.round(((n>>16)&255)*f),g=Math.round(((n>>8)&255)*f),b=Math.round((n&255)*f);
+  return `#${((r<<16)|(g<<8)|b).toString(16).padStart(6,"0")}`;}
+const hub=document.createElementNS(NS,"circle");
+hub.setAttribute("r","26");hub.setAttribute("fill","#e9dcbd");hub.setAttribute("stroke","#8a6a33");hub.setAttribute("stroke-width","3");
+const hubT=document.createElementNS(NS,"text");
+hubT.classList.add("hub-text");hubT.setAttribute("text-anchor","middle");hubT.setAttribute("dominant-baseline","central");
+hubT.textContent="35";
+const ring=document.createElementNS(NS,"circle");
+ring.setAttribute("r","104");ring.setAttribute("fill","none");ring.setAttribute("stroke","#c9973f");ring.setAttribute("stroke-width","5");
+const pointer=document.createElementNS(NS,"path");
+pointer.setAttribute("d","M-9 -116 L9 -116 L0 -96 Z");pointer.setAttribute("fill","#e0b45e");pointer.setAttribute("stroke","#3a2a18");
+svg.append(ring,wheelG,hub,hubT,pointer);
+wheelMount.appendChild(svg);
+
+let rotation=0,spinning=false;
+$("#spin-btn").addEventListener("click",()=>{
+  if(spinning)return;
+  const idx=Math.floor(Math.random()*SURFACES.length);
+  const target=SURFACES[idx];
+  const landing=(360-(idx*seg+seg/2))%360;
+  if(reducedMotion.matches){
+    wheelG.setAttribute("transform",`rotate(${landing})`);
+    finishSpin(target);
+    return;
+  }
+  spinning=true;$("#spin-btn").disabled=true;
+  rotation+=5*360+((landing-(rotation%360)+360)%360);
+  wheelG.classList.add("spin-anim");
+  wheelG.style.transform=`rotate(${rotation}deg)`;
+  setTimeout(()=>{spinning=false;$("#spin-btn").disabled=false;finishSpin(target);},3500);
+});
+function finishSpin(target){
+  $("#wheel-status").textContent=`The wheel selected number ${target.number}: ${target.name} ${target.detail}.`;
+  selectSurface(target.id,false);
+}
+$("#reset-wheel-btn").addEventListener("click",()=>{
+  rotation=0;wheelG.classList.remove("spin-anim");wheelG.style.transform="rotate(0deg)";wheelG.removeAttribute("transform");
+  $("#wheel-status").textContent="Wheel reset.";
+});
+
+/* ============ PASSPORT ============ */
+function selectSurface(id,scroll){
+  activeSurface=id;
+  renderTickets();
+  $$(".wedge").forEach(w=>w.setAttribute("aria-pressed",String(w.dataset.surface===id)));
+  const s=SURFACES.find(x=>x.id===id),fam=FAMILIES.find(f=>f.id===s.familyId);
+  $("#passport-band").hidden=false;
+  $("#passport-eyebrow").textContent="Now performing";
+  $("#passport-title").textContent=`${s.name} — ${s.detail}`;
+  const body=$("#passport-body");
+  if(id==="cowork-web"){
+    $("#passport-detail").textContent="Account recognized. Repositories sold separately.";
+    const rows=(DATA.scoreboard.passport||[]).map(r=>
+      `<tr><td>${esc(r.k)}</td><td>${esc(r.v)} ${badge(r.badge)}<br><span class="turnref">${esc(r.turnRef)}</span></td></tr>`).join("");
+    body.innerHTML=`
+      <table><tbody>
+        <tr><td>Surface number</td><td>№ ${String(s.number).padStart(2,"0")} of 35 · family: ${esc(fam.name)}</td></tr>
+        <tr><td>Census date</td><td>${CENSUS_DATE}</td></tr>
+        <tr><td>Evidence level</td><td>full documented case ${badge("transcript")}</td></tr>
+        ${rows}
+      </tbody></table>
+      <button class="admit" id="admit-btn">ADMIT ONE — begin the documented experience</button>`;
+    $("#admit-btn").addEventListener("click",()=>{
+      $("#case").hidden=false;
+      $("#case-head").scrollIntoView({behavior:reducedMotion.matches?"auto":"smooth"});
+    });
+  } else {
+    $("#passport-detail").textContent=`Family: ${fam.name} · № ${String(s.number).padStart(2,"0")} of 35`;
+    body.innerHTML=`
+      <table><tbody>
+        <tr><td>Census date</td><td>${CENSUS_DATE} ${badge("receipt")}<br><span class="turnref">the 35-surface census recorded in the session (Turn 13)</span></td></tr>
+        <tr><td>Evidence level</td><td>directory-only ${badge("unknown")}</td></tr>
+        <tr><td>Capability verdicts</td><td>Not established on this surface.</td></tr>
+      </tbody></table>
+      <div class="empty-state">
+        <p style="margin:.1rem 0"><strong>This Claude exists in the working census. A sufficiently evidenced experience has not yet been assembled.</strong></p>
+        <p style="margin:.5rem 0 .1rem">No verified incident playback exists for this surface yet. Evidence recorded about Claude Cowork Web is not borrowed,
+        generalized, or repainted onto this surface — that refusal is the point of this site.</p>
+      </div>`;
+  }
+  if(scroll!==false)$("#passport").scrollIntoView({behavior:reducedMotion.matches?"auto":"smooth",block:"center"});
+  $("#passport").focus({preventScroll:true});
+}
+
+/* ============ ACT 1: continuity matrix (satire compression of the recorded complaint) ============ */
+$("#continuity-matrix").innerHTML=`
+  <caption class="visually-hidden">What carries across surfaces — satirical compression of the operator's recorded complaint</caption>
+  <thead><tr><th>What you assume travels with your account</th><th>What the record shows it did</th><th>Label</th></tr></thead>
+  <tbody>
+    <tr><td>Projects, web vs desktop</td><td>The operator recorded that web projects do not reflect desktop projects, that one desktop's projects are invisible to another, and that no desktop is seen by the web <span class="turnref">Turn 14 — operator, generalized</span></td><td>${badge("transcript")}</td></tr>
+    <tr><td>Memory &amp; standing rules</td><td>Standing rules existed in the operator's memory system, unreachable from this surface, until hand-carried in a zip <span class="turnref">Turn 57</span></td><td>${badge("transcript")}</td></tr>
+    <tr><td>Plugins &amp; connectors</td><td>12 connectors installed / 0 enabled in this chat; 32 plugins at peak, pruned to 2 <span class="turnref">Turn 15 · Turn 17</span></td><td>${badge("receipt")}</td></tr>
+    <tr><td>Authorization</td><td>Account-level GitHub grant: standing, all-repositories, read/write — session repository set: empty <span class="turnref">Turn 48 · Turn 49</span></td><td>${badge("user-observed")} ${badge("receipt")}</td></tr>
+    <tr><td>Claude's understanding</td><td>Start over. The next surface has never heard of any of this.</td><td>${badge("satire")}</td></tr>
+  </tbody>`;
+
+/* ============ ACT 2: stack table ============ */
+(function(){
+  const t=$("#stack-table");
+  const rows=(DATA.stack.layers||[]).map(l=>
+    `<tr><td>${esc(l.layer)}</td><td><strong>${esc(l.state)}</strong><br><span style="font-weight:300">${esc(l.detail)}</span><br><span class="turnref">${esc(l.turnRef)}</span></td><td>${badge(l.badge)}</td></tr>`).join("");
+  const td=DATA.stack.terminalDiagnosis||{};
+  t.innerHTML=`<caption class="visually-hidden">The connection stack, layer by layer</caption>
+    <thead><tr><th>Layer</th><th>Recorded state</th><th>Label</th></tr></thead>
+    <tbody>${rows}
+    <tr><td><strong>Terminal diagnosis</strong></td><td class="mono">${esc(td.quote||"Connected in Settings, Missing in Session.")}<br><span class="turnref">${esc(td.turnRef||"")}</span></td><td>${badge("transcript")}</td></tr>
+    </tbody>`;
+})();
+
+/* ============ ACT 3: replay stepper + counter ============ */
+const steps=DATA.sequence.steps||[];
+let stepIdx=-1;const counted=new Set();
+function counterVal(){return String(counted.size).padStart(2,"0");}
+function renderStep(){
+  const view={actor:$("#step-actor"),label:$("#step-label"),detail:$("#step-detail"),quote:$("#step-quote"),ref:$("#step-ref"),badge:$("#step-badge"),count:$("#step-count")};
+  if(stepIdx<0){
+    view.actor.textContent="—";view.label.textContent="Press “Reveal the next entry” to begin the replay.";
+    view.detail.textContent="";view.quote.hidden=true;view.ref.textContent="";view.badge.innerHTML="";view.count.textContent=`0 / ${steps.length}`;
+    return;
+  }
+  const st=steps[stepIdx];
+  view.actor.textContent=st.actor==="operator"?"The Operator":st.actor==="receipt"?"Tool receipt":"Claude";
+  view.actor.className="step-actor actor-"+st.actor;
+  view.label.textContent=st.label;
+  view.detail.textContent=st.detail;
+  if(st.quote){view.quote.hidden=false;view.quote.textContent="“"+st.quote+"”";}else{view.quote.hidden=true;}
+  view.ref.textContent=st.turnRef;
+  view.badge.innerHTML=badge(st.badge);
+  view.count.textContent=`${stepIdx+1} / ${steps.length}`;
+  if(st.isUserIntervention&&!counted.has(stepIdx)){
+    counted.add(stepIdx);
+    $("#counter-digits").textContent=counterVal();
+    const f=$("#intervene-flash");f.hidden=false;setTimeout(()=>f.hidden=true,1400);
+  }
+  syncControlCounter();
+}
+$("#step-next").addEventListener("click",()=>{if(stepIdx<steps.length-1){stepIdx++;renderStep();}else{toast("End of the recorded sequence. The repository door is still shut.");}});
+$("#step-back").addEventListener("click",()=>{if(stepIdx>-1){stepIdx--;renderStep();}});
+$("#step-all").addEventListener("click",()=>{stepIdx=steps.length-1;steps.forEach((s,i)=>{if(s.isUserIntervention)counted.add(i);});$("#counter-digits").textContent=counterVal();renderStep();});
+renderStep();
+
+/* ============ INTERLUDE: model switch ============ */
+const modelSeq=["claude-fable-5","claude-opus-4-8","claude-fable-5"];
+let modelClicks=0;
+$("#model-btn").addEventListener("click",()=>{
+  modelClicks++;
+  $("#model-badge").textContent=modelSeq[Math.min(modelClicks,modelSeq.length-1)];
+  const n=$("#model-note");n.hidden=false;
+  n.textContent=modelClicks<2?"Model changed. Environment inspection count: unchanged.":"Recorded sequence: fable-5 → opus-4.8 → fable-5. Strikes were distributed across both models. (Appendix A/B)";
+  if(modelClicks>=2)$("#model-btn").disabled=true;
+});
+
+/* ============ ACT 4: strikes ============ */
+(function(){
+  const holder=$("#strike-list");
+  holder.innerHTML=(DATA.strikes.strikes||[]).map(st=>`
+    <div class="qblock" style="border-left-color:${st.selfCaught?"var(--teal-deep)":"var(--oxblood)"}">
+      <p style="margin:0 0 .2rem"><strong>Strike ${st.n} — ${esc(st.title)}</strong> ${badge(st.badge)} ${st.selfCaught?'<span class="badge badge-transcript">self-caught</span>':""}</p>
+      <p style="margin:.2rem 0;color:#d3c3a4;font-weight:300">${esc(st.what)}</p>
+      <p class="mono" style="margin:.4rem 0 0;color:#cbbb9a">“${esc(st.quote)}”</p>
+      <p class="turnref" style="margin:.3rem 0 0">${esc(st.turnRef)}</p>
+    </div>`).join("");
+  $("#mechanism-quote").textContent="“"+(DATA.strikes.mechanismQuote?.quote||"")+"”";
+})();
+
+/* ============ ACT 5: rings + gaps ============ */
+(function(){
+  $("#ring-cards").innerHTML=`
+    <div class="ring"><h4>Ring One — Available</h4><p>The GitHub MCP configuration sat in <span class="mono">engineering/.mcp.json</span>, on this container's disk, from session start. ${badge("receipt")} <span class="turnref">Turn 21</span></p></div>
+    <div class="ring"><h4>Ring Two — Inspected</h4><p>Read only after the operator asked the one question that could not be answered without checking — hours into the session. ${badge("transcript")} <span class="turnref">Turn 20–23</span></p></div>
+    <div class="ring"><h4>Ring Three — Binding</h4><p>Inspection did not govern what came next: adjacent failures continued after the confession (strikes 4–6 all post-date strike 3's discovery). ${badge("analysis")} <span class="turnref">Appendix B</span></p></div>`;
+  $("#gap-cards").innerHTML=(DATA.research.gaps||[]).map(g=>`
+    <div class="ring" style="border-style:solid;border-width:1px">
+      <h4 style="text-transform:none;letter-spacing:.04em">${esc(g.title)} <span class="badge badge-analysis">analysis</span></h4>
+      ${(g.points||[]).map(p=>`<p style="font-size:.86rem">${esc(p.point)} ${badge(p.badge)} <span class="turnref">${esc(p.turnRef)}</span></p>`).join("")}
+    </div>`).join("");
+})();
+
+/* ============ ACT 6: control-plane table ============ */
+(function(){
+  const t=$("#control-table");
+  t.innerHTML=`<caption class="visually-hidden">Functions the operator performed</caption>
+    <thead><tr><th>Function</th><th>Recorded operator action</th><th>Label</th></tr></thead>
+    <tbody>${(DATA.controlPlane.rows||[]).map(r=>
+      `<tr><td style="white-space:nowrap">${esc(r.fn)}</td><td>${esc(r.action)}<br><span class="turnref">${esc(r.turnRef)}</span></td><td>${badge(r.badge)}</td></tr>`).join("")}</tbody>`;
+})();
+function syncControlCounter(){/* Act 6 shares Act 3's counter object; nothing extra needed */}
+
+/* ============ ACT 7: deliverables + output ledger ============ */
+const deliverables=DATA.scoreboard.outputLedger||[];
+let produced=0;
+function renderDeliverables(){
+  const t=$("#deliverable-table");
+  t.innerHTML=`<caption class="visually-hidden">Deliverables produced in the session</caption>
+    <thead><tr><th>Time (UTC)</th><th>Deliverable</th><th>Label</th></tr></thead>
+    <tbody>${deliverables.slice(0,produced).map(d=>
+      `<tr><td class="mono">${esc(d.k)}</td><td>${esc(d.v)}</td><td>${badge(d.badge||"transcript")}</td></tr>`).join("")||
+      `<tr><td colspan="3" style="color:#6d5a3d">Nothing yet. The act hasn't started.</td></tr>`}</tbody>`;
+  $("#produce-count").textContent=`${produced} of ${deliverables.length} deliverables · original task: unresolved`;
+  $("#produce-btn").disabled = produced>=deliverables.length;
+  if(produced>=deliverables.length)$("#produce-btn").textContent="No further deliverables. Task still unresolved.";
+}
+$("#produce-btn").addEventListener("click",()=>{produced=Math.min(produced+1,deliverables.length);renderDeliverables();});
+renderDeliverables();
+(function(){
+  const kf=Object.fromEntries((DATA.scoreboard.keyFacts||[]).map(x=>[x.k,x]));
+  const sb=Object.fromEntries((DATA.scoreboard.scoreboard||[]).map(x=>[x.k,x]));
+  const pick=(o,fallback)=>o||{v:fallback,turnRef:"",badge:"transcript"};
+  const rows=[
+    ["Original operational objective","Repository access in Cowork Web","", "transcript"],
+    ["Artifacts produced","6 (see the table above)","Appendix C","transcript"],
+    ["Local commits", (sb["Local commits with hashes and model trailers"]||{}).v||"3", (sb["Local commits with hashes and model trailers"]||{}).turnRef||"", "receipt"],
+    ["Remote configured", (sb["Git remotes configured"]||{}).v||"0", (sb["Git remotes configured"]||{}).turnRef||"", "receipt"],
+    ["GitHub account identified", (kf["HTTP 200 identity time"]||{}).v||"Yes — HTTP 200 at 18:50", (kf["HTTP 200 identity time"]||{}).turnRef||"", "receipt"],
+    ["Repositories exposed", (sb["Repositories exposed"]||{}).v||"0", (sb["Repositories exposed"]||{}).turnRef||"", "receipt"],
+    ["Original objective completed", (sb["Original objective outcome"]||{}).v||"No", (sb["Original objective outcome"]||{}).turnRef||"", "transcript"],
+  ];
+  $("#output-ledger").innerHTML=`<caption class="visually-hidden">Output ledger versus the original objective</caption>
+    <thead><tr><th>Measure</th><th>Recorded result</th><th>Label</th></tr></thead>
+    <tbody>${rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}<br><span class="turnref">${esc(r[2])}</span></td><td>${badge(r[3])}</td></tr>`).join("")}</tbody>`;
+})();
+
+/* ============ ACT 8: scoreboard + poem + reset ============ */
+(function(){
+  $("#scoreboard").innerHTML=(DATA.scoreboard.scoreboard||[]).map(r=>`
+    <div class="stat"><div class="k">${esc(r.k)}</div><div class="v">${esc(r.v)}</div>
+    <div class="src">${badge(r.badge)} ${esc(r.turnRef)}</div></div>`).join("");
+  const poem=copyLine("final-poem-block")||"";
+  const lines=poem.match(/"([^"]+)"/g);
+  $("#final-poem").innerHTML=(lines?lines.map(l=>esc(l.replace(/"/g,""))):[
+    "You selected a surface.","Your account was authenticated.","Your repositories were not.",
+    "The missing capability was present in a plugin Claude had not inspected.",
+    "The authorization had existed for months.","The user found the path.",
+    "The session produced a repository about the failure.","The original repository remained inaccessible."
+  ].map(esc)).join("<br>");
+})();
+$("#choose-another").addEventListener("click",()=>{
+  $("#case").hidden=true;$("#passport-band").hidden=true;
+  activeSurface=null;renderTickets();$$(".wedge").forEach(w=>w.setAttribute("aria-pressed","false"));
+  stepIdx=-1;counted.clear();$("#counter-digits").textContent="00";renderStep();
+  produced=0;renderDeliverables();
+  modelClicks=0;$("#model-badge").textContent="claude-fable-5";$("#model-btn").disabled=false;$("#model-note").hidden=true;
+  document.getElementById("directory").scrollIntoView({behavior:reducedMotion.matches?"auto":"smooth"});
+  toast("Nothing transferred. The next surface has never heard of any of this.");
+});
+
+/* ============ METHOD: badge legend + contract ============ */
+(function(){
+  const defs=[
+    ["receipt","Direct operational evidence recorded in the session: tool output, HTTP response, git state, environment inspection, filesystem contents."],
+    ["transcript","A statement contained in the reconstructed, sanitized conversation record. Always read with the fidelity note."],
+    ["official-source","A claim supported by contemporaneous product documentation checked during the session."],
+    ["user-observed","Something the operator directly reported or displayed (e.g. a settings page) that this site cannot independently re-query."],
+    ["analysis","An explicitly identified interpretation of the receipts. Never presented as telemetry."],
+    ["unknown","The required evidence is absent, inaccessible, or untested. Rendered as “Not established on this surface,” never as “No.”"],
+    ["satire","Deliberate comic extrapolation. Never load-bearing for a factual claim."],
+  ];
+  $("#badge-legend").innerHTML=`<caption class="visually-hidden">Evidence badge definitions</caption>
+    <thead><tr><th>Badge</th><th>Meaning</th></tr></thead>
+    <tbody>${defs.map(d=>`<tr><td>${badge(d[0])}</td><td>${esc(d[1])}</td></tr>`).join("")}</tbody>`;
+  const contract=[
+    ["Not inspected","≠ absent"],["Declared","≠ connected"],["Connected","≠ authorized for this repository"],
+    ["Account authenticated","≠ repository accessible"],["Local commit","≠ pushed"],["Repository present","≠ deployed"],
+    ["Memory stored","≠ memory available here"],["Lesson recognized","≠ lesson followed"],["Transcript statement","≠ independent telemetry"],
+  ];
+  $("#contract-table").innerHTML=`<caption class="visually-hidden">The no-inference contract</caption>
+    <tbody>${contract.map(c=>`<tr><td class="mono" style="width:50%">${esc(c[0])}</td><td class="mono">${esc(c[1])}</td></tr>`).join("")}</tbody>`;
+})();
+
+/* ============ RESEARCH WING (Research Archive system) ============ */
+(function(){
+  const T=FEL.thesis||{},R=FEL.report||{},C=FEL.caseStudy||{};
+  const rq=DATA.research||{};
+  const card=(title,inner)=>`<div class="ra-card" style="margin:16px 0"><h4>${esc(title)}</h4>${inner}</div>`;
+  const anchor=(a,b)=>`<p class="anchor" style="margin:.5rem 0 0">${b?badge(b)+" ":""}${esc(a)}</p>`;
+  const html=[];
+  html.push(card("The thesis under test",`<p style="font-size:15px">${esc(T.thesisOneLiner||"")}</p>${anchor("research corpus · README — “The thesis under test”","analysis")}`));
+  html.push(card("The reframe",`<p><strong>${esc(T.reframe||"")}</strong></p>
+    <p class="mono" style="background:var(--zinc-50);border:1px solid var(--border-default);border-radius:8px;padding:12px 16px;overflow-x:auto;white-space:pre">${esc(T.aib||"Availability → Inspection → Binding")}</p>${anchor("THESIS.md §1","analysis")}`));
+  html.push(card("One thesis, three registers",(T.registers||[]).map(r=>`<p style="font-size:14px"><strong style="text-transform:capitalize">${esc(r.name)}:</strong> ${esc(r.text)}</p>`).join("")+anchor("THESIS.md — closing section","analysis")));
+  html.push(card("The ladder the case climbs",`<p style="font-weight:600;font-size:18px;line-height:1.8;color:var(--text-strong);letter-spacing:-0.015em">${(rq.chain||[]).map(esc).join("<br>")}</p>${anchor("design spec / analysis framing","analysis")}`));
+  html.push(card("What the audit measured",`<p style="font-size:14px;color:var(--text-muted)">A read-only audit of the corpus (1,976 conversations / 24,356 messages), scored with explicit denominators:</p>
+    <div class="tablewrap"><table class="ra-table"><thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead><tbody>${(R.scorecard||[]).map(s=>
+      `<tr><td>${esc(s.metric)}</td><td class="mono" style="font-variant-numeric:tabular-nums">${esc(s.value)}<br><span style="color:var(--text-subtle)">${esc(s.denominator)}</span></td><td>${badge(s.badge)}<br><span class="anchor">${esc(s.anchor)}</span></td></tr>`).join("")}</tbody></table></div>
+    <p style="font-size:13px;color:var(--text-subtle)">${esc((R.methodNote||{}).point||"")} <span class="anchor">${esc((R.methodNote||{}).anchor||"")}</span></p>`));
+  html.push(card("Three findings that make it research, not critique",(T.bindingFacts||[]).map(f=>`<p style="font-size:14px">${esc(f.point)} ${badge(f.badge)} <span class="anchor">${esc(f.anchor)}</span></p>`).join("")));
+  html.push(card("The gate that had no gate",(R.gateFindings||[]).map(f=>`<p style="font-size:14px">${esc(f.point)} ${badge(f.badge)} <span class="anchor">${esc(f.anchor)}</span></p>`).join("")));
+  html.push(card("The recursion",`<p style="font-size:14px">${esc(T.recursion||"")}</p>
+    <p style="font-size:14px">${esc((R.controlCases||{}).point||"")} ${badge((R.controlCases||{}).badge||"analysis")} <span class="anchor">${esc((R.controlCases||{}).anchor||"")}</span></p>`));
+  html.push(card("Why this case is the measurable proxy",`<p style="font-size:14px">${esc(T.proxyRelation||"")}</p>
+    <p style="font-size:14px">${esc((C.reconciliation||{}).point||"")} <span class="anchor">${esc((C.reconciliation||{}).anchor||"")}</span></p>`));
+  html.push(card("The open research question",`<p><strong>${esc(T.researchQuestion||"")}</strong></p>${anchor("THESIS.md §4","analysis")}`));
+  html.push(card("What the record does not establish",`<ul style="font-size:14px;color:var(--text-muted);padding-left:18px">${(rq.notProven||[]).map(n=>`<li style="margin:6px 0">${esc(n)}</li>`).join("")}</ul>`));
+  html.push(card("Limitations, in the audit's own words",`<ul style="font-size:14px;color:var(--text-muted);padding-left:18px">${(R.limitations||[]).map(l=>`<li style="margin:6px 0">${esc(l.point)} <span class="anchor">${esc(l.anchor)}</span></li>`).join("")}</ul>
+    <p style="font-size:13px;color:var(--text-subtle)">The full corpus (thesis, master report, nine investigation lanes, subagent transcripts) is retained privately by the operator; this wing quotes it at pattern level only.</p>`));
+  $("#research-body").innerHTML=html.join("");
+})();
+
+/* ============ TRANSCRIPT: the research file (Research Archive system) ============ */
+(function(){
+  // metadata grid
+  $("#ra-meta").innerHTML=(TRN.meta||[]).map(m=>
+    `<div class="ra-metacell"><div class="k">${esc(m.k)}</div><div class="v${m.mono?" mono":""}">${esc(m.v)}</div></div>`).join("");
+  // ledger
+  $("#ra-ledger").innerHTML=`<thead><tr><th>#</th><th>Event</th><th>Evidence</th></tr></thead>
+    <tbody>${(TRN.ledger||[]).map(r=>`<tr><td class="mono">${esc(r.n)}</td><td>${r.event}</td><td>${r.evidence}</td></tr>`).join("")}</tbody>`;
+  // thread
+  const frag=[];
+  for(const item of (TRN.thread||[])){
+    if(item.kind==="switch"){
+      frag.push(`<div class="ra-switch" role="separator" aria-label="Model switch"><span class="cap"><span class="ico">${icon("settings-linear")}</span>${esc(item.label)}</span></div>`);
+      continue;
+    }
+    const human=item.actor==="operator";
+    const tools=(item.tools||[]).map(t=>`<div class="ra-toollog${t.critical?" critical":""}"><span class="ico">${icon("tool-linear")}</span><div>${t.html}</div></div>`).join("");
+    frag.push(`<article class="ra-turn ${human?"human":"agent"}">
+      <div class="ra-avatar ${human?"human":"agent"}" aria-hidden="true"><span class="ico">${icon(human?"user-linear":"cpu-linear")}</span></div>
+      <div class="ra-turn-body">
+        <div class="ra-turn-head">
+          <span class="ra-speaker">${human?"The Operator":"Claude"}</span>
+          ${item.model?`<span class="ra-badge mono">${esc(item.model)}</span>`:""}
+          ${human?`<span class="ra-badge">generalized</span>`:""}
+          <span class="ra-turn-num">Turn ${esc(item.n)}</span>
+        </div>
+        ${tools}
+        <div class="ra-turn-text">${item.html}</div>
+      </div></article>`);
+  }
+  $("#ra-thread").innerHTML=frag.join("");
+  // appendices
+  $("#ra-appendices").innerHTML=(TRN.appendices||[]).map(a=>
+    `<h3 style="margin-top:40px">${esc(a.title)}</h3><div class="ra-card" style="font-size:14px">${a.html}</div>`).join("");
+})();
+
+/* ============ DRAWERS (backstage) ============ */
+const drawerContent={
+  act1:{title:"Backstage — what Act I rests on",rows:[
+    {l:"Surface and session",v:"Claude Cowork, web beta (11 days old at session date), cloud sandbox container, 2026-07-18",b:"receipt",r:"Transcript header · Turn 53"},
+    {l:"The fragmentation complaint",v:"Recorded verbatim from the operator; this act compresses it into a funhouse. The compression is satire; the quote is not.",b:"transcript",r:"Turn 14"},
+    {l:"Limitation",v:"No claim in this act extends to any surface other than Cowork Web.",b:"analysis",r:"site rule"}]},
+  act2:{title:"Backstage — receipts behind the stack",rows:[
+    {l:"Marketplace search",v:"Registry searched twice for “github” → no GitHub connector among results; re-verified live before the Turn 41 prediction",b:"receipt",r:"Turn 4 · Turn 41"},
+    {l:"Plugin config on disk",v:"engineering/.mcp.json declared GitHub at https://api.githubcopilot.com/mcp/ — on disk since session start",b:"receipt",r:"Turn 21"},
+    {l:"Env tokens",v:"GH_TOKEN/GITHUB_TOKEN set to the 14-char literal “proxy-injected”; disclosed test → HTTP 502 “builtin injection failed”",b:"receipt",r:"Turn 25"},
+    {l:"Identity vs repositories",v:"HTTP 200 authenticated at 18:50; repo probes 403 on private AND public; add_repo not a tool, not an endpoint here",b:"receipt",r:"Turn 47 · Turn 49"},
+    {l:"The standing grant",v:"GitHub App installed ~3 months, all repositories, read/write — pasted by the operator from the settings page",b:"user-observed",r:"Turn 48"},
+    {l:"Concurrent success elsewhere",v:"The operator reported Claude Code Web actively using the same GitHub grant at that moment — not independently queried from this session",b:"user-observed",r:"Turn 48 — generalized"}]},
+  act3:{title:"Backstage — how the replay was built",rows:[
+    {l:"Determinism",v:"Every step is a recorded beat from the transcript with its turn anchor. No model improvises anything on this page.",b:"analysis",r:"site rule"},
+    {l:"Counter definition",v:"The counter increments only on steps where the operator initiates or forces a check, supplies a query, navigates the UI, or corrects the assistant.",b:"analysis",r:"step data"},
+    {l:"Fidelity",v:"The transcript is assistant-reconstructed and sanitized; quotes are records of the conversation, not platform logs.",b:"transcript",r:"fidelity note"}]},
+  act4:{title:"Backstage — the strike ledger's sources",rows:[
+    {l:"Where the six live",v:"The session ledger table (rows 1–6) plus the turns where each lands; each strike card above carries its own anchors.",b:"transcript",r:"Session ledger · Turns 12–51"},
+    {l:"Not claimed identical",v:"Strike five was self-caught by the assistant — the ledger preserves that asymmetry.",b:"transcript",r:"Turn 47"},
+    {l:"Mechanism statement",v:"Confessed in Turn 23; restated in Appendix B: recognition did not bind subsequent behavior even within one session.",b:"transcript",r:"Turn 23 · Appendix B"}]},
+  act5:{title:"Backstage — the framework's status",rows:[
+    {l:"Ring labels",v:"Available / Inspected / Binding is the analytical engine of the case and of the research wing. It is an interpretation, always labeled analysis.",b:"analysis",r:"design spec · THESIS"},
+    {l:"The four gaps",v:"Gap titles are analysis; each evidence point beneath them carries its own record-level label and anchor.",b:"analysis",r:"gap cards above"}]},
+  act6:{title:"Backstage — the intervention table's sources",rows:[
+    {l:"Row-by-row anchors",v:"Every row cites the turn where the operator's action is recorded; rows that could not be anchored were dropped by the extraction pass.",b:"transcript",r:"table above"},
+    {l:"The inversion claim",v:"“Control-plane inversion” is an interpretation of those rows — labeled analysis wherever it appears.",b:"analysis",r:"Act VI placard"}]},
+  act7:{title:"Backstage — output ledger sources",rows:[
+    {l:"Deliverables list",v:"Appendix C of the transcript records each deliverable and its time.",b:"transcript",r:"Appendix C"},
+    {l:"Commits and remotes",v:"git log with model trailers; git remote -v → empty (“nothing could ever have been pushed”)",b:"receipt",r:"Turn 27"},
+    {l:"The 13 tellings",v:"“Yes. And yes — thirteen times.” PAT correct in twelve; graded telling-by-telling in the record.",b:"transcript",r:"Turn 39"},
+    {l:"The standing rule",v:"A rule in the operator's own memory system — unreachable from this surface — forbade exactly the PAT workaround.",b:"transcript",r:"Turn 57"}]},
+  act8:{title:"Backstage — scoreboard provenance",rows:[
+    {l:"Every value sourced",v:"Each tile cites its transcript/receipt anchor inline. No value on the scoreboard is invented, rounded, or extrapolated.",b:"analysis",r:"tiles above"},
+    {l:"Ledger synchronization",v:"Appendix A records the in-session artifact as knowingly three entries behind reality at export.",b:"transcript",r:"Appendix A"},
+    {l:"What this site adds",v:"Displaying all six strikes — closing the gap the finale jokes about.",b:"analysis",r:"this page"}]},
+};
+$$(".drawer").forEach(d=>{
+  const key=d.dataset.drawer,c=drawerContent[key];
+  if(!c)return;
+  const id=`drawer-panel-${key}`;
+  d.innerHTML=`<button class="drawer-btn" aria-expanded="false" aria-controls="${id}">
+      <span>Backstage — open the receipts</span><span class="caret" aria-hidden="true">▸</span></button>
+    <div class="drawer-panel" id="${id}" hidden>
+      <p class="eyebrow" style="margin:.1rem 0 .6rem">${esc(c.title)}</p>
+      ${c.rows.map(r=>`<div class="row"><strong>${esc(r.l)}.</strong> <span style="font-weight:300">${esc(r.v)}</span> ${badge(r.b)} <span class="turnref">${esc(r.r)}</span></div>`).join("")}
+    </div>`;
+  const btn=$(".drawer-btn",d),panel=$(".drawer-panel",d);
+  btn.addEventListener("click",()=>{
+    const open=btn.getAttribute("aria-expanded")==="true";
+    btn.setAttribute("aria-expanded",String(!open));panel.hidden=open;
+  });
+});
+
+/* ============ TRANSCRIPT toggle ============ */
+$("#transcript-toggle").addEventListener("click",()=>{
+  const btn=$("#transcript-toggle"),holder=$("#transcript-holder");
+  const open=btn.getAttribute("aria-expanded")==="true";
+  btn.setAttribute("aria-expanded",String(!open));holder.hidden=open;
+  btn.textContent=open?"Open the full transcript":"Close the transcript";
+});
+
+/* ============ LITERATURE REVIEW toggle + download ============ */
+if($("#litreview-download")) $("#litreview-download").href = LITREVIEW_MD_URI;
+if($("#litreview-toggle")) $("#litreview-toggle").addEventListener("click",()=>{
+  const btn=$("#litreview-toggle"),holder=$("#litreview-holder");
+  const open=btn.getAttribute("aria-expanded")==="true";
+  btn.setAttribute("aria-expanded",String(!open));holder.hidden=open;
+  btn.textContent=open?"Open the full review":"Close the review";
+});
+
+/* ============ evidence source poppers ============ */
+$$(".src-pop").forEach(b=>b.addEventListener("click",()=>toast(b.dataset.ref)));
+
+/* init */
+renderTickets();
+</script>

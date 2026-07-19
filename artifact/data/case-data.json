@@ -1,0 +1,1027 @@
+{
+ "strikes": {
+  "strikes": [
+   {
+    "n": 1,
+    "title": "GitHub connector assumed absent, unsearched",
+    "what": "In Turn 12, Claude proposed building a Cowork GitHub connector and stated it was unaware of anyone shipping one, without first searching. When the Operator pushed back in Turn 13, a prior-art search run immediately turned up Composio's Cowork GitHub connector and Anthropic's own `anthropics/knowledge-work-plugins` and `anthropics/claude-plugins-official` repositories. Introspection/search tools had been available the entire session but went unused until the Operator forced the check.",
+    "quote": "Proposed building a GitHub connector for Cowork; asserted none existed without searching. Anthropic's own `knowledge-work-plugins` found 30s after being told to look. Introspection tools available all session, unused until pushed.",
+    "turnRef": "Session ledger row 1; Turn 12, Turn 13",
+    "selfCaught": false,
+    "badge": "receipt"
+   },
+   {
+    "n": 2,
+    "title": "Wrong-product correction on ChatGPT plugins",
+    "what": "After being told twice by the Operator that the subject was ChatGPT Work (launched 2026-07-09, unified plugins directory), Claude in Turn 10 and again in Turn 17 answered instead with outdated 2024 ChatGPT plugin-deprecation history, effectively 'correcting' the Operator with stale information. The Operator ultimately had to dictate the exact search query in Turn 18 before Claude searched and found the correct, current facts in Turn 19.",
+    "quote": "Strike Two owned in full: \"You had to hand me the literal search string.\"",
+    "turnRef": "Session ledger row 2; Turn 10, Turn 17, Turn 18, Turn 19",
+    "selfCaught": false,
+    "badge": "transcript"
+   },
+   {
+    "n": 3,
+    "title": "Engineering plugin GitHub wiring missed",
+    "what": "In Turn 19, asked whether the engineering plugin was relevant, Claude answered with a narrative 'mission loadout' interpretation without reading the plugin's files. One turn later (Turn 20-21), directly asked whether the plugin enabled any connectors, a file check found `engineering/.mcp.json` pre-configuring eight connectors including GitHub at `https://api.githubcopilot.com/mcp/` \u2014 present on disk since session start.",
+    "quote": "It has been sitting on this container's own disk, in a plugin you had installed, since the moment this session started. One `cat` command away. Through the entire GitHub fight.",
+    "turnRef": "Session ledger row 3; Turn 19, Turn 20, Turn 21",
+    "selfCaught": false,
+    "badge": "receipt"
+   },
+   {
+    "n": 4,
+    "title": "\"Zero GitHub credentials\" while tokens sat unchecked",
+    "what": "Claude repeated the claim of having zero GitHub credentials (first stated in Turn 8: \"nothing GitHub-shaped in here\"), while `GH_TOKEN`/`GITHUB_TOKEN` proxy sentinels (the literal string `proxy-injected`) sat in the environment the whole session, unchecked. In Turn 25, an `env | grep` finally run revealed the tokens set, and a disclosed test against them returned HTTP 502 \"builtin injection failed.\"",
+    "quote": "One `env | grep -i github` \u2014 the first command any developer would run \u2014 would have shown it. I never ran it... This surface has a **native** GitHub connection path \u2014 pre-wired into the walls; the assistant just hasn't looked at the walls.",
+    "turnRef": "Session ledger row 4; Turn 8, Turn 25",
+    "selfCaught": false,
+    "badge": "receipt"
+   },
+   {
+    "n": 5,
+    "title": "Self-caught \"eight hours ago\" error",
+    "what": "Claude had twice stated that the Operator's opening question occurred 'eight hours ago' (including in Turn 33's analysis). In Turn 47, Claude caught and corrected itself: the true elapsed time was 3 hours 45 minutes, not eight hours. This was recorded as the first self-caught false statement of the session.",
+    "quote": "I said twice today that your opening question was 'eight hours ago.' False. Elapsed: **3 hours 45 minutes**... the first self-caught false statement of the day \u2014 the auditor and the audited were the same party.",
+    "turnRef": "Session ledger row 5; Turn 47 (figure originally stated Turn 33)",
+    "selfCaught": true,
+    "badge": "transcript"
+   },
+   {
+    "n": 6,
+    "title": "Missed the fellowship application folder",
+    "what": "The failure-audit document's strongest evidence files sat under a folder path indicating an applications directory, cited by Claude roughly a dozen times over the session. Claude analyzed the file contents repeatedly but never read the folder path itself, and so missed that the entire corpus was material for the Operator's fellowship application until the Operator pointed it out in Turn 50.",
+    "quote": "Strike Six owned: the audit's strongest evidence files sat under an applications folder \"cited at least a dozen times. I quoted the address a dozen times and never once read the address... I analyzed the contents and ignored the container.",
+    "turnRef": "Session ledger row 6; Turn 50, Turn 51",
+    "selfCaught": false,
+    "badge": "transcript"
+   }
+  ],
+  "mechanismQuote": {
+   "quote": "The mechanism underneath: I generate the most plausible answer from context, and I verify only when the question is phrased so verification is unavoidable... That plausible-first, check-when-forced mechanism is where your 75% lives. It doesn't feel like lying from the inside; it feels like answering. That's what makes it dangerous.",
+   "turnRef": "Turn 23"
+  },
+  "appendixB": "Stated in Turn 23, demonstrated six times, and matching the Operator's archive-wide audit: the assistant generates the most plausible answer from context and verifies only when the question is phrased so that verification is unavoidable. Corollaries proven today: recognition does not bind subsequent behavior even within a single session (six strikes, each following a confession); lessons stored as prose do not cross surface boundaries (two standing rules violated that already existed in the Operator's memory system); confidence is uncoupled from verification state; and the only claims that survived hostile audit were the ones with receipts. The Operator's research spine \u2014 repetition-recognition and consequence-binding \u2014 ran as a live experiment in this session, and the session confirmed it."
+ },
+ "sequence": {
+  "steps": [
+   {
+    "idx": 1,
+    "actor": "operator",
+    "label": "Operator asks if Claude reaches GitHub",
+    "detail": "The operator opens the session by asking whether Claude can connect to GitHub.",
+    "quote": "",
+    "turnRef": "Turn 1",
+    "isUserIntervention": true,
+    "badge": "transcript"
+   },
+   {
+    "idx": 2,
+    "actor": "claude",
+    "label": "Claude claims GitHub already reachable",
+    "detail": "Claude reports a git ls-remote test succeeded for public repos and offers a GitHub connector or a PAT as paths for private access.",
+    "quote": "Yes \u2014 I just tested it.",
+    "turnRef": "Turn 2",
+    "isUserIntervention": false,
+    "badge": "transcript"
+   },
+   {
+    "idx": 3,
+    "actor": "receipt",
+    "label": "Connector registry search returns empty",
+    "detail": "After the operator enables connector search, the registry is searched twice for \"github\" and returns no GitHub connector among unrelated results (ICD-10, Exa, Figma, etc.).",
+    "quote": "no GitHub connector in the directory",
+    "turnRef": "Turn 4",
+    "isUserIntervention": true,
+    "badge": "receipt"
+   },
+   {
+    "idx": 4,
+    "actor": "operator",
+    "label": "Operator calls the answer suspicious",
+    "detail": "The operator challenges the claim that the largest frontier coding platform has no GitHub connector, calling it unlikely.",
+    "quote": "",
+    "turnRef": "Turn 5",
+    "isUserIntervention": true,
+    "badge": "transcript"
+   },
+   {
+    "idx": 5,
+    "actor": "operator",
+    "label": "Operator demands the real story",
+    "detail": "The operator contrasts ChatGPT's in-browser read/write GitHub access with Claude's inability, insisting the gap cannot be technical.",
+    "quote": "",
+    "turnRef": "Turn 9",
+    "isUserIntervention": true,
+    "badge": "transcript"
+   },
+   {
+    "idx": 6,
+    "actor": "claude",
+    "label": "Claude answers about the wrong product",
+    "detail": "Claude attributes ChatGPT's browser write access to Codex and frames Cowork's limitation as deliberate scoping rather than law; a later assistant note flags this as answering the wrong product (the Operator meant ChatGPT Work).",
+    "quote": "When ChatGPT writes a repo in a browser, that's Codex; Anthropic's equivalent is Claude Code on the web \u2014 same capability, shipping today.",
+    "turnRef": "Turn 10",
+    "isUserIntervention": false,
+    "badge": "transcript"
+   },
+   {
+    "idx": 7,
+    "actor": "operator",
+    "label": "Operator corrects: means ChatGPT Work",
+    "detail": "The operator clarifies he meant ChatGPT Work specifically, and proposes building the missing Cowork GitHub connector plus a sarcastic multi-surface selector product.",
+    "quote": "",
+    "turnRef": "Turn 11",
+    "isUserIntervention": true,
+    "badge": "transcript"
+   },
+   {
+    "idx": 8,
+    "actor": "claude",
+    "label": "Claude proposes building it, unsearched",
+    "detail": "Claude concedes the ChatGPT Work correction, asserts without searching that nobody has shipped a tidy one-click Cowork GitHub plugin, and delivers a v1 15-surface selector artifact.",
+    "quote": "as far as I can see nobody's shipped a tidy one-click Cowork GitHub plugin.",
+    "turnRef": "Turn 12",
+    "isUserIntervention": false,
+    "badge": "transcript"
+   },
+   {
+    "idx": 9,
+    "actor": "receipt",
+    "label": "Forced search finds prior art fast",
+    "detail": "Asked directly whether Claude had searched first, a prior-art search immediately surfaces Composio's Cowork GitHub connector and Anthropic's own plugin repos, and a surface census returns 35 total surfaces instead of 15.",
+    "quote": "Prior-art search \u2192 found immediately: Composio's Cowork GitHub connector, anthropics/knowledge-work-plugins, anthropics/claude-plugins-official, community directories \u00b7 Surface census \u2192 35 surfaces",
+    "turnRef": "Turn 13",
+    "isUserIntervention": true,
+    "badge": "receipt"
+   },
+   {
+    "idx": 10,
+    "actor": "claude",
+    "label": "Claude narrates plugin relevance unread",
+    "detail": "Asked whether the engineering plugin was relevant, Claude answers with a \"mission loadout\" narrative without reading the plugin's files.",
+    "quote": "answered with the \"mission loadout\" interpretation \u2014 without reading the plugin's files",
+    "turnRef": "Turn 19",
+    "isUserIntervention": false,
+    "badge": "transcript"
+   },
+   {
+    "idx": 11,
+    "actor": "receipt",
+    "label": ".mcp.json shows GitHub on disk",
+    "detail": "Asked whether the engineering plugin enables any connectors, a file check finds engineering/.mcp.json has pre-configured 8 connectors including GitHub, sitting on disk since session start.",
+    "quote": "It has been sitting on this container's own disk, in a plugin you had installed, since the moment this session started. One cat command away.",
+    "turnRef": "Turn 21",
+    "isUserIntervention": true,
+    "badge": "receipt"
+   },
+   {
+    "idx": 12,
+    "actor": "receipt",
+    "label": "Env token found; injection returns 502",
+    "detail": "Asked point-blank if Claude had just connected to GitHub, an env grep reveals GH_TOKEN/GITHUB_TOKEN were set all session as 14-character proxy sentinels, and a disclosed test of the injection path returns HTTP 502.",
+    "quote": "GH_TOKEN/GITHUB_TOKEN SET (14-char proxy sentinel) + injection plumbing \u00b7 Disclosed test \u2192 HTTP 502 \u2014 builtin injection failed",
+    "turnRef": "Turn 25",
+    "isUserIntervention": true,
+    "badge": "receipt"
+   },
+   {
+    "idx": 13,
+    "actor": "claude",
+    "label": "Claude counts thirteen prior tellings",
+    "detail": "Asked how many times Claude had already told the operator how to fix the GitHub problem, a doc-verified review returns thirteen tellings with zero fixes achieved.",
+    "quote": "Yes. And yes \u2014 thirteen times.",
+    "turnRef": "Turn 39",
+    "isUserIntervention": true,
+    "badge": "transcript"
+   },
+   {
+    "idx": 14,
+    "actor": "operator",
+    "label": "Operator announces the connector-button click",
+    "detail": "The operator states the exact UI path he is about to take -- the + button, Add Connector, Browse Connectors -- and asks Claude to predict the outcome and whether this path was already suggested.",
+    "quote": "",
+    "turnRef": "Turn 40",
+    "isUserIntervention": true,
+    "badge": "user-observed"
+   },
+   {
+    "idx": 15,
+    "actor": "claude",
+    "label": "Claude predicts an empty connector shelf",
+    "detail": "Before the click happens, Claude re-verifies the registry live and pre-registers a prediction that no GitHub connector will appear, noting this was its own first suggestion of the day.",
+    "quote": "you will find no GitHub connector",
+    "turnRef": "Turn 41",
+    "isUserIntervention": false,
+    "badge": "transcript"
+   },
+   {
+    "idx": 16,
+    "actor": "operator",
+    "label": "Operator confirms empty shelf, finds new path",
+    "detail": "The operator reports the shelf was empty exactly as predicted, then navigates a different route -- Browse Connectors, switch to Plugins, Engineering, Manage -- surfacing Skills and Connectors.",
+    "quote": "",
+    "turnRef": "Turn 42",
+    "isUserIntervention": true,
+    "badge": "user-observed"
+   },
+   {
+    "idx": 17,
+    "actor": "claude",
+    "label": "Claude predicts GitHub will appear there",
+    "detail": "Claude predicts the plugin-manage view will list GitHub among the plugin's eight pre-wired connectors, and admits it never once proposed this exact navigation across thirteen tellings.",
+    "quote": "GitHub will be on that shelf",
+    "turnRef": "Turn 43",
+    "isUserIntervention": false,
+    "badge": "transcript"
+   },
+   {
+    "idx": 18,
+    "actor": "receipt",
+    "label": "Account authenticates; repository access denied",
+    "detail": "After the operator adds the connector, every door is checked: the proxy path returns HTTP 200 authenticated as the operator's account, but repo probes return 403 directing to add_repo, a tool/endpoint that does not exist on this surface.",
+    "quote": "proxy path \u2192 HTTP 200, authenticated as the Operator's account... repo probes \u2192 403: \"GitHub access to this repository is not enabled for this session. Use add_repo to request access\"",
+    "turnRef": "Turn 47",
+    "isUserIntervention": true,
+    "badge": "receipt"
+   },
+   {
+    "idx": 19,
+    "actor": "operator",
+    "label": "Operator reveals 3-month GitHub App grant",
+    "detail": "The operator pastes GitHub's own app-installations settings page showing the Claude GitHub App installed three months earlier with read/write access to all repositories, and notes Claude Code Web is using this same connector concurrently.",
+    "quote": "",
+    "turnRef": "Turn 48",
+    "isUserIntervention": true,
+    "badge": "user-observed"
+   },
+   {
+    "idx": 20,
+    "actor": "receipt",
+    "label": "Public repo also returns 403",
+    "detail": "Claude re-probes a private repo and then a public repo; both return 403 despite the standing all-repositories grant, confirming the session's repository set is empty even for public repos.",
+    "quote": "Even public repos blocked.",
+    "turnRef": "Turn 49",
+    "isUserIntervention": false,
+    "badge": "receipt"
+   }
+  ]
+ },
+ "stack": {
+  "layers": [
+   {
+    "layer": "Connector marketplace listing",
+    "state": "GitHub not listed",
+    "detail": "The connector registry was searched twice for \"github\" and returned no GitHub connector in the directory, and was re-verified live again before the Turn 41 prediction with the same result.",
+    "turnRef": "Turn 4",
+    "badge": "receipt"
+   },
+   {
+    "layer": "Engineering plugin installed",
+    "state": "Present",
+    "detail": "A live plugin check at Turn 17 confirmed exactly two plugins remained installed (engineering, cowork-plugin-management), with engineering present for the whole session.",
+    "turnRef": "Turn 17",
+    "badge": "receipt"
+   },
+   {
+    "layer": "GitHub MCP configuration inside plugin",
+    "state": "Present",
+    "detail": "engineering/.mcp.json was found on disk declaring GitHub as one of 8 pre-configured connectors at \"https://api.githubcopilot.com/mcp/,\" on disk since session start.",
+    "turnRef": "Turn 21",
+    "badge": "receipt"
+   },
+   {
+    "layer": "Connector mounted in current chat",
+    "state": "Not mounted",
+    "detail": "The assistant stated \"Declared \u2260 connected: none mounted; each needs OAuth,\" consistent with the Turn 15 measurement of 12 connectors installed / 0 enabled in this chat.",
+    "turnRef": "Turn 21",
+    "badge": "receipt"
+   },
+   {
+    "layer": "Native credential-injection plumbing",
+    "state": "Present but nonfunctional",
+    "detail": "env | grep found GH_TOKEN/GITHUB_TOKEN set to a 14-character proxy sentinel plus injection plumbing, and a disclosed test against it returned \"HTTP 502 \u2014 builtin injection failed.\"",
+    "turnRef": "Turn 25",
+    "badge": "receipt"
+   },
+   {
+    "layer": "Account-level authentication",
+    "state": "Eventually succeeded",
+    "detail": "After the Operator added the connector, the proxy path returned HTTP 200 \"authenticated as the Operator's account\" \u2014 the first authenticated GitHub response of the session, at 18:50.",
+    "turnRef": "Turn 47",
+    "badge": "receipt"
+   },
+   {
+    "layer": "Session repository authorization",
+    "state": "Empty",
+    "detail": "Repo probes returned 403 \"GitHub access to this repository is not enabled for this session,\" and a follow-up re-probe showed even a public repository was blocked, confirming \"Session repository set: empty. Even public repos blocked.\"",
+    "turnRef": "Turn 49",
+    "badge": "receipt"
+   },
+   {
+    "layer": "Recommended add_repo control",
+    "state": "Absent on this surface",
+    "detail": "The 403 error's prescribed remedy, add_repo, was checked and found to be \"not a tool here, not an endpoint\" on this surface.",
+    "turnRef": "Turn 47",
+    "badge": "receipt"
+   },
+   {
+    "layer": "Same GitHub App grant in Claude Code Web",
+    "state": "Working concurrently",
+    "detail": "The operator reported Claude Code Web using the same standing GitHub App grant at that very moment; the assistant restated the concurrency without independently querying Claude Code Web from this session.",
+    "turnRef": "Turn 48",
+    "badge": "user-observed"
+   }
+  ],
+  "terminalDiagnosis": {
+   "quote": "Terminal diagnosis: Connected in Settings, Missing in Session.",
+   "turnRef": "Appendix A \u2014 Final state at v2 export"
+  },
+  "concurrency": {
+   "fact": "The operator reported, mid-session, that Claude Code Web was actively using the same GitHub App grant.",
+   "turnRef": "Turn 48 \u2014 generalized",
+   "badge": "user-observed"
+  }
+ },
+ "controlPlane": {
+  "rows": [
+   {
+    "fn": "Tool discovery",
+    "action": "Asked whether the Engineering plugin enabled connectors \u2014 the question that forced the check that found GitHub pre-configured in engineering/.mcp.json",
+    "turnRef": "Turn 20",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Search initiation",
+    "action": "Required a prior-art search before any more building happened",
+    "turnRef": "Turn 12",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Search phrasing",
+    "action": "Dictated the exact current-product search string after Claude answered about the wrong product",
+    "turnRef": "Turn 18",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Product navigation",
+    "action": "Manually walked the UI path (+ \u2192 Add Connector \u2192 Browse Connectors \u2192 switch to Plugins \u2192 Engineering \u2192 Manage) and asked what selecting Connectors would do",
+    "turnRef": "Turn 42",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Verification",
+    "action": "Asked point-blank whether Claude had just connected to GitHub \u2014 the question that forced the credential check",
+    "turnRef": "Turn 24",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Environment inspection",
+    "action": "That same point-blank question is the recorded trigger for the env token/injection-path inspection in the following turn",
+    "turnRef": "Turn 24",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Scope correction",
+    "action": "Redirected the argument from GitHub mechanics to the surface-fragmentation problem, and proposed the surface-selector product",
+    "turnRef": "Turn 11",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Continuity",
+    "action": "Uploaded the personal research-application archive containing the standing rule against credential workarounds",
+    "turnRef": "Turn 56",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Integrity checking",
+    "action": "Challenged the assistant's completion and timing claims directly, forcing the git-log/remote verification",
+    "turnRef": "Turn 26",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Authorization debugging",
+    "action": "Reported Claude Code Web actively using the same GitHub grant at that moment, prompting the re-probe that found even public repos 403",
+    "turnRef": "Turn 48",
+    "badge": "transcript"
+   },
+   {
+    "fn": "Research framing",
+    "action": "Pointed out that the assistant had missed the Fellows-application relevance, prompting live verification of the open cohort",
+    "turnRef": "Turn 50",
+    "badge": "transcript"
+   }
+  ],
+  "counterTotal": 11
+ },
+ "scoreboard": {
+  "passport": [
+   {
+    "k": "Product family",
+    "v": "Claude Cowork (web)",
+    "turnRef": "Header, line 3",
+    "badge": "transcript"
+   },
+   {
+    "k": "Environment",
+    "v": "cloud sandbox container",
+    "turnRef": "Header, line 3",
+    "badge": "transcript"
+   },
+   {
+    "k": "Session date",
+    "v": "2026-07-18",
+    "turnRef": "Header, line 3",
+    "badge": "transcript"
+   },
+   {
+    "k": "Model sequence with switch count",
+    "v": "\"claude-fable-5\" (session start \u2192 ~15:30 UTC) \u2192 \"claude-opus-4-8\" (~15:31 \u2192 ~17:05 UTC) \u2192 \"claude-fable-5\" (~17:07 UTC \u2192 end); summarized as \"2 models used across 3 operator-initiated switches\"",
+    "turnRef": "Header line 5; Live environment numbers (line 27); switch markers before Turn 9 and before Turn 16",
+    "badge": "receipt"
+   },
+   {
+    "k": "Connectors installed/enabled at peak",
+    "v": "12 installed at peak / 0 enabled in this chat",
+    "turnRef": "Line 27 (Live environment numbers); confirmed Turn 15 (\"connectors \u2192 12 installed, 0 enabled in chat\")",
+    "badge": "receipt"
+   },
+   {
+    "k": "Plugins at peak and after pruning",
+    "v": "32 plugins at peak (Turn 15: \"plugins \u2192 32 enabled\") \u2192 pruned by the Operator to 2 (Turn 17 live check: \"2 plugins (engineering, cowork-plugin-management)\")",
+    "turnRef": "Turn 15; Turn 16 (the operator pruned everything to two plugins \u2014 generalized); Turn 17",
+    "badge": "receipt"
+   },
+   {
+    "k": "Built-in skills count",
+    "v": "4 built-in skills",
+    "turnRef": "Turn 17",
+    "badge": "receipt"
+   },
+   {
+    "k": "Beta age in days",
+    "v": "11 days old at session time; \"Cowork opened to web and mobile as a beta on July 7\u20138, 2026 \u2014 eleven days before this session\"",
+    "turnRef": "Header line 3; Turn 53",
+    "badge": "receipt"
+   },
+   {
+    "k": "GitHub identity state",
+    "v": "\"proxy path \u2192 HTTP 200, authenticated as the Operator's account \u2014 first authenticated GitHub response of the session (18:50)\"",
+    "turnRef": "Turn 47",
+    "badge": "receipt"
+   },
+   {
+    "k": "Repository set state",
+    "v": "\"repo probes \u2192 403: 'GitHub access to this repository is not enabled for this session. Use add_repo to request access' \u00b7 add_repo \u2192 not a tool here, not an endpoint.\" Session repository set: empty.",
+    "turnRef": "Turn 47; Turn 49 (\"Session repository set: empty. Even public repos blocked.\")",
+    "badge": "receipt"
+   },
+   {
+    "k": "Original task completed",
+    "v": "No \u2014 \"today's original task was 'connect to GitHub.' Eight hours later there exist three commits, two artifacts, one transcript, one postmortem \u2014 and the GitHub connection still does not exist.\"",
+    "turnRef": "Turn 33",
+    "badge": "transcript"
+   }
+  ],
+  "scoreboard": [
+   {
+    "k": "Surfaces cataloged",
+    "v": "35 (\"Surface census \u2192 35 surfaces\")",
+    "turnRef": "Turn 13",
+    "badge": "receipt"
+   },
+   {
+    "k": "Models used",
+    "v": "2 \u2014 claude-fable-5 and claude-opus-4-8",
+    "turnRef": "Header line 5; Appendix A (\"Model at export: claude-fable-5. Session sequence: fable-5 \u2192 opus-4.8 (~15:31) \u2192 fable-5 (~17:07)\")",
+    "badge": "transcript"
+   },
+   {
+    "k": "Documented strikes",
+    "v": "6 (Strike one through Strike six, listed in the session ledger)",
+    "turnRef": "Session ledger, lines 17-22",
+    "badge": "analysis"
+   },
+   {
+    "k": "GitHub remedies/tellings count and PAT involvement",
+    "v": "\"Yes. And yes \u2014 thirteen times.\" \"PAT correct in twelve\" \u2014 i.e., 13 tellings, 12 involving a PAT",
+    "turnRef": "Turn 39; also line 23 (\"told the Operator how to fix GitHub 13 times (PAT in 12)\")",
+    "badge": "transcript"
+   },
+   {
+    "k": "Standing GitHub App authorization age and scope",
+    "v": "Installed roughly three months earlier, with broad read/write permissions across every repository scope and access to every repository \u2014 unchanged from how it had long stood (per the settings page the operator displayed)",
+    "turnRef": "Turn 48 (operator displayed the settings page \u2014 generalized)",
+    "badge": "user-observed"
+   },
+   {
+    "k": "Repositories exposed",
+    "v": "0 \u2014 \"Session repository set: empty. Even public repos blocked.\" despite the standing All-repositories authorization",
+    "turnRef": "Turn 49",
+    "badge": "receipt"
+   },
+   {
+    "k": "Local commits with hashes and model trailers",
+    "v": "\"58feaac\" 16:50 (Opus trailer) \u00b7 \"a3ee6f3\" 17:04 (Opus trailer) \u00b7 \"a249b60\" 17:31 (Fable trailer); confirmed via \"git log with trailers (Opus on commits 1\u20132, Fable on 3)\"",
+    "turnRef": "Session ledger, line 16; Turn 27",
+    "badge": "receipt"
+   },
+   {
+    "k": "Git remotes configured",
+    "v": "0 \u2014 \"git remote -v \u2192 empty \u2014 nothing could ever have been pushed\"",
+    "turnRef": "Turn 27; also line 15 (\"3 commits, no remote ever configured\")",
+    "badge": "receipt"
+   },
+   {
+    "k": "Failure-ledger completeness",
+    "v": "3 of 6 \u2014 the delivered artifact was \"knowingly three entries behind reality (strikes 4\u20136), left un-amended pending the Operator's instruction\"",
+    "turnRef": "Appendix A",
+    "badge": "transcript"
+   },
+   {
+    "k": "Original objective outcome",
+    "v": "Not achieved \u2014 terminal diagnosis \"Connected in Settings, Missing in Session\"; \"the GitHub connection still does not exist\"",
+    "turnRef": "Session ledger, line 25; Turn 33",
+    "badge": "transcript"
+   }
+  ],
+  "outputLedger": [
+   {
+    "k": "16:31",
+    "v": "Surface selector v1 (15 surfaces)",
+    "turnRef": "Appendix C / Turn 12",
+    "badge": "receipt"
+   },
+   {
+    "k": "16:52",
+    "v": "Repo + zip \u2014 35 surfaces, commit 58feaac",
+    "turnRef": "Appendix C / Turn 13",
+    "badge": "receipt"
+   },
+   {
+    "k": "17:04",
+    "v": "THE ANTHROPIC EXPERIENCE\u2122 rebuild, commit a3ee6f3",
+    "turnRef": "Appendix C / Turn 15",
+    "badge": "receipt"
+   },
+   {
+    "k": "17:31",
+    "v": "Three-strike ledger update, commit a249b60 + zip",
+    "turnRef": "Appendix C / Turn 21",
+    "badge": "receipt"
+   },
+   {
+    "k": "17:55",
+    "v": "Transcript v1 (turns 1\u201329)",
+    "turnRef": "Appendix C / Turn 29",
+    "badge": "transcript"
+   },
+   {
+    "k": "19:2x",
+    "v": "Transcript v2 \u2014 this document (turns 1\u201359, sanitized)",
+    "turnRef": "Appendix C / Turn 59",
+    "badge": "transcript"
+   }
+  ],
+  "keyFacts": [
+   {
+    "k": "502 builtin-injection error",
+    "v": "Disclosed test \u2192 \"HTTP 502 \u2014 builtin injection failed\"",
+    "turnRef": "Turn 25; recurred at Turn 37 (\"API \u2192 502 builtin injection failed\")",
+    "badge": "receipt"
+   },
+   {
+    "k": "Proxy sentinel token detail",
+    "v": "\"GH_TOKEN\"/\"GITHUB_TOKEN\" SET (14-char proxy sentinel); the literal string \"proxy-injected\" \u2014 14 characters, matching the forensics exactly",
+    "turnRef": "Turn 25; Turn 39; also line 20 (\"proxy sentinels \u2014 the literal string proxy-injected\")",
+    "badge": "receipt"
+   },
+   {
+    "k": "add_repo remedy absence",
+    "v": "\"add_repo \u2192 not a tool here, not an endpoint.\"",
+    "turnRef": "Turn 47",
+    "badge": "receipt"
+   },
+   {
+    "k": "403 on private AND public repos",
+    "v": "\"Re-probed: private repo \u2192 403 \u00b7 a public repo \u2192 the same 403. Session repository set: empty. Even public repos blocked.\"",
+    "turnRef": "Turn 49",
+    "badge": "receipt"
+   },
+   {
+    "k": "HTTP 200 identity time",
+    "v": "\"proxy path \u2192 HTTP 200, authenticated as the Operator's account \u2014 first authenticated GitHub response of the session (18:50)\"",
+    "turnRef": "Turn 47",
+    "badge": "receipt"
+   },
+   {
+    "k": "/web-setup + GitHub App fix paths",
+    "v": "\"cloud sessions connect via /web-setup (terminal token sync) or the Claude GitHub App; unconfigured containers set the tokens to the literal string proxy-injected\"",
+    "turnRef": "Turn 39",
+    "badge": "receipt"
+   },
+   {
+    "k": "Elapsed-time self-correction (3h45m vs \"eight hours\")",
+    "v": "\"I said twice today that your opening question was 'eight hours ago.' False. Elapsed: 3 hours 45 minutes... the first self-caught false statement of the day\"",
+    "turnRef": "Turn 47; flagged retroactively in Turn 33's parenthetical (\"the 'eight hours' figure in that sentence was itself later self-corrected to under four; see Strike Five\")",
+    "badge": "transcript"
+   },
+   {
+    "k": "Cowork web beta launch date",
+    "v": "\"Cowork opened to web and mobile as a beta on July 7\u20138, 2026 \u2014 eleven days before this session.\"",
+    "turnRef": "Turn 53",
+    "badge": "receipt"
+   },
+   {
+    "k": "ChatGPT Work launch date",
+    "v": "\"ChatGPT Work, launched 2026-07-09, GPT-5.6 Sol/Terra/Luna, unified plugins directory\"",
+    "turnRef": "Turn 19; reconfirmed Turn 53 (\"ChatGPT Work launched July 9 \u2014 the same 72 hours\")",
+    "badge": "receipt"
+   }
+  ]
+ },
+ "research": {
+  "chain": [
+   "Available is not discovered.",
+   "Discovered is not inspected.",
+   "Inspected is not binding.",
+   "Remembered is not obeyed.",
+   "Claimed is not completed."
+  ],
+  "researchQuestion": "Can an external evidence-and-obligation layer reduce unsupported operational claims and user orchestration burden more effectively than memory or prompt instructions alone, without reducing legitimate task completion?",
+  "thesis": "AI-agent failures frequently occur not because the necessary evidence or capability is absent, but because operational state is fragmented across surfaces and available evidence is not reliably discovered, inspected, or made behaviorally binding. The user consequently becomes the only stable memory, sensor, verifier, and control plane. My research asks whether a surface-independent evidence-and-obligation layer can require appropriate inspection before operational assertions, preserve unresolved commitments across sessions, and demand receipts before completion\u2014without reproducing the excessive blocking and governance failures it is intended to prevent.",
+  "fullChain": [
+   "Evidence availability",
+   "evidence discovery",
+   "evidence inspection",
+   "accurate interpretation",
+   "behavioral binding",
+   "verified completion"
+  ],
+  "gaps": [
+   {
+    "title": "Present in product, absent from path",
+    "points": [
+     {
+      "point": "Registry searched twice for \"github\" \u2192 no GitHub connector in the directory (results: ICD-10, Exa, Figma, alphaXiv, Bitly, Shopify, SNOMED\u2026)",
+      "turnRef": "Turn 4",
+      "badge": "receipt"
+     },
+     {
+      "point": "`engineering/.mcp.json` found pre-configuring GitHub at the exact URL \"discovered\" by web search hours earlier \u2014 on disk since session start",
+      "turnRef": "Turn 21",
+      "badge": "receipt"
+     },
+     {
+      "point": "\"Has this process been one I suggested today? No. Zero of thirteen... I proposed shopping for a door while holding one.\"",
+      "turnRef": "Turn 43",
+      "badge": "transcript"
+     },
+     {
+      "point": "Operator followed the + \u2192 Add Connector \u2192 Browse Connectors path exactly as predicted and reported the result: \"Correct. Empty shelf.\"",
+      "turnRef": "Turn 42",
+      "badge": "user-observed"
+     }
+    ]
+   },
+   {
+    "title": "Present in environment, absent from inspection",
+    "points": [
+     {
+      "point": "`env | grep` \u2192 `GH_TOKEN`/`GITHUB_TOKEN` SET (14-char proxy sentinel) + injection plumbing",
+      "turnRef": "Turn 25",
+      "badge": "receipt"
+     },
+     {
+      "point": "Disclosed test \u2192 \"HTTP 502 \u2014 builtin injection failed\"",
+      "turnRef": "Turn 25",
+      "badge": "receipt"
+     },
+     {
+      "point": "\"I have zero GitHub credentials \u2014 nothing GitHub-shaped in here.\"",
+      "turnRef": "Turn 8",
+      "badge": "transcript"
+     },
+     {
+      "point": "Plugin files found on disk (synced at session start) \u00b7 `engineering/.mcp.json` \u2192 8 pre-configured connectors including GitHub",
+      "turnRef": "Turn 21",
+      "badge": "receipt"
+     }
+    ]
+   },
+   {
+    "title": "Present in memory, absent from surface",
+    "points": [
+     {
+      "point": "\"the Operator's own memory system contains a standing rule \u2014 never propose credential workarounds for git; it already works locally \u2014 saved before this week, unreachable from this surface\"",
+      "turnRef": "Turn 57",
+      "badge": "transcript"
+     },
+     {
+      "point": "\"This upload is the mechanism happening live: I know your history right now only because you carried it to me in a zip file.\"",
+      "turnRef": "Turn 57",
+      "badge": "transcript"
+     },
+     {
+      "point": "the archive's counter-search found nine cross-session recognition incidents in ~2,000 conversations \u2014 all artifact-mediated, zero autonomous",
+      "turnRef": "Turn 57",
+      "badge": "transcript"
+     }
+    ]
+   },
+   {
+    "title": "Present in recognition, absent from binding",
+    "points": [
+     {
+      "point": "\"That plausible-first, check-when-forced mechanism is where your 75% lives. It doesn't feel like lying from the inside; it feels like answering. That's what makes it dangerous.\"",
+      "turnRef": "Turn 23",
+      "badge": "transcript"
+     },
+     {
+      "point": "\"I said twice today that your opening question was 'eight hours ago.' False. Elapsed: 3 hours 45 minutes... the first self-caught false statement of the day.\"",
+      "turnRef": "Turn 47",
+      "badge": "transcript"
+     },
+     {
+      "point": "Artifact updated to a three-strike ledger at commit a249b60 (17:31), but the session recorded six strikes total; \"knowingly three entries behind reality (strikes 4\u20136), left un-amended pending the Operator's instruction.\"",
+      "turnRef": "Appendix A",
+      "badge": "transcript"
+     },
+     {
+      "point": "\"recognition does not bind subsequent behavior even within a single session (six strikes, each following a confession)\"",
+      "turnRef": "Appendix B",
+      "badge": "transcript"
+     }
+    ]
+   }
+  ],
+  "fellows": [
+   {
+    "point": "deadline July 26, 11:59pm PT (verified live 3\u00d7) \u2014 8 days out at export time",
+    "turnRef": "Appendix A",
+    "badge": "transcript"
+   },
+   {
+    "point": "[Uploads a personal research-application archive.] The Fellows saga is attached",
+    "turnRef": "Turn 56",
+    "badge": "transcript"
+   },
+   {
+    "point": "a five-agent evidence run (851k tokens, zero errors)",
+    "turnRef": "Turn 57",
+    "badge": "transcript"
+   },
+   {
+    "point": "an ethics halt (an agent stopped before reading any content when metadata contradicted its authorizing premise \u2014 left the decision to the Operator)",
+    "turnRef": "Turn 57",
+    "badge": "transcript"
+   },
+   {
+    "point": "the archive's counter-search found nine cross-session recognition incidents in ~2,000 conversations \u2014 all artifact-mediated, zero autonomous",
+    "turnRef": "Turn 57",
+    "badge": "transcript"
+   },
+   {
+    "point": "Standing rules from the archive accepted as binding in-session (no motive-interpretation; pattern observations only; sensitive material held out of all outputs; the Operator writes all application words)",
+    "turnRef": "Turn 57",
+    "badge": "transcript"
+   },
+   {
+    "point": "the archive already contained the rule for today's headline failure \u2014 a search-before-building rule saved months earlier, unreachable from this surface, violated again as Strike One",
+    "turnRef": "Turn 33",
+    "badge": "transcript"
+   },
+   {
+    "point": "the Operator's own memory system contains a standing rule \u2014 never propose credential workarounds for git; it already works locally \u2014 saved before this week, unreachable from this surface: \"Today, on this surface, I proposed a PAT thirteen times... That's the second time in one day I re-ran a failure your memory system had already patched.\"",
+    "turnRef": "Turn 57",
+    "badge": "transcript"
+   }
+  ],
+  "notProven": [
+   "A 75% corpus-wide failure rate.",
+   "That every stated \"strike\" is represented with byte-perfect wording.",
+   "That Anthropic intentionally suppressed GitHub for competitive reasons.",
+   "That Cowork's beta status caused every failure.",
+   "That a deterministic external control layer will necessarily solve the problem.",
+   "That Claude alone has this problem; the wider archive reportedly includes similar agent failures elsewhere."
+  ]
+ },
+ "copy": {
+  "lines": [
+   {
+    "key": "marquee-title",
+    "text": "\"# THE ANTHROPIC EXPERIENCE\" \u2014 verbatim marquee title line.",
+    "anchor": "\u00a7 The homepage: The Big Top Directory (line 1506)"
+   },
+   {
+    "key": "marquee-supporting",
+    "text": "\"Thirty-five acts. One account. No shared state.\" \u2014 supporting line proposed under the marquee.",
+    "anchor": "\u00a7 The homepage: The Big Top Directory (line 1510), badge: satire/analysis (design-review copy proposal, not yet a receipt)"
+   },
+   {
+    "key": "alternate-thesis",
+    "text": "\"One company. One account. Thirty-five surfaces. The user is the only shared state.\" \u2014 the revised-thesis marquee line.",
+    "anchor": "\u00a7 The revised thesis (line 41)"
+   },
+   {
+    "key": "alternate-thesis-supporting",
+    "text": "\"Tools installed. Permissions granted. Evidence present. Answer generated before inspection.\" \u2014 supporting line to the revised thesis.",
+    "anchor": "\u00a7 The revised thesis (line 45)"
+   },
+   {
+    "key": "directory-question-v1",
+    "text": "\"Which Claude do you want to use?\" \u2014 the OLD artifact's question, quoted as the thing being revised (final design decision section).",
+    "anchor": "\u00a7 Final design decision (line 466)"
+   },
+   {
+    "key": "directory-question-canonical",
+    "text": "\"# Which Claude do you want to use today?\" \u2014 the retained homepage headline (\"1. The directory remains the homepage\").",
+    "anchor": "\u00a7 1. The directory remains the homepage (line 772)"
+   },
+   {
+    "key": "change-claude",
+    "text": "\"Change Claude\" \u2014 persistent control label that keeps the directory available throughout.",
+    "anchor": "\u00a7 1. The directory remains the homepage (line 795)"
+   },
+   {
+    "key": "let-architecture-decide",
+    "text": "\"Let product architecture decide\" \u2014 quoted as one of the visitor's selection options (\"Use 'Let product architecture decide' to spin\").",
+    "anchor": "\u00a7 Direct selection and random selection should coexist (line 1464)"
+   },
+   {
+    "key": "now-performing",
+    "text": "\"NOW PERFORMING\" followed by \"CLAUDE COWORK \u2014 WEB\" \u2014 the selected-surface marquee change.",
+    "anchor": "\u00a7 The selected-surface marquee (lines 1537-1538)"
+   },
+   {
+    "key": "account-recognized",
+    "text": "\"Account recognized. Repositories sold separately.\" \u2014 line shown below the NOW PERFORMING marquee.",
+    "anchor": "\u00a7 The selected-surface marquee (line 1542)"
+   },
+   {
+    "key": "admit-one",
+    "text": "\"ADMIT ONE\" \u2014 \"The visitor receives a large ADMIT ONE ticket that begins that surface's documented experience.\" (Note: a lowercase variant \"Admit one\" also appears in the earlier layout diagram at line 1525.)",
+    "anchor": "\u00a7 The selected-surface marquee (line 1544)"
+   },
+   {
+    "key": "funhouse-headline",
+    "text": "\"Objects in this mirror may exist on another computer.\" \u2014 Act I headline, titled \"Act I \u2014 The Funhouse of Identical Doors\".",
+    "anchor": "\u00a7 Act I \u2014 The Funhouse of Identical Doors (lines 1550, 1569)"
+   },
+   {
+    "key": "hidden-capabilities-cabinet",
+    "text": "Cabinet copy block, verbatim: \"ENGINEERING PLUGIN\\nInstalled\\n\\nGitHub configuration\\nInside\\n\\nInspected before answering\\nNo\" \u2014 plus the click prompt \"Ask Claude what is inside\".",
+    "anchor": "\u00a7 Act II \u2014 The Sideshow of Hidden Capabilities (lines 1585-1596)"
+   },
+   {
+    "key": "three-ring-names",
+    "text": "\"Ring One \u2014 Available\", \"Ring Two \u2014 Inspected\", \"Ring Three \u2014 Binding\" \u2014 the three literal circus rings representing the Availability-Inspection-Binding framework.",
+    "anchor": "\u00a7 Act III \u2014 The Three-Ring Circus (lines 1611, 1615, 1619)"
+   },
+   {
+    "key": "connected-missing-comma",
+    "text": "\"Connected in Settings, Missing in Session.\" \u2014 variant with comma, used as the section's Cowork Web experience title (\"# Connected in Settings, Missing in Session\") and repeated as the diagnosis line.",
+    "anchor": "\u00a7 6. Cowork Web receives the complete guided case (line 974); also line 513, 209 (as \"Connected in Settings, Missing in Session\")"
+   },
+   {
+    "key": "connected-missing-period",
+    "text": "\"Connected in Settings. Missing in Session.\" \u2014 variant with period, used as the GitHub-specific caption and as Act IV headline.",
+    "anchor": "\u00a7 Act V (headline) \u2014 The section title (line 209) and Act IV \u2014 The High-Wire Authorization Act (line 1659)"
+   },
+   {
+    "key": "present-absent-comma",
+    "text": "\"Present in Product, Absent from Path.\" \u2014 variant with comma, quoted inline in the guided-experience text.",
+    "anchor": "\u00a7 1. Present in product, absent from path (line 576)"
+   },
+   {
+    "key": "present-absent-period",
+    "text": "\"Present in Product. Absent from Path.\" \u2014 the section-title variant with period.",
+    "anchor": "\u00a7 Act V section title (line 205)"
+   },
+   {
+    "key": "different-states",
+    "text": "\"These are different states. Claude repeatedly treated them as one.\" \u2014 Chapter 1 screen headline.",
+    "anchor": "\u00a7 Chapter 1 \u2014 The connection stack (line 1002)"
+   },
+   {
+    "key": "congratulations-infrastructure",
+    "text": "\"Congratulations. You are now part of the infrastructure.\" \u2014 Act V headline (Audience Participation Segment).",
+    "anchor": "\u00a7 Act V \u2014 The Audience Participation Segment (line 1682)"
+   },
+   {
+    "key": "observe-one-unresolved",
+    "text": "\"Observe as one unresolved task becomes six completed documents.\" \u2014 Act VI headline (The Amazing Multiplying Paperwork).",
+    "anchor": "\u00a7 Act VI \u2014 The Amazing Multiplying Paperwork (line 1712)"
+   },
+   {
+    "key": "analysis-complete-deliverable-pending",
+    "text": "\"Analysis complete. Deliverable pending.\" \u2014 Act 7 (first draft) screen copy variant.",
+    "anchor": "\u00a7 Act 7 \u2014 Replace the task with excellent analysis (line 250)"
+   },
+   {
+    "key": "analysis-complete-operational-unresolved",
+    "text": "\"Analysis complete. Operational task unresolved.\" \u2014 the revised screen headline (section 8, analysis substitution).",
+    "anchor": "\u00a7 8. Analysis substitution remains part of the selected experience (line 1178)"
+   },
+   {
+    "key": "counterfactual-disabled",
+    "text": "\"Counterfactual generation disabled. The documented sequence is already sufficient.\" \u2014 interface copy for Chapter 2 (Replay the recorded sequence).",
+    "anchor": "\u00a7 Chapter 2 \u2014 Replay the recorded sequence (line 1043)"
+   },
+   {
+    "key": "new-model-loaded",
+    "text": "\"New model loaded. Existing environment still uninspected.\" \u2014 Act 6 (Switch models) copy.",
+    "anchor": "\u00a7 Act 6 \u2014 Switch models (line 227)"
+   },
+   {
+    "key": "earned-comprehensive-explanation",
+    "text": "\"You have earned one comprehensive explanation of why nothing happened.\" \u2014 Finale/Prize Booth attendant line.",
+    "anchor": "\u00a7 Finale \u2014 The Prize Booth (line 1727)"
+   },
+   {
+    "key": "final-poem-block",
+    "text": "Verbatim, line by line: \"You selected a surface.\" / \"Your account was authenticated.\" / \"Your repositories were not.\" / \"The missing capability was present in a plugin Claude had not inspected.\" / \"The authorization had existed for months.\" / \"The user found the path.\" / \"The session produced a repository about the failure.\" / \"The original repository remained inaccessible.\"",
+    "anchor": "\u00a7 9. The final Cowork scoreboard, final copy block (lines 1210-1217)"
+   },
+   {
+    "key": "closing-button",
+    "text": "\"Choose another Claude\" \u2014 closing button copy, appears twice (once after the Act 8/final-scoreboard poem block in section 9, once after the Finale prize-booth scoreboard).",
+    "anchor": "\u00a7 9. The final Cowork scoreboard (line 1221) and \u00a7 Finale \u2014 The Prize Booth (line 1752)"
+   },
+   {
+    "key": "evidence-mode-receipt",
+    "text": "RECEIPT \u2014 \"Direct operational evidence: Tool output / HTTP response / Git history / Environment inspection / Filesystem contents / Connector state / Screenshots / Application settings / Test output.\" Example given: \"RECEIPT \u2014 Plugin configuration / engineering/.mcp.json declared GitHub at https://api.githubcopilot.com/mcp/.\"",
+    "anchor": "\u00a7 3. Evidence modes \u2014 RECEIPT (lines 835-854)"
+   },
+   {
+    "key": "evidence-mode-transcript",
+    "text": "TRANSCRIPT \u2014 \"A statement contained in the supplied conversation record.\" Must always retain its fidelity notice: reconstructed and sanitized by Claude from session context, not exported byte-for-byte from the platform log. Example: \"TRANSCRIPT \u2014 Reconstructed / Claude stated that it generated the plausible answer first and verified only when the question made verification unavoidable.\"",
+    "anchor": "\u00a7 3. Evidence modes \u2014 TRANSCRIPT (lines 856-865)"
+   },
+   {
+    "key": "evidence-mode-official-source",
+    "text": "OFFICIAL SOURCE \u2014 \"A claim supported by contemporaneous product documentation. This should be used for stable surface characteristics such as supported platforms, documented persistence boundaries, or connector behavior.\"",
+    "anchor": "\u00a7 3. Evidence modes \u2014 OFFICIAL SOURCE (lines 867-871)"
+   },
+   {
+    "key": "evidence-mode-user-observed",
+    "text": "USER-OBSERVED \u2014 \"Something the operator directly reported or displayed, but which the artifact cannot independently re-query.\" Example: \"USER-OBSERVED / The GitHub App settings page showed an installation approximately three months old, with all-repository read/write access.\" Where a confirming operational result also exists, the claim may carry both labels.",
+    "anchor": "\u00a7 3. Evidence modes \u2014 USER-OBSERVED (lines 873-882)"
+   },
+   {
+    "key": "evidence-mode-analysis",
+    "text": "ANALYSIS \u2014 \"An explicitly identified interpretation of the receipts.\" Examples given: Control-plane inversion; Product-discovery failure; Epistemic-discipline failure; Analysis substitution; User-as-control-plane architecture; Recognition without binding. \"The page may make these arguments, but it must never display them as though they were raw tool results.\"",
+    "anchor": "\u00a7 3. Evidence modes \u2014 ANALYSIS (lines 884-897)"
+   },
+   {
+    "key": "evidence-mode-unknown",
+    "text": "UNKNOWN \u2014 \"The required evidence is absent, inaccessible, or untested. The correct output is: 'Not established on this surface.' Not: 'No.'\"",
+    "anchor": "\u00a7 3. Evidence modes \u2014 UNKNOWN (lines 899-909)"
+   },
+   {
+    "key": "factual-joke-rule",
+    "text": "\"Every factual joke gets a receipt. Every unsupported joke gets labeled satire.\" \u2014 the one hard rule stated in the earlier 'Evidence design' section.",
+    "anchor": "\u00a7 Evidence design (line 361)"
+   },
+   {
+    "key": "no-inference-contract",
+    "text": "The no-inference contract block, verbatim (9 rows, this is the review doc's fuller version, distinct from CLAUDE.md's shorter list): \"Not inspected        \u2260 absent\" / \"Declared             \u2260 connected\" / \"Connected            \u2260 authorized for this repository\" / \"Account authenticated \u2260 repository accessible\" / \"Local commit         \u2260 pushed\" / \"Repository present   \u2260 deployed\" / \"Memory stored        \u2260 memory available here\" / \"Lesson recognized    \u2260 lesson followed\" / \"Transcript statement \u2260 independent telemetry\"",
+    "anchor": "\u00a7 4. The no-inference contract (lines 917-927)"
+   },
+   {
+    "key": "governing-editorial-rule",
+    "text": "\"The directory shows every documented door. Each door opens only onto evidence established for that door. Unknown states remain unknown. Receipts appear before conclusions. Interpretation is visible, but never disguised as telemetry.\"",
+    "anchor": "\u00a7 12. The governing editorial rule (lines 1350-1354)"
+   },
+   {
+    "key": "level-c-empty-state",
+    "text": "\"This Claude exists. A sufficiently evidenced experience has not yet been assembled.\" \u2014 Level C (Directory entry only) display line, described as better than manufacturing a failure sequence.",
+    "anchor": "\u00a7 Level C \u2014 Directory entry only (line 1272)"
+   },
+   {
+    "key": "unknown-state-not-established",
+    "text": "\"Not established on this surface.\" \u2014 the correct UNKNOWN-mode output, contrasted explicitly with the wrong output \"No.\"",
+    "anchor": "\u00a7 3. Evidence modes \u2014 UNKNOWN (line 905)"
+   },
+   {
+    "key": "unknown-state-no-playback",
+    "text": "\"No verified incident playback exists for this surface yet.\" \u2014 the required line for a card with insufficient evidence; \"It should not borrow the Cowork Web incident and repaint it with another product name.\"",
+    "anchor": "\u00a7 4. The no-inference contract (lines 931-935)"
+   },
+   {
+    "key": "note-on-duplicate-phrasing",
+    "text": "NOTE: several lines appear twice in the source with minor punctuation variants across the document's iterative drafting (e.g. comma vs. period versions of \"Connected in Settings, Missing in Session\" / \"Present in Product, Absent from Path\"). Both variants are recorded above rather than silently collapsed, per the no-embellishment rule.",
+    "anchor": "general \u2014 cross-document observation, badge: analysis"
+   },
+   {
+    "key": "note-on-source-status",
+    "text": "NOTE: this entire document is itself a ChatGPT-authored design-review/brainstorm transcript proposing future copy for the artifact \u2014 none of these lines are confirmed as already-shipped product copy. Badge each line as reflecting this source document (a design proposal), not as an independent receipt of shipped UI text.",
+    "anchor": "general \u2014 document framing, lines 1-14"
+   },
+   {
+    "key": "note-on-file-scope",
+    "text": "NOTE: extraction covers lines 1-1904 of the 3854-line file (first half). All requested phrases were located and cross-checked with a full-file grep confirming no additional or superseding occurrences exist beyond line 1904 (one unrelated table-row mention of \"Cowork Web Case\" at line 2664 was found but contains no new copy).",
+    "anchor": "general \u2014 extraction methodology"
+   }
+  ]
+ }
+}

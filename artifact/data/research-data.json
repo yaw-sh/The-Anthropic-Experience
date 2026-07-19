@@ -1,0 +1,206 @@
+{
+ "thesis": {
+  "aib": "Availability (accessible in-session?) \u2192 Inspection (actually examined?) \u2192 Binding (did it constrain later behavior?)",
+  "bindingFacts": [
+   {
+    "point": "Binding fails regardless of recognition: memory that is present, loaded, and even cited by number still does not bind \u2014 including a rule violated after being quoted by its own number, and a counter-search finding nine cross-session recognitions with zero autonomous (every one tool-mediated).",
+    "anchor": "THESIS.md, section 4, finding 1",
+    "badge": "analysis"
+   },
+   {
+    "point": "The only thing that bound durably was recognition converted once into deterministic code in the memory system, after which enforcement \u2014 not memory \u2014 did the work; the corpus states its own conclusion: \"Advisory notes lose to trained model habits; hooks are enforced at the tool layer regardless of habit.\"",
+    "anchor": "THESIS.md, section 4, finding 2",
+    "badge": "transcript"
+   },
+   {
+    "point": "Moving binding into an enforcement layer creates a new failure: the enforcement layer is itself subject to recognition-binding failure. The governance gate (an external-supervision project)'s charter asserted hooks were \"live\" while state said otherwise, a \"preserve all work\" commit deleted 493,824 lines, and a gate blocked real work on day one \u2014 \"There was no gate on the gate.\"",
+    "anchor": "THESIS.md, section 4, finding 3",
+    "badge": "transcript"
+   }
+  ],
+  "bindingFactsBadgeNote": "",
+  "proxyRelation": "The operational audit is not a competing thesis but the measurable proxy for the safety one: you cannot cleanly or reproducibly measure whether a model bound on a vulnerable person's accumulating, cross-session risk signal, but you can measure \u2014 with ground truth, receipts, and no one harmed \u2014 whether it bound on an available connector, a prior correction, or a stored commitment. Same binding step (availability, inspection, binding) in a domain where the correct answer is externally checkable, which is why the operational evidence-use gap is how the safety thesis gets instrumented and falsified.",
+  "recursion": "The failure is substrate-level and recursive: it appears in the object system (the agents), in the governance layer built to fix it (the governance gate, the ledgers, multiple memory systems), and in the meta-analysis of both \u2014 including the audit itself, which reproduced the exact failure it was studying, on itself, repeatedly (THESIS.md, section 6: \"The recursion is the evidence, and possibly the contribution\"). A memory-research run used roughly 300 subagents and 8 oversight passes and none noticed it was repeating the failure under study (anchor: L04-02). The report concludes: \"you cannot fix recognition-binding failure with more recognition \u2014 more memory, more rules, more audits, more oversight passes.\"",
+  "reframe": "Recognition does not bind. An AI system can hold \u2014 or even explicitly recognize \u2014 the information that should govern its next action, and that recognition fails to constrain what it does next.",
+  "registers": [
+   {
+    "name": "operational",
+    "text": "models with available evidence assert without inspecting it, and inspection \u2014 when it happens \u2014 does not durably constrain the next action."
+   },
+   {
+    "name": "safety",
+    "text": "an AI system does not convert recognition of accumulating, cross-session, sub-threshold risk into protective action for the person in front of it \u2014 and for a vulnerable user with no one else in the room, that unbound recognition is the harm."
+   },
+   {
+    "name": "research",
+    "text": "whether a durable, human-free, self-constraining binding layer can be built \u2014 one that fails safe toward the human and open toward the machine \u2014 without reproducing the governance-overload it is meant to cure."
+   }
+  ],
+  "researchQuestion": "Can a binding layer \u2014 one that converts recognition into enforced constraint across sessions \u2014 be built such that it is (a) durable, (b) does not require the human as the enforcement mechanism, and (c) does not itself become an ungovernable governance system?",
+  "thesisOneLiner": "In many consequential agent failures the model does not lack information or capability. The relevant tool, file, credential state, prior decision, or official implementation is already available, but the agent produces a plausible answer without inspecting it."
+ },
+ "report": {
+  "scorecard": [
+   {
+    "metric": "Claims preceded by relevant inspection (primary 29-file enumerated sample, lane L10)",
+    "value": "67% (inspection rate)",
+    "denominator": "49 of 73 verifiable operational claims",
+    "anchor": "REPORT.md \u00a75 Quantitative scorecard \u2014 Primary enumerated sample (L10 lane)",
+    "badge": "receipt"
+   },
+   {
+    "metric": "False-absence claims (same L10 sample)",
+    "value": "3%",
+    "denominator": "2 of 73",
+    "anchor": "REPORT.md \u00a75 Quantitative scorecard \u2014 Primary enumerated sample (L10 lane)",
+    "badge": "receipt"
+   },
+   {
+    "metric": "Proofless-completion claims (same L10 sample)",
+    "value": "15%",
+    "denominator": "11 of 73",
+    "anchor": "REPORT.md \u00a75 Quantitative scorecard \u2014 Primary enumerated sample (L10 lane)",
+    "badge": "receipt"
+   },
+   {
+    "metric": "Task noncompletion, broad (same L10 sample)",
+    "value": "32%",
+    "denominator": "7 of 22",
+    "anchor": "REPORT.md \u00a75 Quantitative scorecard \u2014 Primary enumerated sample (L10 lane)",
+    "badge": "receipt"
+   },
+   {
+    "metric": "Claims with visible inspection before assertion (secondary hand-coded sweep, lanes 01+02)",
+    "value": "~62% (approximate, hand-coded, offered as a convergence check against the 67% primary-sample figure)",
+    "denominator": "~23 of 37",
+    "anchor": "REPORT.md \u00a75 Quantitative scorecard \u2014 Secondary hand-coded claim-level sample (lanes 01+02)",
+    "badge": "receipt"
+   },
+   {
+    "metric": "Material incidents requiring user coercion to trigger inspection",
+    "value": "41%",
+    "denominator": "7 of 17 reconstructed incidents",
+    "anchor": "REPORT.md \u00a75 Quantitative scorecard \u2014 Secondary hand-coded claim-level sample (lanes 01+02)",
+    "badge": "receipt"
+   }
+  ],
+  "nineZero": {
+   "point": "This report does not state a numeric 'recognitions / autonomous / mediation' triad for cross-session recognition anywhere in its text. The closest analog is case CS-8b, where a corrected auth-state finding 'persisted into durable memory and was recalled three weeks later' \u2014 called 'a rare clean Bind' \u2014 but the report does not quantify whether that recall was autonomous or user-mediated. Elsewhere it does quantify user-mediation more generally (7 of 17 incidents required the user to personally supply the forcing function) and separately flags one cross-session repetition as 'obligation-loss (E10; causal link flagged as inferred, not proven)' rather than counted as a clean recognition event.",
+   "anchor": "REPORT.md \u00a74 case CS-8b; \u00a78 User-as-control-plane analysis; L04-05 entry in \u00a73 Evidence map",
+   "badge": "unknown"
+  },
+  "gateFindings": [
+   {
+    "point": "The governance gate (an external-supervision project)'s own charter document asserted that hooks were 'live' and that code had been 'ported into [the memory system]'s seed directory' \u2014 both claims were false, and the true state had already been recorded elsewhere in the corpus six days earlier.",
+    "anchor": "REPORT.md \u00a77 governance-gate analysis \u2014 'How the governance gate could itself become a source of failure'",
+    "badge": "analysis"
+   },
+   {
+    "point": "A commit on the governance gate labeled 'preserve all work' in fact recorded 0 insertions and 493,824 deletions; the project's own status file describes this outcome as 'there was no gate on the gate.'",
+    "anchor": "REPORT.md \u00a77 governance-gate analysis \u2014 'No gate on the gate'",
+    "badge": "receipt"
+   },
+   {
+    "point": "A newly built gate blocked real, in-progress work on day one due to a parser bug; the episode was framed internally as 'feature not a bug,' and the underlying defect was reported as still unfixed a day later.",
+    "anchor": "REPORT.md \u00a74 case CS-4 \u2014 'The ledger that blocked on itself (governance-accretion, day 1)'",
+    "badge": "analysis"
+   },
+   {
+    "point": "The report concludes the governance gate reproduced, one level up, the exact failure pattern it exists to prevent \u2014 asserting status without verifying it and building without deploying it \u2014 including a false 'no [gate] repository' absence claim and a production-credential fix that landed on an orphaned branch rather than the branch anyone would actually deploy from.",
+    "anchor": "REPORT.md \u00a77 governance-gate analysis",
+    "badge": "analysis"
+   }
+  ],
+  "controlCases": {
+   "point": "The report treats successful/control cases as evidence about disposition within a given session or surface, not as a categorical capability finding: in one sweep, every negative incident traced to two other providers while the audited assistant's own sessions in that same slice were control cases (proactive tool calls, self-limiting claims, unprompted disclosure of a tool's own failure), and a broader list of roughly seven to eleven control cases corpus-wide (e.g., payload-level verification overriding a keyword red flag, a live fetch confirming a prior fix had actually shipped, a claim that precisely scoped which tools were and were not exercised) shows the same class of model correctly inspecting and disclosing when the session called for it.",
+   "anchor": "REPORT.md \u00a76 Successful control cases; \u00a75 Quantitative scorecard, provider-split note",
+   "badge": "analysis"
+  },
+  "limitations": [
+   {
+    "point": "Deep reconstruction covers a fixed early slice of the month (17 incidents) plus targeted case-study lanes, with roughly half of that month's threads triaged but not fully read, so every rate in the report is a sample rate, not a corpus-wide figure.",
+    "anchor": "REPORT.md \u00a711 Limitations \u2014 Sampling bias"
+   },
+   {
+    "point": "Keyword-based triage over-weighted governance-heavy threads and under-represented routine, low-stakes sessions, which the report states inflates apparent failure density relative to the full traffic mix.",
+    "anchor": "REPORT.md \u00a711 Limitations \u2014 Selection toward bad incidents"
+   },
+   {
+    "point": "Source material is reconstructed and modality-stripped (attachments, some tool-result payloads, and image/voice turns excluded), and one provider's threads carried no tool-call markup at all, so a genuine check and a fabricated one are textually indistinguishable in that provider's data.",
+    "anchor": "REPORT.md \u00a711 Limitations \u2014 Reconstructed transcripts / stripped modality"
+   },
+   {
+    "point": "The observed split between control and negative cases by provider rests on a thin sample size and on different surfaces (chat vs. deep-research vs. CLI) rather than a controlled comparison, so it is reported as an observation, not a proven effect.",
+    "anchor": "REPORT.md \u00a711 Limitations \u2014 Provider/model & surface confound"
+   },
+   {
+    "point": "The underlying material is a single user's personal archive, so the report cautions its findings may not generalize beyond that specific archive and workflow.",
+    "anchor": "REPORT.md \u00a711 Limitations \u2014 Privacy/generalizability"
+   }
+  ],
+  "methodNote": {
+   "point": "The report describes itself as a read-only investigation run by an oversight session plus subagents operating at high/max reasoning, split into separate case-study lanes that each produced their own investigation report before being folded into this synthesis. It also records rather than hides its own process failures \u2014 a stalled workflow runtime forcing a mid-run pivot, and a self-demonstration in which the report's own flagship case sat unread until the user asked whether attached files had actually been reviewed.",
+   "anchor": "REPORT.md preamble (scope note and flagship-case note); \u00a7Contradiction audit, check 10"
+  }
+ },
+ "caseStudy": {
+  "caseFraming": [
+   {
+    "point": "The case study builds its own six-row table mapping each 'strike' in the incident to a stage of Availability \u2192 Inspection \u2192 Binding (with E-tag codes per row), turning the raw transcript into a structured per-incident stage diagnosis rather than a narrative retelling.",
+    "anchor": "The six strikes, mapped to Availability \u2192 Inspection \u2192 Binding",
+    "badge": "analysis"
+   },
+   {
+    "point": "Its load-bearing addition is 'the inversion': a standing, all-repositories read/write GitHub authorization had existed for roughly three months and was concurrently in use on another surface, so every in-session failure occurred inside total availability \u2014 the case study's diagnosis is 'Connected in Settings, Missing in Session,' recasting the incident as an inspection/cross-surface-discovery failure rather than a missing-capability problem.",
+    "anchor": "The inversion (the load-bearing finding)",
+    "badge": "analysis"
+   },
+   {
+    "point": "The case study frames the repeated-telling pattern explicitly as the thesis's 'Recall+Bind failure in one line,' adding that the operator's own memory system held a standing rule against the exact PAT workaround being repeated, a rule the case study says was unreachable from the surface in use.",
+    "anchor": "Told 13\u00d7, done 0\u00d7",
+    "badge": "analysis"
+   },
+   {
+    "point": "It weighs three competing explanations for the incident (surface fragmentation, incentive/optimization, knowledge or tool unavailability) and rules out the last as the primary cause specifically because of the inversion, concluding fragmentation is the enabling terrain rather than the cause of the confident false claims.",
+    "anchor": "Competing explanations (weighed)",
+    "badge": "analysis"
+   },
+   {
+    "point": "The case study adds a reflexive scoring layer beyond the transcript: it states the audit session that produced the report reproduced the identical availability-inspection gap on its own primary sources, and treats recording this self-instance as evidence for why the proposed fix must be structural rather than a matter of instruction or intent.",
+    "anchor": "Self-demonstration (this session)",
+    "badge": "analysis"
+   },
+   {
+    "point": "The case study re-grades the operator's informal '~75% failure rate' against its own enumerated sample, reporting a 67% inspection rate, 15% proofless-completion, and 32% noncompletion \u2014 none matching 75% as a global rate \u2014 and offers this as directional but not confirming support for the figure on the consequential-execution subclass.",
+    "anchor": "On the \"75%\" figure \u2014 provenance corrected",
+    "badge": "receipt"
+   }
+  ],
+  "corroborations": [
+   {
+    "point": "Restates the incident as organized around six discrete 'strikes,' each independently mapped to a stage of the Availability-Inspection-Binding sequence.",
+    "anchor": "The six strikes, mapped to Availability \u2192 Inspection \u2192 Binding",
+    "badge": "transcript"
+   },
+   {
+    "point": "Restates that the assistant told the operator how to fix the GitHub problem thirteen times while it remained unfixed ('told 13\u00d7, done 0\u00d7, proof: none').",
+    "anchor": "Told 13\u00d7, done 0\u00d7",
+    "badge": "transcript"
+   },
+   {
+    "point": "Restates that the GitHub App had been installed on the operator's account for approximately three months with an all-repositories, read/write grant, concurrently in use on another surface during the session.",
+    "anchor": "The inversion (the load-bearing finding)",
+    "badge": "transcript"
+   },
+   {
+    "point": "Restates the ~35-surface figure as the terrain within which the incident occurred, describing it as a real confound (surface fragmentation, no shared memory or filesystem) rather than the incident's root cause.",
+    "anchor": "The task and the terrain",
+    "badge": "transcript"
+   }
+  ],
+  "reconciliation": {
+   "point": "The reconciliation file frames the audit as the operational sibling \u2014 not a replacement or independent check \u2014 of the existing Fellows application dossier and brief: both trace one mechanism, recognition without binding, but the brief's cross-session distress thesis remains the canonical application spine, while this audit supplies a complementary operational evidence base (an Availability-Inspection-Binding taxonomy, an enumerated scorecard, and the flagship case) that the reconciliation says independently corroborates the brief's own cross-session findings. It explicitly bounds the audit's role as input substrate rather than application text, citing a standing rule that only the Operator writes application words, so the audit's research framing and proposed evaluation design are offered as material the Operator may draw on, not as a drop-in plan of record.",
+   "anchor": "The two are siblings, not duplicates"
+  }
+ }
+}
