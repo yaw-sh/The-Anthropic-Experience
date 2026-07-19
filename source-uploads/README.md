@@ -30,7 +30,7 @@ These came from two uploads during the 2026-07-18/19 sessions:
 | `Research findings abstract conversion.pdf` | Image-only proposal draft (no references/method apparatus). |
 | `react_wheels/` | Prototype wheel source zips (duplicates of `../design/reference/*.zip`). |
 | `research-archive-design-system/` | The research-archive design system (tokens, components, templates). |
-| `ReviewandResearchReport_1.md` | ChatGPT conversation export: the Pro session that produced both packs — the forensic review pack, the roast correction ("the instructions survived; the point did not"), the master blueprint pack — and then its own four-part GitHub failure (committed one file instead of the pack; reconstructed files instead of copying; omitted the evidence files; never checked the repo first). Documents the `3e1f625`/`3119913` commits on `main`. |
+| `ReviewandResearchReport.md` | ChatGPT conversation export (full version — replaces the earlier partial `_1` export, which remains in git history): the Pro session that produced both packs, the roast correction, the master blueprint, its four-part GitHub failure (`3e1f625`/`3119913` on `main`), and its closing hierarchy ruling — root blueprint canonical, pack supporting, old Claude plan "superseded" (ChatGPT's recommendation; not yet an owner decision). |
 | `archive-2026-07-19/` | The provided `Archive.zip`: six ChatGPT conversation exports (AI-agent-reliability dossier, a fuller Claude failure analysis, a fail-stamp request, the satirical-circus visual style, plus two byte-duplicates of files above). See its `README.md`. |
 
 ## Status and cautions

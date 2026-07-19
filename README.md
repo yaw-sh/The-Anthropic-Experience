@@ -56,6 +56,9 @@ The repository separates **spectacle from evidence** and **product from research
 | Path | What it is |
 |---|---|
 | `CLAUDE.md` | Execution procedure and standing rules. Overrides default behavior. Includes the evidence contract and phase discipline. |
+| `THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md` | The 2,133-line creative/technical master blueprint (root copy, committed to `main` by the ChatGPT session; includes its "Attempt Four" section). The pack's canonical 2,053-line copy lives in `anthropic_experience_actual_blueprint/`. |
+
+> **Which plan governs — open owner decision.** Three planning generations coexist: the original phased plan (`docs/superpowers/`), the review pack's `CODEX-BUILD-DIRECTIVE.md`, and the master blueprint. The ChatGPT session's closing recommendation (see `source-uploads/ReviewandResearchReport.md`) is blueprint-as-canonical with the original plan marked superseded — but `anthropic_experience_review_pack/OWNER-DECISIONS.md`'s decision log is still empty. Until the owner records that row, no supersession is in force.
 | `README.md` | This file — frontstage front page plus this map. |
 | `docs/BUILD-GUIDE.md` · `docs/BUILD-STATUS.md` | The build guide and the cross-session execution ledger (the ledger records the honest Phase-0 state). |
 | `docs/superpowers/` | The design spec (`specs/`) and the phased implementation plan (`plans/`). |
