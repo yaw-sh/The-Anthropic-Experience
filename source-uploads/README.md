@@ -30,6 +30,7 @@ These came from two uploads during the 2026-07-18/19 sessions:
 | `Research findings abstract conversion.pdf` | Image-only proposal draft (no references/method apparatus). |
 | `react_wheels/` | Prototype wheel source zips (duplicates of `../design/reference/*.zip`). |
 | `research-archive-design-system/` | The research-archive design system (tokens, components, templates). |
+| `archive-2026-07-19/` | The provided `Archive.zip`: six ChatGPT conversation exports (AI-agent-reliability dossier, a fuller Claude failure analysis, a fail-stamp request, the satirical-circus visual style, plus two byte-duplicates of files above). See its `README.md`. |
 
 ## Status and cautions
 
