@@ -4,7 +4,7 @@ This pack replaces the earlier forensic-first handoff with the requested creativ
 
 ## Primary file
 
-- `../THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md`
+- `THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md`
 
 ## Implementation entry point
 
@@ -20,4 +20,4 @@ This pack replaces the earlier forensic-first handoff with the requested creativ
 - `evidence/PRIOR-FORENSIC-HANDOFF.md`
 - `evidence/PREVIOUS-PRO-REVIEW.md`
 
-The files are committed individually. The ZIP is not stored in the repository.
+The original 57 MB archive is intentionally not duplicated here.

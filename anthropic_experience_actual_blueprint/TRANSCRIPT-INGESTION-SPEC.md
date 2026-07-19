@@ -14,9 +14,6 @@ The owner will supply the full transcript of the Pro review and correction seque
 8. Pro admission that it produced “a forensic appendix pretending to be that blueprint.”
 9. Owner request for this complete creative and technical blueprint.
 10. Final blueprint delivery.
-11. Owner asks why GitHub was described rather than used.
-12. Pro commits one file instead of the complete pack.
-13. Owner corrects that the files should be committed individually rather than uploading the ZIP.
 
 ## Ingestion rules
 

@@ -1,0 +1,55 @@
+<!-- @dsCard group="Research Archive" viewport="900x760" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Anthropic Experience — Research Archive</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>
+  html,body{margin:0}
+  body{background:var(--surface-page);color:var(--text-body);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--selection-bg);color:var(--selection-fg)}
+  a{color:var(--info-tag-text);text-decoration:none}
+  a:hover{color:var(--blue-900)}
+  strong{color:var(--text-strong);font-weight:600}
+</style>
+</head><body>
+<div id="root"></div>
+<script type="text/babel" src="ArchiveHeader.jsx"></script>
+<script type="text/babel" src="ArchiveLedger.jsx"></script>
+<script type="text/babel" src="ArchiveThread.jsx"></script>
+<script type="text/babel">
+const RA_APP = window.ResearchArchiveDesignSystem_b308e3;
+function App(){
+  const { Navbar, Dropdown, Badge } = window.ResearchArchiveDesignSystem_b308e3;
+  return (<React.Fragment>
+    <Navbar monogram="AE" title="Research Archive">
+      <Badge variant="status" dot>Verified</Badge>
+      <Dropdown label="Options" items={[
+        {label:'Export PDF', icon:'solar:printer-linear', href:'#'},
+        {label:'Share Link', icon:'solar:share-linear', href:'#'},
+      ]} />
+    </Navbar>
+    <main style={{maxWidth:'var(--content-max)',margin:'0 auto',padding:'64px 24px 96px'}}>
+      <window.ArchiveHeader/>
+      <window.FidelityNote/>
+      <window.SectionRule/>
+      <window.ArchiveLedger/>
+      <window.SectionRule/>
+      <window.ArchiveThread/>
+      <footer style={{marginTop:80,paddingTop:32,borderTop:'1px solid var(--rule)',font:'var(--fw-regular) 12px/1.6 var(--font-sans)',color:'var(--text-faint)'}}>
+        <em>— End of transcript v2. Reconstructed and redacted 2026-07-18 by claude-fable-5 at the Operator's request. This export is faithful to substance, order, and failure.</em>
+      </footer>
+    </main>
+  </React.Fragment>);
+}
+function mount(){
+  if(!window.ResearchArchiveDesignSystem_b308e3 || !window.ArchiveHeader || !window.ArchiveLedger || !window.ArchiveThread){ return setTimeout(mount, 30); }
+  ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+}
+mount();
+</script>
+</body></html>

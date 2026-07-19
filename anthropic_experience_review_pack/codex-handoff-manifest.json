@@ -1,0 +1,52 @@
+{
+  "manifestVersion": "1.0",
+  "generatedAt": "2026-07-19T03:00:45.477949+00:00",
+  "purpose": "Core private handoff for Codex; raw archive audit and inventory intentionally omitted.",
+  "files": [
+    {
+      "path": "CODEX-HANDOFF-README.md",
+      "bytes": 1472,
+      "sha256": "1593ddca3fa240a50771da1997f7bca887c5f0b6222bed8f980deae64701fcb2"
+    },
+    {
+      "path": "THE-ANTHROPIC-EXPERIENCE-PRO-REVIEW.md",
+      "bytes": 46476,
+      "sha256": "7ebb29e4c2ff710c7c189cd3c19fb5d096c40f790960be7674e8a0bfe1ed41fd"
+    },
+    {
+      "path": "CODEX-BUILD-DIRECTIVE.md",
+      "bytes": 21599,
+      "sha256": "f5265160dd1d3d79a231c08b4f04a3c743774541917733036d0d3d589b55fa94"
+    },
+    {
+      "path": "public-claims-register.seed.json",
+      "bytes": 36338,
+      "sha256": "6a27cffe13b4def2461102908cd54cd1d3ffca468fbd646c44ce8b0286e96961"
+    },
+    {
+      "path": "RELEASE-GATES.md",
+      "bytes": 8222,
+      "sha256": "54d507b10c2474d1cab0d094779bf403f6aef5cff01bf993c42075e788f3d1fa"
+    },
+    {
+      "path": "ARCHIVE-DISPOSITION.md",
+      "bytes": 12659,
+      "sha256": "48bdaf6910220ba4f4b245c4425b2c0429cd2f68334109b7ff69f6996ccd6f5a"
+    },
+    {
+      "path": "OUTWARD-RESEARCH-MERGE-GUIDE.md",
+      "bytes": 7410,
+      "sha256": "67e9209945a97a384fd61a8f3d33b9ded4b6273722f5907c4b87a84d6ce7aab1"
+    },
+    {
+      "path": "OWNER-DECISIONS.md",
+      "bytes": 1848,
+      "sha256": "9682b8fccc0871e75a6222a17b4c24d3fea1cdbfcbb7a7ef112432056d7f3bc7"
+    },
+    {
+      "path": "AUDIT-RECEIPTS.md",
+      "bytes": 5214,
+      "sha256": "1716b83cc8cef83211b51edb219d2de7de1c207db039e15a125a56cef3a9c9f1"
+    }
+  ]
+}
