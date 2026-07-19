@@ -1295,7 +1295,7 @@ git commit -m "feat: add static surface passport routes"
 - Modify: `src/styles/components.css`
 - Modify: `src/features/directory/SurfaceWheel.jsx`
 - Modify: `src/features/directory/BigTopDirectory.jsx`
-- Modify: `README-FOR-JOSH.md`
+- Modify: `app/README.md`
 - Modify: `docs/BUILD-STATUS.md`
 
 **Interfaces:**
@@ -1376,7 +1376,7 @@ Expected: all tests pass and Vite builds `dist/`.
 Set Phase 1 to complete in `docs/BUILD-STATUS.md`, include command results and commit hashes, then run:
 
 ```bash
-git add src/index.css src/styles/components.css src/features/directory/SurfaceWheel.jsx src/features/directory/BigTopDirectory.jsx README-FOR-JOSH.md docs/BUILD-STATUS.md
+git add src/index.css src/styles/components.css src/features/directory/SurfaceWheel.jsx src/features/directory/BigTopDirectory.jsx app/README.md docs/BUILD-STATUS.md
 git commit -m "chore: complete working directory phase"
 ```
 
@@ -2174,7 +2174,7 @@ Correct every blocking issue; document remaining nonblocking limitations.
 **Files:**
 - Create: `docs/DEPLOYMENT.md`
 - Create: `docs/RELEASE-CHECKLIST.md`
-- Modify: `README-FOR-JOSH.md`
+- Modify: `app/README.md`
 - Modify: `docs/BUILD-STATUS.md`
 
 - [ ] Document selected static host and exact deployment commands.

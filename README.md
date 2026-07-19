@@ -2,7 +2,7 @@
 
 ![Connected in Settings, Missing in Session — the GitHub connector shows Connected, stamped FAIL](docs/media/connected-in-settings.png)
 
-## ▶ [Open me the fuck up and experience it for yourself.](https://claude.ai/code/artifact/ae1f6f3f-e062-4ae7-b0e8-9c4784acb942)
+## ▶ [Open it up and experience it for yourself.](https://claude.ai/code/artifact/ae1f6f3f-e062-4ae7-b0e8-9c4784acb942)
 
 [![THE ANTHROPIC EXPERIENCE — the big-top directory](docs/media/artifact-hero.png)](https://claude.ai/code/artifact/ae1f6f3f-e062-4ae7-b0e8-9c4784acb942)
 

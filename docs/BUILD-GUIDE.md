@@ -45,7 +45,7 @@ Do not add a backend, database, state library, component framework, animation fr
 ```text
 .
 ├── CLAUDE.md
-├── README-FOR-JOSH.md
+├── app/README.md
 ├── index.html
 ├── package.json
 ├── public/
