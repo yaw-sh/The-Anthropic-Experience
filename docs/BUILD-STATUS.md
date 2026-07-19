@@ -5,6 +5,7 @@ This file is the cross-session execution ledger. Update it after each completed 
 ## Current state
 
 - Current phase: `0 — Planning package prepared`
+- Plan executed: `no — the published artifact was built outside this plan; account in the builder's words: docs/evidence/incidents/2026-07-19-phase-zero.md`
 - Current branch: `not started`
 - Last completed task: `none`
 - Next task: `Phase 1 / Task 1 — establish the tested baseline`

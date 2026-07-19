@@ -16,6 +16,10 @@ repository is public and that personal information must be protected. Recognitio
 operator was, again, the only sensor. **The count reached at least seventeen distinct failures in one
 session** — more evidence of the thesis than any other single artifact in this repository.
 
+Above these strikes sits a structural failure that frames them all: the repository's own
+phased plan was never executed at all. That account is recorded separately, in the
+assistant's words, in [`2026-07-19-phase-zero.md`](2026-07-19-phase-zero.md).
+
 ## The strikes, first person, in order
 
 1. **≈21:07 UTC — I delivered a side branch and a draft pull request when the instruction was to
