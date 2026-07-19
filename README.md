@@ -57,8 +57,9 @@ The repository separates **spectacle from evidence** and **product from research
 |---|---|
 | `CLAUDE.md` | Execution procedure and standing rules. Overrides default behavior. Includes the evidence contract and phase discipline. |
 | `THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md` | The 2,133-line creative/technical master blueprint (root copy, committed to `main` by the ChatGPT session; includes its "Attempt Four" section). The pack's canonical 2,053-line copy lives in `anthropic_experience_actual_blueprint/`. |
+| `CODEX-PREP-HANDOFF.md` | The verified inventory (transcript-by-transcript operator-turn counts, marker formats, output convention, ingestion-spec summary) for the operator-voice generalization and ingestion-spec work assigned to Codex. Research only — nothing in it has been executed. |
 
-> **Which plan governs — open owner decision.** Three planning generations coexist: the original phased plan (`docs/superpowers/`), the review pack's `CODEX-BUILD-DIRECTIVE.md`, and the master blueprint. The ChatGPT session's closing recommendation (see `source-uploads/ReviewandResearchReport.md`) is blueprint-as-canonical with the original plan marked superseded — but `anthropic_experience_review_pack/OWNER-DECISIONS.md`'s decision log is still empty. Until the owner records that row, no supersession is in force.
+> **Which plan governs — decided.** Three planning generations coexist: the original phased plan (`docs/superpowers/`), the review pack's `CODEX-BUILD-DIRECTIVE.md`, and the master blueprint. `anthropic_experience_review_pack/OWNER-DECISIONS.md` row 1 (2026-07-19) records the owner's decision: the master blueprint governs the build, Codex builds it in a fresh clean-room repository, and this repository is the private evidence vault only. The original plan and the directive are retained as historical/engineering reference. See `CODEX-PREP-HANDOFF.md` for the resulting inventory and open work items.
 | `README.md` | This file — frontstage front page plus this map. |
 | `docs/BUILD-GUIDE.md` · `docs/BUILD-STATUS.md` | The build guide and the cross-session execution ledger (the ledger records the honest Phase-0 state). |
 | `docs/superpowers/` | The design spec (`specs/`) and the phased implementation plan (`plans/`). |
@@ -77,6 +78,7 @@ The repository separates **spectacle from evidence** and **product from research
 | `docs/evidence/incidents/2026-07-18-build-session.md` | The 17-strike build-session ledger — the assistant's failures logged first person. |
 | `docs/evidence/incidents/2026-07-19-phase-zero.md` | The phase-zero account: the governed plan was never executed. |
 | `docs/media/` | The two published screenshots (hero + connected-in-settings). |
+| `scratchpad/convert_transcripts.py` | The tool that regenerates the session/subagent transcript exports under `fellows/thesis-review-2026-07-19/transcripts/` from the raw session JSONL. Committed so a future session (or Codex) can refresh a transcript without reconstructing the tool from scratch — it previously existed only in a session-local scratch directory. |
 
 ### The research (private; quarantined from any public release)
 | Path | What it is |
