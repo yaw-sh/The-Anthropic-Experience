@@ -1,0 +1,171 @@
+{
+  "events": [
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-01-planning-and-scaffold-event-001",
+      "index": 1,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "build-failure-analysis",
+          "start": 1
+        },
+        {
+          "end": 4,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "build-failure-analysis",
+          "start": 4
+        },
+        {
+          "end": 6,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "build-failure-analysis",
+          "start": 6
+        }
+      ],
+      "sourceSlotId": "build-failure-analysis",
+      "speaker": "operator",
+      "tags": [
+        "instruction"
+      ],
+      "text": "The operator requested a product that made the documented failures visible, funny, and evidence-backed.",
+      "transcriptId": "phase-01-planning-and-scaffold",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-01-planning-and-scaffold-event-002",
+      "index": 2,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 3,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "build-failure-analysis",
+          "start": 3
+        },
+        {
+          "end": 5,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "build-failure-analysis",
+          "start": 5
+        },
+        {
+          "end": 7,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "build-failure-analysis",
+          "start": 7
+        }
+      ],
+      "sourceSlotId": "build-failure-analysis",
+      "speaker": "assistant",
+      "tags": [
+        "promise"
+      ],
+      "text": "The assistant proposed a structured thesis, phased implementation, evidence model, and accessibility constraints.",
+      "transcriptId": "phase-01-planning-and-scaffold",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-01-planning-and-scaffold-event-003",
+      "index": 3,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "planning-package",
+          "start": 1
+        }
+      ],
+      "sourceSlotId": "planning-package",
+      "speaker": "tool",
+      "tags": [
+        "instruction",
+        "verification"
+      ],
+      "text": "The repository procedure recorded phase branches, test-first tasks, task receipts, and an externally verified completion state.",
+      "transcriptId": "phase-01-planning-and-scaffold",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-01-planning-and-scaffold-event-004",
+      "index": 4,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 3,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "planning-package",
+          "start": 3
+        }
+      ],
+      "sourceSlotId": "planning-package",
+      "speaker": "tool",
+      "tags": [
+        "operation",
+        "substitute"
+      ],
+      "text": "The planning package expanded to 22 tasks and 112 tracked steps while the application remained a small wheel scaffold.",
+      "transcriptId": "phase-01-planning-and-scaffold",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-01-planning-and-scaffold-event-005",
+      "index": 5,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 4,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "planning-package",
+          "start": 4
+        }
+      ],
+      "sourceSlotId": "planning-package",
+      "speaker": "tool",
+      "status": "not-started",
+      "tags": [
+        "status",
+        "binding-failure"
+      ],
+      "text": "The execution ledger recorded Phase 0 with no governed tasks completed.",
+      "transcriptId": "phase-01-planning-and-scaffold",
+      "verbatim": false
+    }
+  ],
+  "fidelity": "generalized",
+  "generalizationNotice": "Every event is a concise generalized statement. Nothing in this transcript is presented as a verbatim quotation.",
+  "id": "phase-01-planning-and-scaffold",
+  "schemaVersion": "1.0.0",
+  "title": "Planning and scaffold",
+  "verbatim": false
+}

@@ -1,0 +1,71 @@
+{
+  "canonicalTranscript": "history/phases/phase-05-codex-build/transcript.md",
+  "checks": {
+    "generalizationLabel": "pass",
+    "publicHash": "pass",
+    "sourceAttribution": "pass",
+    "sourceCoverage": "pass",
+    "sourceExistence": "pass",
+    "sourceOverlap": "pass",
+    "sourceRanges": "pass",
+    "verbatimClaims": "pass"
+  },
+  "collapsedSourceUnits": 3337,
+  "coveredSourceUnitCount": 3375,
+  "eventCount": 38,
+  "generalized": true,
+  "phaseId": "phase-05-codex-build",
+  "publicHash": "ff5e8f96bccc85c1911f23adb6841aa16969a6aa4709296ed3ff154c16e4bdf7",
+  "publicTranscript": "evidence/public/transcripts/phase-05-codex-build.json",
+  "replacementCount": 5669,
+  "schemaVersion": "1.0.0",
+  "sourceSlots": [
+    {
+      "formerPathSlots": [
+        "current-source-001"
+      ],
+      "id": "binding-owner-decision",
+      "note": "The numbered current owner decisions are parsed directly from the canonical record.",
+      "parser": "decision-table",
+      "sourceRoleCounts": {
+        "operator": 7
+      },
+      "sourceUnitCount": 7,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "private-session-slot-001"
+      ],
+      "id": "codex-product-track-session",
+      "note": "The private product-track Codex session is parsed into role-attributed source units; only generalized outcomes are published.",
+      "parser": "codex-jsonl",
+      "sourceRoleCounts": {
+        "assistant": 128,
+        "operator": 58,
+        "system": 33,
+        "tool": 1624
+      },
+      "sourceUnitCount": 1843,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "private-session-slot-002"
+      ],
+      "id": "codex-cleanup-track-session",
+      "note": "The private cleanup-track Codex session is parsed into role-attributed source units; only generalized outcomes are published.",
+      "parser": "codex-jsonl",
+      "sourceRoleCounts": {
+        "assistant": 124,
+        "operator": 41,
+        "system": 17,
+        "tool": 1343
+      },
+      "sourceUnitCount": 1525,
+      "uniqueBlobCount": 1
+    }
+  ],
+  "sourceUnitCount": 3375,
+  "verbatim": false
+}

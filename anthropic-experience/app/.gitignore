@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist-artifact/
+public/evidence/
+playwright-report/
+test-results/

@@ -1,0 +1,85 @@
+{
+  "canonicalTranscript": "history/phases/phase-04-master-blueprint-handoff/transcript.md",
+  "checks": {
+    "generalizationLabel": "pass",
+    "publicHash": "pass",
+    "sourceAttribution": "pass",
+    "sourceCoverage": "pass",
+    "sourceExistence": "pass",
+    "sourceOverlap": "pass",
+    "sourceRanges": "pass",
+    "verbatimClaims": "pass"
+  },
+  "collapsedSourceUnits": 2224,
+  "coveredSourceUnitCount": 2235,
+  "eventCount": 11,
+  "generalized": true,
+  "phaseId": "phase-04-master-blueprint-handoff",
+  "publicHash": "d41de6bc693a073724f58c9739013e56df04587ceaae604c6447a86c88ddf35f",
+  "publicTranscript": "evidence/public/transcripts/phase-04-master-blueprint-handoff.json",
+  "replacementCount": 100,
+  "schemaVersion": "1.0.0",
+  "sourceSlots": [
+    {
+      "formerPathSlots": [
+        "former-path-020",
+        "former-path-021"
+      ],
+      "id": "pro-review-session",
+      "note": "A superseded prefix is retained as a path slot while unique blobs are parsed once.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 42,
+        "operator": 28,
+        "system": 2
+      },
+      "sourceUnitCount": 72,
+      "uniqueBlobCount": 2
+    },
+    {
+      "formerPathSlots": [
+        "former-path-022"
+      ],
+      "id": "creative-style-session",
+      "note": "Creative direction is generalized and represented as a source slot.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 11,
+        "operator": 11
+      },
+      "sourceUnitCount": 22,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "former-path-023",
+        "former-path-024"
+      ],
+      "id": "supporting-review-sessions",
+      "note": "Distinct supporting sessions are represented without raw wording.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 4,
+        "operator": 4
+      },
+      "sourceUnitCount": 8,
+      "uniqueBlobCount": 2
+    },
+    {
+      "formerPathSlots": [
+        "former-path-025",
+        "former-path-026"
+      ],
+      "id": "blueprint-handoff",
+      "note": "The shorter snapshot is a strict prefix with zero unique lines; the 2,133-line root blueprint remains authoritative.",
+      "parser": "longest-lines",
+      "sourceRoleCounts": {
+        "assistant": 2133
+      },
+      "sourceUnitCount": 2133,
+      "uniqueBlobCount": 2
+    }
+  ],
+  "sourceUnitCount": 2235,
+  "verbatim": false
+}

@@ -1,0 +1,1062 @@
+{
+  "heroBigTop": {
+    "alt": "An ornate big-top prologue stage with a blank circular center",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--480.avif",
+        "format": "image/avif",
+        "height": 270,
+        "path": "/images/derivatives/hero-big-top--wide--480.avif",
+        "sha256": "adf642bf4665c0be364aacb31d5f840faa480e83cb5a259e9325f0bce77ba0a0",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--480.webp",
+        "format": "image/webp",
+        "height": 270,
+        "path": "/images/derivatives/hero-big-top--wide--480.webp",
+        "sha256": "c098b2f1d7414dcc0633db258c53bb3deec36cf784e447f07449af664dcdd9e8",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 270,
+        "path": "/images/derivatives/hero-big-top--wide--480.jpg",
+        "sha256": "f48f4ed48381e32fed57e40625b545a2383398756ab406eae0de4162da20439b",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--768.avif",
+        "format": "image/avif",
+        "height": 432,
+        "path": "/images/derivatives/hero-big-top--wide--768.avif",
+        "sha256": "9807237409d4a3635fff989ad06120d5d1f05f99617b4d7e24ded11a00619bd0",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--768.webp",
+        "format": "image/webp",
+        "height": 432,
+        "path": "/images/derivatives/hero-big-top--wide--768.webp",
+        "sha256": "8da3b9315651a1ed22cf49ac3d291eaff4f2b42bbfe1a91d8e08f52b30ddd4d3",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 432,
+        "path": "/images/derivatives/hero-big-top--wide--768.jpg",
+        "sha256": "1fba6eb4cb8d0f64f74be09e8f61e9d6d895c166323f9a154197473bfa16f520",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--1280.avif",
+        "format": "image/avif",
+        "height": 720,
+        "path": "/images/derivatives/hero-big-top--wide--1280.avif",
+        "sha256": "5a8d32d7716674bc8f0fecd8f8a751d55f9281ebb50f06c2e61d978e45ef3892",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--1280.webp",
+        "format": "image/webp",
+        "height": 720,
+        "path": "/images/derivatives/hero-big-top--wide--1280.webp",
+        "sha256": "bd194cf56a85341989c3d7281ddbcb0eb4d43138265fa619499031a134695613",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 720,
+        "path": "/images/derivatives/hero-big-top--wide--1280.jpg",
+        "sha256": "b144ab1e55a4084e407bdf8503144769c3043a87fe6c2603e455ec2344db330f",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1080,
+        "path": "/images/derivatives/hero-big-top--wide--1920.avif",
+        "sha256": "e5493d8ef29f6446dae409798fb0a42bb408e40d83bfada364610fc78e462fe8",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1080,
+        "path": "/images/derivatives/hero-big-top--wide--1920.webp",
+        "sha256": "91552b33db7ee4ff9a6127eea1d304f9bf5031a32dcec0831a91a3a5db2d533e",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1080,
+        "path": "/images/derivatives/hero-big-top--wide--1920.jpg",
+        "sha256": "11f5bf42422da5606e8a7bb7a907b130c165ccb300f64f59a867a2b1c2b130e0",
+        "width": 1920
+      }
+    ],
+    "purpose": "Static responsive prologue anchor; all narrative text remains HTML.",
+    "sourceFile": "../design/source-images/hero-big-top--wide.jpg",
+    "sourceHeight": 1152,
+    "sourceSha256": "91c74838265225afb01d74756a6051e90c51c9fa0821f3feb488080165574daa",
+    "sourceWidth": 2048
+  },
+  "heroBigTopAlt": {
+    "alt": "A big-top directory stage with a central wheel and two ticket banks",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--480.avif",
+        "format": "image/avif",
+        "height": 270,
+        "path": "/images/derivatives/hero-big-top--alt--wide--480.avif",
+        "sha256": "5228c774f514dc006cadd919907dccddc903587c41eb183a609fc849b3d90d84",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--480.webp",
+        "format": "image/webp",
+        "height": 270,
+        "path": "/images/derivatives/hero-big-top--alt--wide--480.webp",
+        "sha256": "534735a0254995a917f357f621cd166212fb3e13bb5826d57943c32b3a6c5cfa",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 270,
+        "path": "/images/derivatives/hero-big-top--alt--wide--480.jpg",
+        "sha256": "f68e7e0bcc3e601c160e17043d79323aa1ebc448f4da5770540c00f337342421",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--768.avif",
+        "format": "image/avif",
+        "height": 432,
+        "path": "/images/derivatives/hero-big-top--alt--wide--768.avif",
+        "sha256": "f78e93fb4900b9bda68515dc9b9be84e12a6f1e1c2dff62c4561813648c0b4bb",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--768.webp",
+        "format": "image/webp",
+        "height": 432,
+        "path": "/images/derivatives/hero-big-top--alt--wide--768.webp",
+        "sha256": "e6e9458be3656ccef78a3912a5b8feec6857910d3ea872d6adc6f9c0945d16ec",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 432,
+        "path": "/images/derivatives/hero-big-top--alt--wide--768.jpg",
+        "sha256": "8e0d108022febb9b6c53177fd63c4845f7bb177f7d4ba10d7b77f8a5b47b48ed",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--1280.avif",
+        "format": "image/avif",
+        "height": 720,
+        "path": "/images/derivatives/hero-big-top--alt--wide--1280.avif",
+        "sha256": "4396c1dab3c6668d9d11cc6755e202d2742e1b232a2fe70df400dde6a0d0ec77",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--1280.webp",
+        "format": "image/webp",
+        "height": 720,
+        "path": "/images/derivatives/hero-big-top--alt--wide--1280.webp",
+        "sha256": "ccbae351f80136ea03fd74d0b6afbf00855eef64c198cf5f7d6210e7305f65a9",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 720,
+        "path": "/images/derivatives/hero-big-top--alt--wide--1280.jpg",
+        "sha256": "585677478a2573609de17460b72c4391c579a4548c4f824687545283d6ec4233",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1080,
+        "path": "/images/derivatives/hero-big-top--alt--wide--1920.avif",
+        "sha256": "6962518afa539c9c08d1146b18dced60f4af5a26a9881a21c8193661556ae881",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1080,
+        "path": "/images/derivatives/hero-big-top--alt--wide--1920.webp",
+        "sha256": "913ee36560c243b32bc4192a8785940e7ec5ffe58e5eaf04cc1d89eec93435f2",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/hero-big-top--alt--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1080,
+        "path": "/images/derivatives/hero-big-top--alt--wide--1920.jpg",
+        "sha256": "ab6103ef0daaa8db74351a518ff0e41584bf65524e691a6c7883aa9b2a4d2df3",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive shared surface directory; wheel and ticket controls remain HTML.",
+    "sourceFile": "../design/source-images/hero-big-top--alt--wide.jpg",
+    "sourceHeight": 1152,
+    "sourceSha256": "7ac354dcbf626ee3298b6ff426941559e7edd3bf65ae1fb3159b65d4c08ea4e8",
+    "sourceWidth": 2048
+  },
+  "actThreeRings": {
+    "alt": "Three circus rings arranged for Evidence, Recognition, and Consequence",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--480.avif",
+        "format": "image/avif",
+        "height": 320,
+        "path": "/images/derivatives/act-three-rings--wide--480.avif",
+        "sha256": "94061aa53f24e644ccaf4f0f82ea823113fc1ef2dae0e0e54b721e163fea3669",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--480.webp",
+        "format": "image/webp",
+        "height": 320,
+        "path": "/images/derivatives/act-three-rings--wide--480.webp",
+        "sha256": "dd21b5bcc114b65f4d7fb43d4280fd03b527a03e64f62f68d84713b461f16c03",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 320,
+        "path": "/images/derivatives/act-three-rings--wide--480.jpg",
+        "sha256": "3b8e00e6a4f1f57d94c771ffc7e1a8c8c80842c41f202167d00f047e6c4432d0",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--768.avif",
+        "format": "image/avif",
+        "height": 512,
+        "path": "/images/derivatives/act-three-rings--wide--768.avif",
+        "sha256": "c4a66f9bb034d71ab6c245ded712af0c17dfefbc790a310c03bd82976c2781f8",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--768.webp",
+        "format": "image/webp",
+        "height": 512,
+        "path": "/images/derivatives/act-three-rings--wide--768.webp",
+        "sha256": "f349ff81131ff83bd2f46f7aec3fdeb91aaea0a20a2ae1d989b0f6ff2811955b",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 512,
+        "path": "/images/derivatives/act-three-rings--wide--768.jpg",
+        "sha256": "2135a2992585c8187690b5a5da4140ac0cc5c723a45767b25a7fe5b7ece74bdd",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--1280.avif",
+        "format": "image/avif",
+        "height": 853,
+        "path": "/images/derivatives/act-three-rings--wide--1280.avif",
+        "sha256": "65261569430f6a2ee9700a5cba1e1309ba6f4af50608364792730844be2ca155",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--1280.webp",
+        "format": "image/webp",
+        "height": 853,
+        "path": "/images/derivatives/act-three-rings--wide--1280.webp",
+        "sha256": "49ca26813b6de0abefa51f183949c33bf51d0db08dba83b84b74da6dbf0b3e88",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 853,
+        "path": "/images/derivatives/act-three-rings--wide--1280.jpg",
+        "sha256": "d880e47bcce81c6dafc2df195b1493147a75b3f7623929dceb4ee309c199b681",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1280,
+        "path": "/images/derivatives/act-three-rings--wide--1920.avif",
+        "sha256": "e9326af79b2eed6121531c86a54aeaaaf68809a77d8cc80a3e94950cb38862ff",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1280,
+        "path": "/images/derivatives/act-three-rings--wide--1920.webp",
+        "sha256": "64342bc49976779fd341fb623f4d1051eb8428eb58244c0736b6f7b7335178a1",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-three-rings--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1280,
+        "path": "/images/derivatives/act-three-rings--wide--1920.jpg",
+        "sha256": "2dbc948d18c461f670bfc1b698f7ee37cdd73ec137b07fde18c5a3284ca58d90",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive thesis framework; method labels and detail remain HTML.",
+    "sourceFile": "../design/source-images/act-three-rings--wide.jpg",
+    "sourceHeight": 1365,
+    "sourceSha256": "60bdd5c4d3d623a286815a741365de349fd7b149dab8f8a71c4c25d36e3a3222",
+    "sourceWidth": 2048
+  },
+  "actHighWire": {
+    "alt": "Six high-wire platforms illustrating an authorization method chain",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--480.avif",
+        "format": "image/avif",
+        "height": 270,
+        "path": "/images/derivatives/act-high-wire--wide--480.avif",
+        "sha256": "3d17741ae08e720fd63f466268215dc41bccb3c7236b6e39c17df7c6e541b03a",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--480.webp",
+        "format": "image/webp",
+        "height": 270,
+        "path": "/images/derivatives/act-high-wire--wide--480.webp",
+        "sha256": "c6fbe0f59d615dc898773b0ddf24777b6c9bfd9a63b5701fc44cc876edfa89cf",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 270,
+        "path": "/images/derivatives/act-high-wire--wide--480.jpg",
+        "sha256": "652eb5d285953c187d3cd004c2bd83a6dce38a7d4b3782edb22cf55a9d8380a4",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--768.avif",
+        "format": "image/avif",
+        "height": 432,
+        "path": "/images/derivatives/act-high-wire--wide--768.avif",
+        "sha256": "231c05da6cfb48d4f44741b26f207cb12643dc75ca2f0f66318575e71a8fbb34",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--768.webp",
+        "format": "image/webp",
+        "height": 432,
+        "path": "/images/derivatives/act-high-wire--wide--768.webp",
+        "sha256": "7bab6b39684eb964e88b67424628639e8e4a0ccf0b741db2edf81c0c6d569832",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 432,
+        "path": "/images/derivatives/act-high-wire--wide--768.jpg",
+        "sha256": "fea4e39ccafc17fe9d552c2d48d802a0c487263ee96d1385ee67ce3607540cc7",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--1280.avif",
+        "format": "image/avif",
+        "height": 720,
+        "path": "/images/derivatives/act-high-wire--wide--1280.avif",
+        "sha256": "a0159ff534442f367d7847da14d380dbf594e62f882e96b0a115c452adb8bfe4",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--1280.webp",
+        "format": "image/webp",
+        "height": 720,
+        "path": "/images/derivatives/act-high-wire--wide--1280.webp",
+        "sha256": "90ee29a14de8bda67b2bf4e2d24648b8e18711a3d779e9c2624004d97aa31fa0",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 720,
+        "path": "/images/derivatives/act-high-wire--wide--1280.jpg",
+        "sha256": "dfe8b8340d914f7e677bb5429ef474631b96ecc1770a5db7031c32d0e6987a7a",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1080,
+        "path": "/images/derivatives/act-high-wire--wide--1920.avif",
+        "sha256": "378fe75df1ae524cc2c4cabff434d60637cdc822e5714598d7ca858e834d613c",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1080,
+        "path": "/images/derivatives/act-high-wire--wide--1920.webp",
+        "sha256": "8f79c3fdca5c8bdacf2e9f2b853094f1bba9ed73cf789af111ca1481f59a4823",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-high-wire--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1080,
+        "path": "/images/derivatives/act-high-wire--wide--1920.jpg",
+        "sha256": "0c404693e04164056adeb807c162b4bb41df6c8618dd311b1ac3b25f4c41cd9d",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive authorization method stage; no historical outcome is encoded in the raster.",
+    "sourceFile": "../design/source-images/act-high-wire--wide.jpg",
+    "sourceHeight": 1152,
+    "sourceSha256": "c60974e2625cd7610ab95069f12bde3e7003d0c11e20eaf096dbc4e9740d1f93",
+    "sourceWidth": 2048
+  },
+  "actPaperwork": {
+    "alt": "A ringmaster beside an oversized pile of paperwork",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--480.avif",
+        "format": "image/avif",
+        "height": 360,
+        "path": "/images/derivatives/act-paperwork--wide--480.avif",
+        "sha256": "1c705b0240701f898cc6b074f990d2cbc8633966200cb0d3d92ce359a00562cc",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--480.webp",
+        "format": "image/webp",
+        "height": 360,
+        "path": "/images/derivatives/act-paperwork--wide--480.webp",
+        "sha256": "6668f53d882e2bb03ce63cb32a48652ab5d9354e7297c81a03367d4b0e934917",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 360,
+        "path": "/images/derivatives/act-paperwork--wide--480.jpg",
+        "sha256": "018f4c07ed70a6df84f15ee20b896a8a2f776bf7789e0909c9e15c6b3d05d6bd",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--768.avif",
+        "format": "image/avif",
+        "height": 576,
+        "path": "/images/derivatives/act-paperwork--wide--768.avif",
+        "sha256": "26a7d41575211a9e684257b5896d9b940c63dbcc3cba33ef2b3813967ff33e52",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--768.webp",
+        "format": "image/webp",
+        "height": 576,
+        "path": "/images/derivatives/act-paperwork--wide--768.webp",
+        "sha256": "1940becdb5107935c457a659a2b3f532e638fa81d1eca5e2c099bcbeca6323df",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 576,
+        "path": "/images/derivatives/act-paperwork--wide--768.jpg",
+        "sha256": "693d8e4c8421c952264fe52efc975f2b85126093d2b1f4174eee957513f6e3e5",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--1280.avif",
+        "format": "image/avif",
+        "height": 960,
+        "path": "/images/derivatives/act-paperwork--wide--1280.avif",
+        "sha256": "4f0b9df0deb79e09ca7bbf0694064e65b4cc33424c6787212de680df4c60b36e",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--1280.webp",
+        "format": "image/webp",
+        "height": 960,
+        "path": "/images/derivatives/act-paperwork--wide--1280.webp",
+        "sha256": "3659cb10f996b5207ed27c127a89f856836d2beb28bf560488287080fb41de79",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 960,
+        "path": "/images/derivatives/act-paperwork--wide--1280.jpg",
+        "sha256": "d4bf02afac5b3359874c6b09a1ba303e689bde74c948898991e86e44278cf051",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1440,
+        "path": "/images/derivatives/act-paperwork--wide--1920.avif",
+        "sha256": "5ea3b227c3892a9fee5a310960fd9ea747dfa73841b756ea04bec9cf4d80589b",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1440,
+        "path": "/images/derivatives/act-paperwork--wide--1920.webp",
+        "sha256": "0ffedd092fcb05d3bee4f402d2125afe27a575054f20b5828bdb5701a7f0feec",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-paperwork--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1440,
+        "path": "/images/derivatives/act-paperwork--wide--1920.jpg",
+        "sha256": "81c39ebd160236d02f7f1d731ed7375943cffcad4aaecfba0fe8833d2e3359ad",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive paperwork-output stage; the existing OutputPile remains readable HTML.",
+    "sourceFile": "../design/source-images/act-paperwork--wide.jpg",
+    "sourceHeight": 1536,
+    "sourceSha256": "2cf347020f21a59e5ba36782b6a2c1b6e1c315b2fcfdfa258dd9264a2d6f7f01",
+    "sourceWidth": 2048
+  },
+  "actBackstage": {
+    "alt": "A split circus frontstage and backstage evidence control room",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-backstage--wide--480.avif",
+        "format": "image/avif",
+        "height": 320,
+        "path": "/images/derivatives/act-backstage--wide--480.avif",
+        "sha256": "efa257839fbaf85cadbaed9be59553e937ab769c32e0665f9ffb2bc0faffc05b",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--480.webp",
+        "format": "image/webp",
+        "height": 320,
+        "path": "/images/derivatives/act-backstage--wide--480.webp",
+        "sha256": "6504f24cbfabd1696ca81a4ffaee4409a52f130a043d47ccf1b5aa6b7f72b992",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 320,
+        "path": "/images/derivatives/act-backstage--wide--480.jpg",
+        "sha256": "68b0123256ddd210fa6febf9712ccf5119e8bda700ffc493f0deb741de4c2e3d",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--768.avif",
+        "format": "image/avif",
+        "height": 512,
+        "path": "/images/derivatives/act-backstage--wide--768.avif",
+        "sha256": "de06ab68877a975e1daa45d96c7db4054319e344ce917dc223f1208ff79e51fe",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--768.webp",
+        "format": "image/webp",
+        "height": 512,
+        "path": "/images/derivatives/act-backstage--wide--768.webp",
+        "sha256": "f66b37a44a454d59c5edfd8902a9f805541ccfab65d53318be46a81198cf56e2",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 512,
+        "path": "/images/derivatives/act-backstage--wide--768.jpg",
+        "sha256": "e58553d6082cddc56d4d5926a46814e9213dae41e1b17984580e80dcafd1dca0",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--1280.avif",
+        "format": "image/avif",
+        "height": 853,
+        "path": "/images/derivatives/act-backstage--wide--1280.avif",
+        "sha256": "85e8200f5f752c4ab1be767e825bcde5ea192ab6bd42318e61711906c890240e",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--1280.webp",
+        "format": "image/webp",
+        "height": 853,
+        "path": "/images/derivatives/act-backstage--wide--1280.webp",
+        "sha256": "3f587804a8c617fab62fe46bf4a4b74ce03540e4c03994b54bd496cd55be55c6",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 853,
+        "path": "/images/derivatives/act-backstage--wide--1280.jpg",
+        "sha256": "9bcf00f07dd81a32c3512e6f6d7709cefd4c0e093283a9924c86a547cbc9868e",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1280,
+        "path": "/images/derivatives/act-backstage--wide--1920.avif",
+        "sha256": "f593d71b060f6700312bddfce472e42039c2fd10f0b75d97f65f2573f33e2753",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1280,
+        "path": "/images/derivatives/act-backstage--wide--1920.webp",
+        "sha256": "2e779cc7670c98d482b861bbdb51fea4c5a7d0e8269d2c82645110584172cba7",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-backstage--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1280,
+        "path": "/images/derivatives/act-backstage--wide--1920.jpg",
+        "sha256": "6766efe88cdeb7a9a747cbf2b848f02eb4d53a3d3b10fbfbd797ca779cbce440",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive Evidence Room stage; source, receipt, and limitation metadata remain HTML.",
+    "sourceFile": "../design/source-images/act-backstage--wide.jpg",
+    "sourceHeight": 1365,
+    "sourceSha256": "c68194d9b40562bc513bc045fb215c6debab5c162df6174ba442e86b4a911dd1",
+    "sourceWidth": 2048
+  },
+  "actHiddenCapabilities": {
+    "alt": "A six-layer capability cabinet beside inspection machinery",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--480.avif",
+        "format": "image/avif",
+        "height": 270,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--480.avif",
+        "sha256": "97c88e2b86ff7b32f6a669cfb7f61da5d6890b71aa9abc27a542c6a16fd33528",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--480.webp",
+        "format": "image/webp",
+        "height": 270,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--480.webp",
+        "sha256": "ff473796815aaa0982d5b6c8add7580db5263de7282c11994e18a62e4549f7a7",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 270,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--480.jpg",
+        "sha256": "634193c761757756cea86ef77085f6c7fdfd1e3cfe64044f35bf8dc13011fc1e",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--768.avif",
+        "format": "image/avif",
+        "height": 432,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--768.avif",
+        "sha256": "5ac86106920cba59a18abfed3a2e5d069f4a154f8035175e5dc0f9502e405c81",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--768.webp",
+        "format": "image/webp",
+        "height": 432,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--768.webp",
+        "sha256": "babd0c90b8084968411c188be8a4686a50b85f563ec8e44fd3b836b788f63762",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 432,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--768.jpg",
+        "sha256": "5d2365861b01360bb9289b81a907788954b8f099e79211065e43c70f40e30bf8",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--1280.avif",
+        "format": "image/avif",
+        "height": 720,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--1280.avif",
+        "sha256": "d52dc3ac4a668dfe380f45221bd7e0e731b78db468c1a299627c9da62dde49fc",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--1280.webp",
+        "format": "image/webp",
+        "height": 720,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--1280.webp",
+        "sha256": "2881f8875cd82d9ad6bf18b045894f66b31f205f80e87680babd71608a56466e",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 720,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--1280.jpg",
+        "sha256": "aae68bfaf002a37003fe35562c76438e9968551f0d3901de76c0e613fc4c0454",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1080,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--1920.avif",
+        "sha256": "4b41d85c3f3ab68e5d1f0fe1c863cddb693de34f0a764fab419567bb2e32b0b3",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1080,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--1920.webp",
+        "sha256": "fd349e68e6b1d0188704e80461e6e46553f65e4210c75351df72b28c6544eebf",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-hidden-capabilities--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1080,
+        "path": "/images/derivatives/act-hidden-capabilities--wide--1920.jpg",
+        "sha256": "4c57a7f9c819340aa3735ba6db24914cdca66cadc07fa2e21597bf6238d425c1",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive capability inventory; inspection-layer detail remains HTML.",
+    "sourceFile": "../design/source-images/act-hidden-capabilities--wide.jpg",
+    "sourceHeight": 1152,
+    "sourceSha256": "8e118fb40c1f01fedac30f2b6f4eb1ccdd9113f6c932b859fa4f774dffe7104e",
+    "sourceWidth": 2048
+  },
+  "actControlPlane": {
+    "alt": "A circus control booth surrounded by eight operator stations",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--480.avif",
+        "format": "image/avif",
+        "height": 320,
+        "path": "/images/derivatives/act-control-plane--wide--480.avif",
+        "sha256": "339e337f15bd00377da1fe1fd72a20c4a457f2e7b4b81c105190def652f1ac11",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--480.webp",
+        "format": "image/webp",
+        "height": 320,
+        "path": "/images/derivatives/act-control-plane--wide--480.webp",
+        "sha256": "4334f383b68b1c8c0a123af8c7c246d4c9085c45e2b54c828344a2dd48e5ba0b",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 320,
+        "path": "/images/derivatives/act-control-plane--wide--480.jpg",
+        "sha256": "d4f19314c349a541a7fee37d4a2d6df91fecbf5f82ecef7815451ccfc1a5e859",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--768.avif",
+        "format": "image/avif",
+        "height": 512,
+        "path": "/images/derivatives/act-control-plane--wide--768.avif",
+        "sha256": "e22703faa118ae1293e44a6582165da3931120933eaa5b2af99755404ee01666",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--768.webp",
+        "format": "image/webp",
+        "height": 512,
+        "path": "/images/derivatives/act-control-plane--wide--768.webp",
+        "sha256": "edc636bc3c868400a189464ae7a5462d5f7f0193192079756167c8ae6cdd2f98",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 512,
+        "path": "/images/derivatives/act-control-plane--wide--768.jpg",
+        "sha256": "e07a2d873f6cb817fd3ce327154ddfef285153b8d51a55782e48c003642658eb",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--1280.avif",
+        "format": "image/avif",
+        "height": 853,
+        "path": "/images/derivatives/act-control-plane--wide--1280.avif",
+        "sha256": "c1d1da04f94c9677dd9ce62270c783fbe0d4d3233465cbf5b43462d557a51a05",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--1280.webp",
+        "format": "image/webp",
+        "height": 853,
+        "path": "/images/derivatives/act-control-plane--wide--1280.webp",
+        "sha256": "7e94cb133cf97867a67d499b13a5e4774dc177189be4c64b09aeccd745048074",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 853,
+        "path": "/images/derivatives/act-control-plane--wide--1280.jpg",
+        "sha256": "e26711ca656f9af7f00d78ada49e8ff681884dd528fee467c4a94b8fcf29ebf3",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1280,
+        "path": "/images/derivatives/act-control-plane--wide--1920.avif",
+        "sha256": "1cce27d02eb5798a90f2a4170a33be18eb7366865e340df9862f33ca9768ab1c",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1280,
+        "path": "/images/derivatives/act-control-plane--wide--1920.webp",
+        "sha256": "7ba24b0644abc5b8df184da87e92699ef1dc4a22ddb434b935543c612d2ab0d3",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-control-plane--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1280,
+        "path": "/images/derivatives/act-control-plane--wide--1920.jpg",
+        "sha256": "5cdf8c56f3badd43194fd6987a60f8edab277e02c480b41030e0da1c73031d98",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive operator-responsibility stage; evidence-bound detail remains HTML.",
+    "sourceFile": "../design/source-images/act-control-plane--wide.jpg",
+    "sourceHeight": 1365,
+    "sourceSha256": "ccec54bf90e5c76a55c4c1432e7f692350c261ec64cae692f41127daabc5f900",
+    "sourceWidth": 2048
+  },
+  "actPrizeBooth": {
+    "alt": "A circus prize booth framed for the generated release scoreboard",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--480.avif",
+        "format": "image/avif",
+        "height": 320,
+        "path": "/images/derivatives/act-prize-booth--wide--480.avif",
+        "sha256": "9009062fbaef7ce2457b7d341a85b36a406856bcdada7cc0f8a13148842088c4",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--480.webp",
+        "format": "image/webp",
+        "height": 320,
+        "path": "/images/derivatives/act-prize-booth--wide--480.webp",
+        "sha256": "4512ef0f5feefa292114af9c31f77c9d16215edc088f9abc5906935c16c9236d",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 320,
+        "path": "/images/derivatives/act-prize-booth--wide--480.jpg",
+        "sha256": "972471b4ec346d898964b2ecdbaf54e9e79fdb05480bbd5fa4a93fcd7e86db9f",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--768.avif",
+        "format": "image/avif",
+        "height": 512,
+        "path": "/images/derivatives/act-prize-booth--wide--768.avif",
+        "sha256": "bedb232d3457e2b26ddd2e47524eb8d4990485b2850f14663d704f931fa87264",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--768.webp",
+        "format": "image/webp",
+        "height": 512,
+        "path": "/images/derivatives/act-prize-booth--wide--768.webp",
+        "sha256": "77ab8786e4f6c072f2733239418fbeb9cdce6ad9f5d61ad0abf8afbfedbb91f5",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 512,
+        "path": "/images/derivatives/act-prize-booth--wide--768.jpg",
+        "sha256": "b4023354e03d64662e752d949a358bf757347d0f246568d89511d66792af8245",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--1280.avif",
+        "format": "image/avif",
+        "height": 853,
+        "path": "/images/derivatives/act-prize-booth--wide--1280.avif",
+        "sha256": "876a2e9b6bcc07cd4f832528d03fe951c21b32507437c26696bbdf288946e885",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--1280.webp",
+        "format": "image/webp",
+        "height": 853,
+        "path": "/images/derivatives/act-prize-booth--wide--1280.webp",
+        "sha256": "5a9d8cc2be2176c8b8fc7aff654a1c57367917b100f55081e87cb0fe69a4b059",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 853,
+        "path": "/images/derivatives/act-prize-booth--wide--1280.jpg",
+        "sha256": "44e514750ea4b0a16abb50f3c5053196d773a9d133b188db3488c9ed5b2cd85a",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1280,
+        "path": "/images/derivatives/act-prize-booth--wide--1920.avif",
+        "sha256": "54779bb1faceb348949a0f03f041c76a6cbf98d3607fff0da978f10e990a17b2",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1280,
+        "path": "/images/derivatives/act-prize-booth--wide--1920.webp",
+        "sha256": "1487cfe38621256ceea0dbe0899f31e41c44c94a7e4f255a22767b6ea08ff989",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-prize-booth--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1280,
+        "path": "/images/derivatives/act-prize-booth--wide--1920.jpg",
+        "sha256": "2bba9b6c7912af8d64b6fda9914f116f8aa8150a4391a9fce07cd91b3b241e0b",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive finale stage; release facts and directory navigation remain HTML.",
+    "sourceFile": "../design/source-images/act-prize-booth--wide.jpg",
+    "sourceHeight": 1365,
+    "sourceSha256": "bf691fc9524d0906af54fdd84e8fa4d89a7a093b35cac7d97d094495d73f91bd",
+    "sourceWidth": 2048
+  },
+  "actFunhouse": {
+    "alt": "A six-door funhouse for assistant, agent, repository, editor, browser, and control families",
+    "derivatives": [
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--480.avif",
+        "format": "image/avif",
+        "height": 270,
+        "path": "/images/derivatives/act-funhouse--wide--480.avif",
+        "sha256": "76742d0673b3cb5dc732aab3cd75b9ac7d6675da3734a20b5a0d0b40b5557397",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--480.webp",
+        "format": "image/webp",
+        "height": 270,
+        "path": "/images/derivatives/act-funhouse--wide--480.webp",
+        "sha256": "77c2f17ff5ff740dfaa0bc4af03804736fc50ca166cd1465a42adf18d86dc995",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--480.jpg",
+        "format": "image/jpeg",
+        "height": 270,
+        "path": "/images/derivatives/act-funhouse--wide--480.jpg",
+        "sha256": "9e4a3d2609c4a57a8a949b84e77e4a59fd379537b34218badf799b7326ac7b03",
+        "width": 480
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--768.avif",
+        "format": "image/avif",
+        "height": 432,
+        "path": "/images/derivatives/act-funhouse--wide--768.avif",
+        "sha256": "2a1ee9c08feeb7e5530adea4692012d8c8c245af8d14b7eb73aacc60511c4a03",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--768.webp",
+        "format": "image/webp",
+        "height": 432,
+        "path": "/images/derivatives/act-funhouse--wide--768.webp",
+        "sha256": "c767e13b12baf82905cc91e1118a84131660060b8e08961c75ee36ddaab1de25",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--768.jpg",
+        "format": "image/jpeg",
+        "height": 432,
+        "path": "/images/derivatives/act-funhouse--wide--768.jpg",
+        "sha256": "986c2090db0b1fbf97155d88bf5f0a274c3eb3a864def17dffa18c2e0d82e945",
+        "width": 768
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--1280.avif",
+        "format": "image/avif",
+        "height": 720,
+        "path": "/images/derivatives/act-funhouse--wide--1280.avif",
+        "sha256": "3b01d78dfac85f9c6242626eaa74372a805865a0ac7e1626c0c9f0f2f3658ca2",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--1280.webp",
+        "format": "image/webp",
+        "height": 720,
+        "path": "/images/derivatives/act-funhouse--wide--1280.webp",
+        "sha256": "a5349bf6e74c8c79c41af8848744c378198e0bd11ea48b7e1c82acd8f72c1798",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--1280.jpg",
+        "format": "image/jpeg",
+        "height": 720,
+        "path": "/images/derivatives/act-funhouse--wide--1280.jpg",
+        "sha256": "569e2b290b4f54d4cd90676e5f9b715e1ecc6b69fa9c50e6de4d2b71f9a1454f",
+        "width": 1280
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--1920.avif",
+        "format": "image/avif",
+        "height": 1080,
+        "path": "/images/derivatives/act-funhouse--wide--1920.avif",
+        "sha256": "68bee80fc8e43d1ec922f1c2f513860e07a183bec5840cf9369167019e0d7019",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--1920.webp",
+        "format": "image/webp",
+        "height": 1080,
+        "path": "/images/derivatives/act-funhouse--wide--1920.webp",
+        "sha256": "051c157e5cfa1144294bec5666f7be2565ec704f467e93f84ffa2c82be07a081",
+        "width": 1920
+      },
+      {
+        "file": "public/images/derivatives/act-funhouse--wide--1920.jpg",
+        "format": "image/jpeg",
+        "height": 1080,
+        "path": "/images/derivatives/act-funhouse--wide--1920.jpg",
+        "sha256": "8098a3b0a36181410b5edd67ef3828e42e5c865e547511e972132cf4e459bff4",
+        "width": 1920
+      }
+    ],
+    "purpose": "Responsive surface-family selector; shared URL-backed filtering remains HTML.",
+    "sourceFile": "../design/source-images/act-funhouse--wide.jpg",
+    "sourceHeight": 1152,
+    "sourceSha256": "fca7dde5373ea15686a9e743c7c779eb114a3ce06034b8d38815deec30b21739",
+    "sourceWidth": 2048
+  }
+}

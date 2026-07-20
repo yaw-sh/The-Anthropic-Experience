@@ -1,0 +1,201 @@
+{
+  "generatedOn": "2026-07-19",
+  "groups": [
+    {
+      "canonicalPaths": [
+        "THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md"
+      ],
+      "disposition": "The shorter snapshot was a strict prefix with zero unique lines; the 2,133-line root copy remains authoritative.",
+      "formerPathSlots": [
+        "removed-path-001"
+      ],
+      "id": "authoritative-blueprint",
+      "publicHash": "5af56b6c36b691497fdf2fd075e760e2e27adc86a18edb5169cbbf602961c524"
+    },
+    {
+      "canonicalPaths": [
+        "history/",
+        "evidence/public/",
+        "docs/research/"
+      ],
+      "disposition": "Unique transcript slots were generalized once; byte duplicates, raw exports, and superseded prefixes were removed.",
+      "formerPathSlots": [
+        "removed-path-002",
+        "removed-path-003",
+        "removed-path-004"
+      ],
+      "id": "raw-transcript-copies",
+      "publicHash": "d3bb81dec4dc765e6ebc1eefbf3cc90a5cbaf1f85bec1fc4b0159584297d5dba"
+    },
+    {
+      "canonicalPaths": [
+        "app/",
+        "history/phases/phase-02-artifact-substitution/"
+      ],
+      "disposition": "The alternate implementation was removed; its unique process outcome remains in history while app stays canonical.",
+      "formerPathSlots": [
+        "removed-path-005"
+      ],
+      "id": "alternate-artifact",
+      "publicHash": "c42b847d1e36addcb85d3a85cd6d2bf0386427975efa21212ea7baf67425360b"
+    },
+    {
+      "canonicalPaths": [
+        "docs/research/generalized-method-review.md",
+        "history/phases/phase-03-forensic-review/"
+      ],
+      "disposition": "Unique findings were consolidated; raw journals, subagent sessions, and private research material were removed.",
+      "formerPathSlots": [
+        "removed-path-006",
+        "removed-path-007",
+        "removed-path-008"
+      ],
+      "id": "research-corpus",
+      "publicHash": "b832cfeeb20094ae39a4a1ddf5d8277c2adad9f0256a2c2c4ffe3eca1f314c98"
+    },
+    {
+      "canonicalPaths": [
+        "docs/research/generalized-fuller-claude-analysis.md"
+      ],
+      "disposition": "The distinct fuller analysis remains separately as a generalized public edition.",
+      "formerPathSlots": [
+        "removed-path-009"
+      ],
+      "id": "fuller-analysis",
+      "publicHash": "e7b01602ff8088ef04043f5c2628a6a0c73b24f7f9ee34cc6abe3e4ae6fb4b4d"
+    },
+    {
+      "canonicalPaths": [
+        "OWNER-DECISIONS.md",
+        "history/phases/phase-01-planning-and-scaffold/",
+        "history/phases/phase-04-master-blueprint-handoff/"
+      ],
+      "disposition": "Superseded plans and review packs were represented as history; the binding owner decisions and root blueprint now govern.",
+      "formerPathSlots": [
+        "removed-path-010",
+        "removed-path-011",
+        "removed-path-012"
+      ],
+      "id": "superseded-governance",
+      "publicHash": "9fd7c170bb099343c0170525b59f1977dc521e19b7ead7bff717c5d556030857"
+    },
+    {
+      "canonicalPaths": [
+        "design/reference/wheel-v1/",
+        "design/reference/wheel-v2/",
+        "app/"
+      ],
+      "disposition": "Four tracked ZIP paths represented two unique archives. Unique public-safe source was retained once and all containers were removed.",
+      "formerPathSlots": [
+        "removed-path-013",
+        "removed-path-014",
+        "removed-path-015",
+        "removed-path-016"
+      ],
+      "id": "wheel-archives",
+      "inspection": {
+        "archiveMemberCount": 16,
+        "exactDestinationCount": 8,
+        "memberCoverageCheck": "pass",
+        "normalizedDestinationCount": 1,
+        "sanitizedDestinationCount": 1,
+        "uncoveredUniqueMemberCount": 0,
+        "uniqueArchiveCount": 2,
+        "uniqueMemberCount": 10
+      },
+      "publicHash": "bec374fd8d99bb8fbb6c6ed11a1850b82ab5a4b0d5a8c34014eb10b31c7603c9"
+    },
+    {
+      "canonicalPaths": [
+        "design/reference/research-archive-system/"
+      ],
+      "disposition": "Generic components and tokens remain; transcript previews, generated bundles, remote previews, and duplicate generated pages were removed.",
+      "formerPathSlots": [
+        "removed-path-017",
+        "removed-path-018"
+      ],
+      "id": "research-design-reference",
+      "publicHash": "4aa8e1ca390a40dbbd05bb124ad9d94b4ac163e25793e855c317aa16a66ab4c3"
+    },
+    {
+      "canonicalPaths": [
+        "history/phases/phase-01-planning-and-scaffold/",
+        "history/phases/phase-04-master-blueprint-handoff/",
+        "docs/audit/integration-handoff.md"
+      ],
+      "disposition": "Three superseded build or handoff documents are represented by the planning and handoff phases plus the current integration handoff.",
+      "formerPathSlots": [
+        "removed-path-019",
+        "removed-path-020",
+        "removed-path-021"
+      ],
+      "id": "build-and-handoff-documents",
+      "publicHash": "9c2fd4f9c4e64432764821b3301342ca35699c0fd4848ff40ea46480d5148ae5"
+    },
+    {
+      "canonicalPaths": [
+        "history/phases/phase-00-access-and-request/",
+        "history/phases/phase-02-artifact-substitution/"
+      ],
+      "disposition": "Two unique screenshots were visually inspected. Their connected-integration failure overlay and ornate alternate-artifact hero are represented as generalized outcomes; the original pixels are not published.",
+      "formerPathSlots": [
+        "removed-path-022",
+        "removed-path-023"
+      ],
+      "id": "historical-media-images",
+      "inspection": {
+        "dimensions": [
+          [
+            1444,
+            1089
+          ],
+          [
+            1280,
+            820
+          ]
+        ],
+        "imageCount": 2,
+        "renderCheck": "pass",
+        "semanticAssertionId": "semantic-assertion-001",
+        "semanticDispositionReview": "asserted",
+        "sourceBindingCheck": "pass",
+        "uniqueImageCount": 2
+      },
+      "publicHash": "9ae3b52f27fa6ecbc4083a22ffdbee0ed40423008470e8cf0983870ef0182a28"
+    },
+    {
+      "canonicalPaths": [
+        "scripts/build_public_history.py"
+      ],
+      "disposition": "The one-off converter contained implementation logic rather than unique evidence and is superseded by the deterministic public-history generator.",
+      "formerPathSlots": [
+        "removed-path-024"
+      ],
+      "id": "scratch-converter",
+      "publicHash": "87b8cc2a14924d6566b2f2dcc0682d3f18ec733a4dc73936528571bc91a02f16"
+    },
+    {
+      "canonicalPaths": [
+        "docs/research/generalized-method-review.md"
+      ],
+      "disposition": "The image-only proposal was rendered and OCR-reviewed. Its three-stage model, scoped findings, intervention design, measures, and limitations are represented in the generalized method review.",
+      "formerPathSlots": [
+        "removed-path-025"
+      ],
+      "id": "image-only-research-paper",
+      "inspection": {
+        "ocrExtractionCheck": "pass",
+        "ocrWordCount": 1286,
+        "pageCount": 5,
+        "renderCheck": "pass",
+        "renderedPageCount": 5,
+        "semanticAssertionId": "semantic-assertion-002",
+        "semanticDispositionReview": "asserted",
+        "sourceBindingCheck": "pass",
+        "textLayerBytes": 5
+      },
+      "publicHash": "364879c7c697913a1f05767f90a2b40c0783c2246d67903a553873565bb59489"
+    }
+  ],
+  "schemaVersion": "1.0.0"
+}

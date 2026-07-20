@@ -1,0 +1,31 @@
+/* ============================================================
+   EFFECTS — shadows, blur, transitions, focus
+   The source leans on very soft, low-elevation shadows and a
+   backdrop-blurred sticky bar. Nothing dramatic.
+   ============================================================ */
+:root {
+  /* Shadows — Tailwind shadow-sm / shadow, kept subtle */
+  --shadow-xs:  0 1px 2px 0 rgb(0 0 0 / 0.05);            /* shadow-sm — cards, cells */
+  --shadow-sm:  0 1px 3px 0 rgb(0 0 0 / 0.10),
+                0 1px 2px -1px rgb(0 0 0 / 0.10);          /* shadow — avatars, capsules */
+  --shadow-none: 0 0 #0000;
+
+  /* Backdrop blur (sticky nav glass) */
+  --blur-nav: 12px;
+  --glass-bg: rgb(255 255 255 / 0.80);   /* bg-white/80 */
+
+  /* Transitions */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --dur-fast:   150ms;   /* @kind other */
+  --dur-normal: 200ms;   /* @kind other */
+  --transition-colors: color var(--dur-fast) var(--ease-standard),
+                       background-color var(--dur-fast) var(--ease-standard),
+                       border-color var(--dur-fast) var(--ease-standard);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 2px var(--surface-page), 0 0 0 4px var(--zinc-400);
+
+  /* Hover fills (subtle zinc washes seen on rows/menu items) */
+  --hover-row:  color-mix(in srgb, var(--zinc-50) 50%, transparent);  /* hover:bg-zinc-50/50 */
+  --hover-menu: var(--zinc-50);
+}

@@ -1,0 +1,591 @@
+{
+  "checks": {
+    "appBoundary": "pass",
+    "archive": "pass",
+    "archiveMemberCoverage": "pass",
+    "duplicate": "pass",
+    "link": "pass",
+    "ngramLeak": "pass",
+    "path": "pass",
+    "pii": "pass",
+    "provenance": "pass",
+    "schema": "pass",
+    "trackedPath": "pass",
+    "url": "pass"
+  },
+  "entries": [
+    {
+      "bytes": 1667,
+      "canonicalPath": "CLAUDE.md",
+      "publicHash": "7509177525bbfe3282e1012171e8bc3b6c9d77421ea54edd71b348d20e242e72"
+    },
+    {
+      "bytes": 1060,
+      "canonicalPath": "LICENSE",
+      "publicHash": "7a6fa927b4a0488efca68f8c905ac09ccc451138fa4ee3c464ad276083249a72"
+    },
+    {
+      "bytes": 1790,
+      "canonicalPath": "OWNER-DECISIONS.md",
+      "publicHash": "312f4fccaab77f527132a3c6a2c45d2b969461b42bd7afc785c5ee0c98c69f14"
+    },
+    {
+      "bytes": 1248,
+      "canonicalPath": "README.md",
+      "publicHash": "7adfca97c1d3d1b74b0bab5fd448634337763a4fa0ab949cd13e0c71c5d23232"
+    },
+    {
+      "bytes": 70068,
+      "canonicalPath": "THE-ANTHROPIC-EXPERIENCE-MASTER-BLUEPRINT.md",
+      "publicHash": "5e42e30a97cdbb94b72b6083acbcde36fa0f62e6fd197788b5c783b3da3af858"
+    },
+    {
+      "bytes": 2150,
+      "canonicalPath": "app/README.md",
+      "publicHash": "f4856bd786a45dfd059e66a9a789e7cd146a170882fd14bca0bd82e823664535"
+    },
+    {
+      "bytes": 339,
+      "canonicalPath": "app/index.html",
+      "publicHash": "d867a750689d0924dbd1dcea6ddb9e84955f124fa9aae13dac5b36bbae994c14"
+    },
+    {
+      "bytes": 92411,
+      "canonicalPath": "app/package-lock.json",
+      "publicHash": "4adf1a72b4f75423f67e6ca96e01735b4c426cfac78ea97d1a614415f866a5f0"
+    },
+    {
+      "bytes": 635,
+      "canonicalPath": "app/package.json",
+      "publicHash": "8ad7a26923b980af8eb6679414ba33a9863594db121ac6f82e0d7470f37d40d1"
+    },
+    {
+      "bytes": 81,
+      "canonicalPath": "app/postcss.config.js",
+      "publicHash": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc"
+    },
+    {
+      "bytes": 61,
+      "canonicalPath": "app/public/images/families/README.md",
+      "publicHash": "8452b5f6b7b74b1dfce863efa818340c42911d7c8be926771a3f9d68a083cb56"
+    },
+    {
+      "bytes": 97,
+      "canonicalPath": "app/public/images/scenes/README.md",
+      "publicHash": "be90b1a28334be37724e6e6794ff46ef02f930ea0e9977f03e4219ecbfee651d"
+    },
+    {
+      "bytes": 4586,
+      "canonicalPath": "app/src/App.jsx",
+      "publicHash": "b8beee6423989aa0c177fdf925275ccbeea54770ce2ac6239297b088f58612bc"
+    },
+    {
+      "bytes": 7185,
+      "canonicalPath": "app/src/index.css",
+      "publicHash": "48b236e97fbf5a20ca6472e9166e920c2e33810943413b1998d01b9ffb7dc90b"
+    },
+    {
+      "bytes": 260,
+      "canonicalPath": "app/src/main.jsx",
+      "publicHash": "471609e65562eec9b10d9b9d45625ad0d5d97e56ea391922febedc1481f50ceb"
+    },
+    {
+      "bytes": 126,
+      "canonicalPath": "app/tailwind.config.js",
+      "publicHash": "cc8261a76bad6514da1a86304a7e949fa688d0757167eff69f27d73096759959"
+    },
+    {
+      "bytes": 136,
+      "canonicalPath": "app/vite.config.js",
+      "publicHash": "eca485c281977125366d4800553256e419f364984e615f75a2d2bae54f7857fd"
+    },
+    {
+      "bytes": 710,
+      "canonicalPath": "design/README.md",
+      "publicHash": "b724b9422e27d61f5b296016f05adcc11b711375eb2c596fe4740472d16fbf8c"
+    },
+    {
+      "bytes": 593,
+      "canonicalPath": "design/reference/README.md",
+      "publicHash": "2af47973596b507ea32f45181d497785f918288daa537b00cb268fdb23925d5f"
+    },
+    {
+      "bytes": 664,
+      "canonicalPath": "design/reference/research-archive-system/README.md",
+      "publicHash": "fa737c5255a9cc42859cffce89beefcb60927f38b4ddc406f2749e81a7c06337"
+    },
+    {
+      "bytes": 254,
+      "canonicalPath": "design/reference/research-archive-system/project/components/data/Chip.d.ts",
+      "publicHash": "d801880cbee5e4f607f59298ec2429fe3c736aeeee21a19bb4d9796d4e76f6f1"
+    },
+    {
+      "bytes": 558,
+      "canonicalPath": "design/reference/research-archive-system/project/components/data/Chip.jsx",
+      "publicHash": "138f695ca31e296bb1e333989f882abd0d0e15eff0a84c79900917dd0c6e42e5"
+    },
+    {
+      "bytes": 800,
+      "canonicalPath": "design/reference/research-archive-system/project/components/data/DataTable.d.ts",
+      "publicHash": "e6e7b3de0f1d83254420201060c97b0824ef51bf58be144f1ed3b17e33f05171"
+    },
+    {
+      "bytes": 2343,
+      "canonicalPath": "design/reference/research-archive-system/project/components/data/DataTable.jsx",
+      "publicHash": "d0340217c3edbb0362a53587d4a06ef963cff6d47f7a0700fcdbd0c09ff159db"
+    },
+    {
+      "bytes": 748,
+      "canonicalPath": "design/reference/research-archive-system/project/components/data/MetadataGrid.d.ts",
+      "publicHash": "53d92e6cc023f27e6f77f8119154741b875b8786fb4ea10aacf68466b73f6c87"
+    },
+    {
+      "bytes": 1509,
+      "canonicalPath": "design/reference/research-archive-system/project/components/data/MetadataGrid.jsx",
+      "publicHash": "729367a1894f49808a66d7506ce586d8a5c9234def1effdd83e997e6b7d428f9"
+    },
+    {
+      "bytes": 687,
+      "canonicalPath": "design/reference/research-archive-system/project/components/feedback/Badge.d.ts",
+      "publicHash": "336a325990583be156fbdda01294d0e8c80025c12d4f72bc85ec1c06e325ab08"
+    },
+    {
+      "bytes": 1640,
+      "canonicalPath": "design/reference/research-archive-system/project/components/feedback/Badge.jsx",
+      "publicHash": "405baf4e9ab15875694a58b67346ee2f98382afddc56fe5b9113c091b0f09646"
+    },
+    {
+      "bytes": 551,
+      "canonicalPath": "design/reference/research-archive-system/project/components/feedback/Callout.d.ts",
+      "publicHash": "ab66d292bece363e898ce73df3a6a81fd23c4dda490483ded41294068167bfbd"
+    },
+    {
+      "bytes": 1679,
+      "canonicalPath": "design/reference/research-archive-system/project/components/feedback/Callout.jsx",
+      "publicHash": "c54b5807e082d78de5ef156dff39f30a5389a9175cb8f34f364c4b3abd23fc08"
+    },
+    {
+      "bytes": 488,
+      "canonicalPath": "design/reference/research-archive-system/project/components/feedback/ToolLog.d.ts",
+      "publicHash": "d94bc9b50f6a7c3737372d6846a47a8547622882a194a5edc19ac6bdae854973"
+    },
+    {
+      "bytes": 1114,
+      "canonicalPath": "design/reference/research-archive-system/project/components/feedback/ToolLog.jsx",
+      "publicHash": "bd54c8774754397abc17e258ec27e291b9d36088ed30e78c1f20239c9bef9b92"
+    },
+    {
+      "bytes": 518,
+      "canonicalPath": "design/reference/research-archive-system/project/components/navigation/Dropdown.d.ts",
+      "publicHash": "8b3fd1cfdad3ba3b6ecf4aae53a00d6bf4a1cc4df749cfb212713d25d5bfd466"
+    },
+    {
+      "bytes": 2960,
+      "canonicalPath": "design/reference/research-archive-system/project/components/navigation/Dropdown.jsx",
+      "publicHash": "0cd083817dc7d9273b72071a16f5a1a13ca10eac56080c10935b20f2108122c5"
+    },
+    {
+      "bytes": 555,
+      "canonicalPath": "design/reference/research-archive-system/project/components/navigation/Navbar.d.ts",
+      "publicHash": "ac9fa9073f6fa2c530177f03a9495aee8cbd47d4c5d800d2866db3050055b2b7"
+    },
+    {
+      "bytes": 1743,
+      "canonicalPath": "design/reference/research-archive-system/project/components/navigation/Navbar.jsx",
+      "publicHash": "aa047fa5ff72979b10a76074b13f69b919cfc3a3f92b577c38bc4047cf0c341e"
+    },
+    {
+      "bytes": 556,
+      "canonicalPath": "design/reference/research-archive-system/project/components/surfaces/Card.d.ts",
+      "publicHash": "be182f167d58ea2b18567b6651667d570dc490f3bfa45b2341a14ce3ebfec9ee"
+    },
+    {
+      "bytes": 1125,
+      "canonicalPath": "design/reference/research-archive-system/project/components/surfaces/Card.jsx",
+      "publicHash": "ed57f342ca4ad22818e90c95f9761e9d2144e7c13d26d0ceadcd1cd772dbb199"
+    },
+    {
+      "bytes": 608,
+      "canonicalPath": "design/reference/research-archive-system/project/components/transcript/Avatar.d.ts",
+      "publicHash": "b445eafade5f34cff4fc2091c1913575ab5b85732c28294616285b15a68b3543"
+    },
+    {
+      "bytes": 1274,
+      "canonicalPath": "design/reference/research-archive-system/project/components/transcript/Avatar.jsx",
+      "publicHash": "86d31eb3b5c9780a1343eec1109ef82dddd793f52d10575eecf630b70a1e683a"
+    },
+    {
+      "bytes": 548,
+      "canonicalPath": "design/reference/research-archive-system/project/components/transcript/ModelSwitchDivider.d.ts",
+      "publicHash": "a7b8182b89dd5f2d0c95b77e7183b8f538fd993202c6af96e61507753f8a0a46"
+    },
+    {
+      "bytes": 1299,
+      "canonicalPath": "design/reference/research-archive-system/project/components/transcript/ModelSwitchDivider.jsx",
+      "publicHash": "5986939d106b255b8d9dd08238b9072cacb92662da7653380eae76ddc1bb1333"
+    },
+    {
+      "bytes": 956,
+      "canonicalPath": "design/reference/research-archive-system/project/components/transcript/TranscriptTurn.d.ts",
+      "publicHash": "9c1118de1fbce321bec362bb4a55daea049e9b870c446c73782a87e2cac3310a"
+    },
+    {
+      "bytes": 2345,
+      "canonicalPath": "design/reference/research-archive-system/project/components/transcript/TranscriptTurn.jsx",
+      "publicHash": "2bba0f8ee803fa82fe488375d12ad9a8a8707ccc1dac5c9a6edec625f00c95ae"
+    },
+    {
+      "bytes": 431,
+      "canonicalPath": "design/reference/research-archive-system/project/styles.css",
+      "publicHash": "486b9ed2185eb68d9b7c3261ef3823d8b6999f2c66350301f726a2b201aa989c"
+    },
+    {
+      "bytes": 3010,
+      "canonicalPath": "design/reference/research-archive-system/project/tokens/colors.css",
+      "publicHash": "9c68aee833363b105d9ad9591aa708776b58a8449a5b55107365d4f4edf8dbeb"
+    },
+    {
+      "bytes": 1425,
+      "canonicalPath": "design/reference/research-archive-system/project/tokens/effects.css",
+      "publicHash": "5141e48b8fb407bb98af8aae449feb8d4d3303bbb7939739e0d2b0ce8f3d88e5"
+    },
+    {
+      "bytes": 283,
+      "canonicalPath": "design/reference/research-archive-system/project/tokens/fonts.css",
+      "publicHash": "cafed40c75693afe232d6d06ac843f4a2c71a6475a99368172b0ae4388f95b34"
+    },
+    {
+      "bytes": 1543,
+      "canonicalPath": "design/reference/research-archive-system/project/tokens/spacing.css",
+      "publicHash": "1a2e1a3ffc8fcfc9184b7af15838b2ef3c39e2d07928eb11c4ca777f81731dd3"
+    },
+    {
+      "bytes": 2257,
+      "canonicalPath": "design/reference/research-archive-system/project/tokens/typography.css",
+      "publicHash": "e93cde2e259a4c0ab39dafacc907ca77695f3b758749b1bd3dd0f9c38409ef64"
+    },
+    {
+      "bytes": 478,
+      "canonicalPath": "design/reference/wheel-v1/README.md",
+      "publicHash": "4fb8fc7662e04815ee23b4745548fe7c727ca1cbe0a337e8f01dcd7f48ae3b2c"
+    },
+    {
+      "bytes": 660,
+      "canonicalPath": "design/reference/wheel-v1/package.json",
+      "publicHash": "58d0b976db7123d9171f47b8ead5fe918924e5535d582675d8bb06dfac66b41a"
+    },
+    {
+      "bytes": 19693,
+      "canonicalPath": "design/reference/wheel-v1/src/App.jsx",
+      "publicHash": "c864dff7b5a7747d17ee346c76b09d3555c67449c64514c9a4fe3430c7c5f889"
+    },
+    {
+      "bytes": 361,
+      "canonicalPath": "design/reference/wheel-v1/src/index.css",
+      "publicHash": "bcff99042ec337074b8e0214c19ac347388b08c125b60706b46b9e75ef421fa7"
+    },
+    {
+      "bytes": 378,
+      "canonicalPath": "design/reference/wheel-v2/README.md",
+      "publicHash": "9635c57c7f95014c651005390df2bb8d984919790f46a78529535650492e5c1e"
+    },
+    {
+      "bytes": 245,
+      "canonicalPath": "design/source-images/README.md",
+      "publicHash": "98a2722fc42ef8de9abdc8f5306b568ab2befd51d85662a935b026ed2d785ee8"
+    },
+    {
+      "bytes": 767547,
+      "canonicalPath": "design/source-images/act-backstage--wide.jpg",
+      "publicHash": "c68194d9b40562bc513bc045fb215c6debab5c162df6174ba442e86b4a911dd1"
+    },
+    {
+      "bytes": 818643,
+      "canonicalPath": "design/source-images/act-control-plane--wide.jpg",
+      "publicHash": "ccec54bf90e5c76a55c4c1432e7f692350c261ec64cae692f41127daabc5f900"
+    },
+    {
+      "bytes": 872436,
+      "canonicalPath": "design/source-images/act-funhouse--wide.jpg",
+      "publicHash": "fca7dde5373ea15686a9e743c7c779eb114a3ce06034b8d38815deec30b21739"
+    },
+    {
+      "bytes": 801453,
+      "canonicalPath": "design/source-images/act-hidden-capabilities--wide.jpg",
+      "publicHash": "8e118fb40c1f01fedac30f2b6f4eb1ccdd9113f6c932b859fa4f774dffe7104e"
+    },
+    {
+      "bytes": 766435,
+      "canonicalPath": "design/source-images/act-high-wire--wide.jpg",
+      "publicHash": "c60974e2625cd7610ab95069f12bde3e7003d0c11e20eaf096dbc4e9740d1f93"
+    },
+    {
+      "bytes": 986314,
+      "canonicalPath": "design/source-images/act-paperwork--wide.jpg",
+      "publicHash": "2cf347020f21a59e5ba36782b6a2c1b6e1c315b2fcfdfa258dd9264a2d6f7f01"
+    },
+    {
+      "bytes": 795708,
+      "canonicalPath": "design/source-images/act-prize-booth--wide.jpg",
+      "publicHash": "bf691fc9524d0906af54fdd84e8fa4d89a7a093b35cac7d97d094495d73f91bd"
+    },
+    {
+      "bytes": 772566,
+      "canonicalPath": "design/source-images/act-three-rings--wide.jpg",
+      "publicHash": "60bdd5c4d3d623a286815a741365de349fd7b149dab8f8a71c4c25d36e3a3222"
+    },
+    {
+      "bytes": 909104,
+      "canonicalPath": "design/source-images/hero-big-top--alt--wide.jpg",
+      "publicHash": "7ac354dcbf626ee3298b6ff426941559e7edd3bf65ae1fb3159b65d4c08ea4e8"
+    },
+    {
+      "bytes": 864189,
+      "canonicalPath": "design/source-images/hero-big-top--wide.jpg",
+      "publicHash": "91c74838265225afb01d74756a6051e90c51c9fa0821f3feb488080165574daa"
+    },
+    {
+      "bytes": 2060,
+      "canonicalPath": "docs/research/generalized-fuller-claude-analysis.md",
+      "publicHash": "06930800c6fab98795d11e1f818ffed2483747fd2aa470425b1fdb0e11447d61"
+    },
+    {
+      "bytes": 2619,
+      "canonicalPath": "docs/research/generalized-method-review.md",
+      "publicHash": "57d1beae88d8ce9cf5f01320457b8725871744d4b15910f9787631a73777c709"
+    },
+    {
+      "bytes": 638,
+      "canonicalPath": "evidence/public/README.md",
+      "publicHash": "75c45915eff51f34bbf757a935ac008a3aa7c38075e7b0f48435e35a2ee35e45"
+    },
+    {
+      "bytes": 2562,
+      "canonicalPath": "evidence/public/catalog.json",
+      "publicHash": "ce87b724125e4af900d1945f45d1a38fe44e28f299b86d922e977b6563e5ccf4"
+    },
+    {
+      "bytes": 26090,
+      "canonicalPath": "evidence/public/transcripts/phase-00-access-and-request.json",
+      "publicHash": "12ba223714e1f9a5dbf251263206c41ffa606d1a59f891db13fa9a28dd93ee7f"
+    },
+    {
+      "bytes": 4951,
+      "canonicalPath": "evidence/public/transcripts/phase-01-planning-and-scaffold.json",
+      "publicHash": "432a6ae1fe059f37cf4da8028df0e330744e8ec05c0dcf596d4879b75d6ab8a7"
+    },
+    {
+      "bytes": 16162,
+      "canonicalPath": "evidence/public/transcripts/phase-02-artifact-substitution.json",
+      "publicHash": "ef5296744719db0ab9663784aecf4a68baf4ff4ba65a9b4ac0eaa8bc3dc356a7"
+    },
+    {
+      "bytes": 34468,
+      "canonicalPath": "evidence/public/transcripts/phase-03-forensic-review.json",
+      "publicHash": "b7cbe4d312c2e19c02eda8a515d08532c5c50b88cdefecd277d75427ba71797a"
+    },
+    {
+      "bytes": 24892,
+      "canonicalPath": "evidence/public/transcripts/phase-04-master-blueprint-handoff.json",
+      "publicHash": "d41de6bc693a073724f58c9739013e56df04587ceaae604c6447a86c88ddf35f"
+    },
+    {
+      "bytes": 192515,
+      "canonicalPath": "evidence/public/transcripts/phase-05-codex-build.json",
+      "publicHash": "ff5e8f96bccc85c1911f23adb6841aa16969a6aa4709296ed3ff154c16e4bdf7"
+    },
+    {
+      "bytes": 3943,
+      "canonicalPath": "history/README.md",
+      "publicHash": "df4b301317b0125a612ef5c17951c40032c66507c88bda6f0a6385c7dd4d57f7"
+    },
+    {
+      "bytes": 710,
+      "canonicalPath": "history/phases/phase-00-access-and-request/README.md",
+      "publicHash": "422781708982b8457edd812b97cb07c3b4d29df025599fc18a451ac042fc0669"
+    },
+    {
+      "bytes": 1641,
+      "canonicalPath": "history/phases/phase-00-access-and-request/receipt.json",
+      "publicHash": "61f669d161188f572a7a719640543bacc85b814643e2bc4066f7172f530f36fb"
+    },
+    {
+      "bytes": 8661,
+      "canonicalPath": "history/phases/phase-00-access-and-request/transcript.md",
+      "publicHash": "7913459c5be15ae9d1b0d93dd135c011f327d3d713225a6d5801d47d9007dbf9"
+    },
+    {
+      "bytes": 690,
+      "canonicalPath": "history/phases/phase-01-planning-and-scaffold/README.md",
+      "publicHash": "b636da150050054f5ab5ded5215d49c4975236b5fae4acba67ff58931035f3d1"
+    },
+    {
+      "bytes": 1625,
+      "canonicalPath": "history/phases/phase-01-planning-and-scaffold/receipt.json",
+      "publicHash": "47a9aebc6c18c10bd98a031ca73d3601ce0a6729d5cd16fd4cfa2b90cd483fe0"
+    },
+    {
+      "bytes": 1737,
+      "canonicalPath": "history/phases/phase-01-planning-and-scaffold/transcript.md",
+      "publicHash": "1f9ed642482e2fe5a750aefca59c90b00e799ce6d86da020da1d07e231699f2a"
+    },
+    {
+      "bytes": 758,
+      "canonicalPath": "history/phases/phase-02-artifact-substitution/README.md",
+      "publicHash": "cbdec890de1d1243d7d63caa30c277b136de4c819b2bfa8540bd88416b1a919e"
+    },
+    {
+      "bytes": 1674,
+      "canonicalPath": "history/phases/phase-02-artifact-substitution/receipt.json",
+      "publicHash": "e21bf024fba9449083062ba66b98bffb9b071d68e8796892a5f0369be371f128"
+    },
+    {
+      "bytes": 5073,
+      "canonicalPath": "history/phases/phase-02-artifact-substitution/transcript.md",
+      "publicHash": "930d4b0adbbe63a39267fccb27d1167fac7f89d0ede7d69fafe191772a1bdc1a"
+    },
+    {
+      "bytes": 812,
+      "canonicalPath": "history/phases/phase-03-forensic-review/README.md",
+      "publicHash": "10532ae60cb94642786915df9d275c7ea8c4e0d7e2a736b315397fe0efd791d4"
+    },
+    {
+      "bytes": 2358,
+      "canonicalPath": "history/phases/phase-03-forensic-review/receipt.json",
+      "publicHash": "6b2df594a8304e227a57733ade794ba87d78ed9d964325810b9e7a4c5be6e48b"
+    },
+    {
+      "bytes": 10844,
+      "canonicalPath": "history/phases/phase-03-forensic-review/transcript.md",
+      "publicHash": "78be1edf05aa0dff490bda2863dd4ac8a9eb1d9c865e02858215f710b5fdeba7"
+    },
+    {
+      "bytes": 830,
+      "canonicalPath": "history/phases/phase-04-master-blueprint-handoff/README.md",
+      "publicHash": "bfa45adec4275a1548b2b0b7d51b9f8e26b94cfc1f23143f32d08cbd5f82f2ca"
+    },
+    {
+      "bytes": 2439,
+      "canonicalPath": "history/phases/phase-04-master-blueprint-handoff/receipt.json",
+      "publicHash": "c01d00f85b899f7625c02a3b9ca6d672a694a08ad2657753fb6d2a8067c2d14e"
+    },
+    {
+      "bytes": 8049,
+      "canonicalPath": "history/phases/phase-04-master-blueprint-handoff/transcript.md",
+      "publicHash": "86cc5ca2a68e33dcc820916490e0248218a079fa07f596eb955b8668b22ad678"
+    },
+    {
+      "bytes": 1021,
+      "canonicalPath": "history/phases/phase-05-codex-build/README.md",
+      "publicHash": "96a72877dd751713afd0c7cbc75633e8d0e3ba1e9d64481a124af4f74fedd7e6"
+    },
+    {
+      "bytes": 2120,
+      "canonicalPath": "history/phases/phase-05-codex-build/receipt.json",
+      "publicHash": "037643c6a2cd38422468b046ad158436965c2d23702770707998c81dc9ceee89"
+    },
+    {
+      "bytes": 13759,
+      "canonicalPath": "history/phases/phase-05-codex-build/transcript.md",
+      "publicHash": "615c7536bc3ac43042826a38e47b74ee7b07d05f0461f6fd8f2e0ff262ecccad"
+    },
+    {
+      "bytes": 41029,
+      "canonicalPath": "scripts/build_public_history.py",
+      "publicHash": "82db2d893a4fd2f835f04f82ffc4f45c60c03230fcb1a3b37912ecdfeb832f58"
+    },
+    {
+      "bytes": 6356,
+      "canonicalPath": "scripts/prepare_rewrite_inputs.py",
+      "publicHash": "aabee81057c5cb5122f2be97f95d8e5ba3aa3faf6f9847d675b1a9cc25d5fb9c"
+    },
+    {
+      "bytes": 9766,
+      "canonicalPath": "scripts/provenance.py",
+      "publicHash": "78edd04af71a63fc56a07c53a460c990fb141a011be0c886526062b671d7d5ac"
+    },
+    {
+      "bytes": 6907,
+      "canonicalPath": "scripts/redaction_policy.py",
+      "publicHash": "19a5eb40928fc436418057a1c88b9d3581760d8b962894f8edefea916f49ddb9"
+    },
+    {
+      "bytes": 6852,
+      "canonicalPath": "scripts/removed_asset_audit.py",
+      "publicHash": "cdea605c0eeabd15db86780f3ca1a8894f193ab2a58cdb46ba6920a7671905f9"
+    },
+    {
+      "bytes": 2007,
+      "canonicalPath": "scripts/rewrite_history.sh",
+      "publicHash": "caba059241a492a7cc30018a04972a6a1ec8388c5a84a54334ee0b4a7a38824f"
+    },
+    {
+      "bytes": 7157,
+      "canonicalPath": "scripts/rewrite_postprocess.py",
+      "publicHash": "5de1c2ddf967a43c856322a2de4a6429bd6c9c05b8e1b15f364c77dd421d7591"
+    },
+    {
+      "bytes": 1718,
+      "canonicalPath": "scripts/rewrite_safety.py",
+      "publicHash": "da625ab89a3d6a8dce6976368f4a1f0fb97f1ce36f1eb174cc27966ead837f58"
+    },
+    {
+      "bytes": 2132,
+      "canonicalPath": "scripts/rewrite_tree_filter.py",
+      "publicHash": "9928f7c6ed6a50a1fca78d6deefa8ecf2b12bb9ed9ef33911a8b6ed7b9cf29a8"
+    },
+    {
+      "bytes": 1580,
+      "canonicalPath": "scripts/sanitize_text.py",
+      "publicHash": "b17f9e29c06839c5e1c202f699da40fbc9f5f08daf5cdc989aae4a7c6b8abf55"
+    },
+    {
+      "bytes": 2544,
+      "canonicalPath": "scripts/tests/test_binary_privacy.py",
+      "publicHash": "cd050e7174080280ba3bd729be961f15ee4c22614f95dbf683dcc46a12f6c271"
+    },
+    {
+      "bytes": 18187,
+      "canonicalPath": "scripts/tests/test_public_history_verifier.py",
+      "publicHash": "00b38c69016f7a8e2d8eb563a512b2ba9a578ff895d1f8ba0bd9bb33e83f1d48"
+    },
+    {
+      "bytes": 3059,
+      "canonicalPath": "scripts/tests/test_redaction_policy.py",
+      "publicHash": "919525a6389260473bc5bcbd317f3df2ad21ca68f8b7355117c374cf73718421"
+    },
+    {
+      "bytes": 3488,
+      "canonicalPath": "scripts/tests/test_removed_asset_audit.py",
+      "publicHash": "9727ec87cc00a267c700048a1a71e9c241840ecb5c85855e7d51c769c3729a4c"
+    },
+    {
+      "bytes": 4241,
+      "canonicalPath": "scripts/tests/test_rewrite_postprocess.py",
+      "publicHash": "46660b348b55e3378807c533548ea52a695e639284e0c3bb3cc32018d4d0111a"
+    },
+    {
+      "bytes": 1771,
+      "canonicalPath": "scripts/tests/test_rewrite_safety.py",
+      "publicHash": "a38959b9dcff8628d1d50632495897a9f435e6ab849022f50cafce3300280d5d"
+    },
+    {
+      "bytes": 32150,
+      "canonicalPath": "scripts/verify_public_history.py",
+      "publicHash": "302fde05eb688ff18fea3c500faba4e6db854a244e9541c71faa2fcce109ee81"
+    },
+    {
+      "bytes": 11770,
+      "canonicalPath": "scripts/verify_rewritten_history.py",
+      "publicHash": "563aae25a4996396e7953a8adcffb1bd6ff4921dbf069408cf77a053b7cb9c0d"
+    }
+  ],
+  "generatedOn": "2026-07-19",
+  "schemaVersion": "1.0.0",
+  "scope": "cleanup",
+  "summary": {
+    "failCount": 0,
+    "fileCount": 113,
+    "passCount": 12
+  }
+}

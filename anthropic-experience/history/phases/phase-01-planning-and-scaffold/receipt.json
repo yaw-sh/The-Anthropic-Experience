@@ -1,0 +1,57 @@
+{
+  "canonicalTranscript": "history/phases/phase-01-planning-and-scaffold/transcript.md",
+  "checks": {
+    "generalizationLabel": "pass",
+    "publicHash": "pass",
+    "sourceAttribution": "pass",
+    "sourceCoverage": "pass",
+    "sourceExistence": "pass",
+    "sourceOverlap": "pass",
+    "sourceRanges": "pass",
+    "verbatimClaims": "pass"
+  },
+  "collapsedSourceUnits": 6,
+  "coveredSourceUnitCount": 11,
+  "eventCount": 5,
+  "generalized": true,
+  "phaseId": "phase-01-planning-and-scaffold",
+  "publicHash": "432a6ae1fe059f37cf4da8028df0e330744e8ec05c0dcf596d4879b75d6ab8a7",
+  "publicTranscript": "evidence/public/transcripts/phase-01-planning-and-scaffold.json",
+  "replacementCount": 11,
+  "schemaVersion": "1.0.0",
+  "sourceSlots": [
+    {
+      "formerPathSlots": [
+        "former-path-005",
+        "former-path-006"
+      ],
+      "id": "build-failure-analysis",
+      "note": "A duplicate archive copy is represented by one deduplicated source slot.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 3,
+        "operator": 4
+      },
+      "sourceUnitCount": 7,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "former-path-007",
+        "former-path-008",
+        "former-path-009",
+        "former-path-010"
+      ],
+      "id": "planning-package",
+      "note": "Planning documents are represented as generalized process records, not quotations.",
+      "parser": "documents",
+      "sourceRoleCounts": {
+        "tool": 4
+      },
+      "sourceUnitCount": 4,
+      "uniqueBlobCount": 4
+    }
+  ],
+  "sourceUnitCount": 11,
+  "verbatim": false
+}

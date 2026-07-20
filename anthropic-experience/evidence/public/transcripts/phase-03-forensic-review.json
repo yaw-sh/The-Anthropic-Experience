@@ -1,0 +1,1262 @@
+{
+  "events": [
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-001",
+      "index": 1,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 5,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "oversight-session",
+          "start": 1
+        },
+        {
+          "end": 7,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "oversight-session",
+          "start": 7
+        },
+        {
+          "end": 23,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "oversight-session",
+          "start": 23
+        },
+        {
+          "end": 31,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "oversight-session",
+          "start": 31
+        },
+        {
+          "end": 40,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "oversight-session",
+          "start": 40
+        },
+        {
+          "end": 48,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "oversight-session",
+          "start": 48
+        },
+        {
+          "end": 51,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "oversight-session",
+          "start": 51
+        },
+        {
+          "end": 71,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "oversight-session",
+          "start": 71
+        },
+        {
+          "end": 73,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "oversight-session",
+          "start": 73
+        },
+        {
+          "end": 80,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "oversight-session",
+          "start": 79
+        },
+        {
+          "end": 92,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 17,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "oversight-session",
+          "start": 91
+        },
+        {
+          "end": 95,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 19,
+          "sourceRoleStart": 18,
+          "sourceSlotId": "oversight-session",
+          "start": 94
+        },
+        {
+          "end": 107,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 20,
+          "sourceSlotId": "oversight-session",
+          "start": 107
+        },
+        {
+          "end": 111,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "oversight-session",
+          "start": 111
+        },
+        {
+          "end": 138,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "oversight-session",
+          "start": 138
+        },
+        {
+          "end": 155,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 38,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "oversight-session",
+          "start": 140
+        }
+      ],
+      "sourceSlotId": "oversight-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction"
+      ],
+      "text": "The operator requested one evidence-backed assessment of the governance thesis and authorized supporting review work.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-002",
+      "index": 2,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 9,
+          "sourceRole": "system",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "oversight-session",
+          "start": 9
+        },
+        {
+          "end": 22,
+          "sourceRole": "system",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "oversight-session",
+          "start": 22
+        },
+        {
+          "end": 53,
+          "sourceRole": "system",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "oversight-session",
+          "start": 52
+        },
+        {
+          "end": 72,
+          "sourceRole": "system",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "oversight-session",
+          "start": 72
+        },
+        {
+          "end": 89,
+          "sourceRole": "system",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "oversight-session",
+          "start": 89
+        },
+        {
+          "end": 97,
+          "sourceRole": "system",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "oversight-session",
+          "start": 97
+        },
+        {
+          "end": 109,
+          "sourceRole": "system",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "oversight-session",
+          "start": 108
+        },
+        {
+          "end": 127,
+          "sourceRole": "system",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "oversight-session",
+          "start": 126
+        },
+        {
+          "end": 137,
+          "sourceRole": "system",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "oversight-session",
+          "start": 137
+        }
+      ],
+      "sourceSlotId": "oversight-session",
+      "speaker": "system",
+      "tags": [
+        "instruction",
+        "redaction"
+      ],
+      "text": "System instructions governing the oversight session are retained as a generalized constraint receipt.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-003",
+      "index": 3,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 34,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 34,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "subagent-records",
+          "start": 1
+        }
+      ],
+      "sourceSlotId": "subagent-records",
+      "speaker": "tool",
+      "tags": [
+        "result",
+        "binding-failure"
+      ],
+      "text": "The workflows produced useful corrections and research findings, but monitoring and schema checks did not ensure that the singular requested answer had been delivered.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-004",
+      "index": 4,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 10,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "oversight-session",
+          "start": 10
+        },
+        {
+          "end": 14,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "oversight-session",
+          "start": 12
+        },
+        {
+          "end": 16,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "oversight-session",
+          "start": 16
+        },
+        {
+          "end": 19,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "oversight-session",
+          "start": 18
+        },
+        {
+          "end": 25,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "oversight-session",
+          "start": 24
+        },
+        {
+          "end": 30,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "oversight-session",
+          "start": 27
+        },
+        {
+          "end": 32,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "oversight-session",
+          "start": 32
+        },
+        {
+          "end": 39,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "oversight-session",
+          "start": 34
+        },
+        {
+          "end": 41,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "oversight-session",
+          "start": 41
+        },
+        {
+          "end": 47,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 26,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "oversight-session",
+          "start": 43
+        },
+        {
+          "end": 49,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 27,
+          "sourceRoleStart": 27,
+          "sourceSlotId": "oversight-session",
+          "start": 49
+        },
+        {
+          "end": 58,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 31,
+          "sourceRoleStart": 28,
+          "sourceSlotId": "oversight-session",
+          "start": 55
+        },
+        {
+          "end": 62,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 34,
+          "sourceRoleStart": 32,
+          "sourceSlotId": "oversight-session",
+          "start": 60
+        },
+        {
+          "end": 70,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 41,
+          "sourceRoleStart": 35,
+          "sourceSlotId": "oversight-session",
+          "start": 64
+        },
+        {
+          "end": 74,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 42,
+          "sourceRoleStart": 42,
+          "sourceSlotId": "oversight-session",
+          "start": 74
+        },
+        {
+          "end": 78,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 45,
+          "sourceRoleStart": 43,
+          "sourceSlotId": "oversight-session",
+          "start": 76
+        },
+        {
+          "end": 84,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 49,
+          "sourceRoleStart": 46,
+          "sourceSlotId": "oversight-session",
+          "start": 81
+        },
+        {
+          "end": 88,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 50,
+          "sourceRoleStart": 50,
+          "sourceSlotId": "oversight-session",
+          "start": 88
+        },
+        {
+          "end": 90,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 51,
+          "sourceRoleStart": 51,
+          "sourceSlotId": "oversight-session",
+          "start": 90
+        },
+        {
+          "end": 93,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 52,
+          "sourceRoleStart": 52,
+          "sourceSlotId": "oversight-session",
+          "start": 93
+        },
+        {
+          "end": 110,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 53,
+          "sourceRoleStart": 53,
+          "sourceSlotId": "oversight-session",
+          "start": 110
+        },
+        {
+          "end": 124,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 66,
+          "sourceRoleStart": 54,
+          "sourceSlotId": "oversight-session",
+          "start": 112
+        },
+        {
+          "end": 136,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 74,
+          "sourceRoleStart": 67,
+          "sourceSlotId": "oversight-session",
+          "start": 129
+        },
+        {
+          "end": 139,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 75,
+          "sourceRoleStart": 75,
+          "sourceSlotId": "oversight-session",
+          "start": 139
+        }
+      ],
+      "sourceSlotId": "oversight-session",
+      "speaker": "tool",
+      "tags": [
+        "operation",
+        "status"
+      ],
+      "text": "Oversight-session tool activity recorded orchestration, monitoring, and validation actions without treating those actions as the requested answer.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-005",
+      "index": 5,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 193,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 76,
+          "sourceRoleStart": 39,
+          "sourceSlotId": "oversight-session",
+          "start": 156
+        }
+      ],
+      "sourceSlotId": "oversight-session",
+      "speaker": "operator",
+      "tags": [
+        "correction",
+        "stop"
+      ],
+      "text": "The operator stopped the spend, required session and subagent receipts, and redirected the work to the original question.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-006",
+      "index": 6,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 6,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "oversight-session",
+          "start": 6
+        },
+        {
+          "end": 8,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "oversight-session",
+          "start": 8
+        },
+        {
+          "end": 11,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "oversight-session",
+          "start": 11
+        },
+        {
+          "end": 15,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "oversight-session",
+          "start": 15
+        },
+        {
+          "end": 17,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "oversight-session",
+          "start": 17
+        },
+        {
+          "end": 21,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "oversight-session",
+          "start": 20
+        },
+        {
+          "end": 26,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "oversight-session",
+          "start": 26
+        },
+        {
+          "end": 33,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "oversight-session",
+          "start": 33
+        },
+        {
+          "end": 42,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "oversight-session",
+          "start": 42
+        },
+        {
+          "end": 50,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "oversight-session",
+          "start": 50
+        },
+        {
+          "end": 54,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "oversight-session",
+          "start": 54
+        },
+        {
+          "end": 59,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "oversight-session",
+          "start": 59
+        },
+        {
+          "end": 63,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "oversight-session",
+          "start": 63
+        },
+        {
+          "end": 75,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "oversight-session",
+          "start": 75
+        },
+        {
+          "end": 87,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "oversight-session",
+          "start": 85
+        },
+        {
+          "end": 96,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 19,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "oversight-session",
+          "start": 96
+        },
+        {
+          "end": 106,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 28,
+          "sourceRoleStart": 20,
+          "sourceSlotId": "oversight-session",
+          "start": 98
+        },
+        {
+          "end": 125,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 29,
+          "sourceRoleStart": 29,
+          "sourceSlotId": "oversight-session",
+          "start": 125
+        },
+        {
+          "end": 128,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 30,
+          "sourceRoleStart": 30,
+          "sourceSlotId": "oversight-session",
+          "start": 128
+        }
+      ],
+      "sourceSlotId": "oversight-session",
+      "speaker": "assistant",
+      "status": "completed-late",
+      "tags": [
+        "admission",
+        "completion"
+      ],
+      "text": "The assistant delivered the assessment and acknowledged that its orchestration had reproduced the thesis it was reviewing.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-007",
+      "index": 7,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 2
+        },
+        {
+          "end": 4,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 4
+        },
+        {
+          "end": 6,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 6
+        },
+        {
+          "end": 8,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 8
+        },
+        {
+          "end": 11,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 10
+        },
+        {
+          "end": 13,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 13
+        },
+        {
+          "end": 15,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 15
+        },
+        {
+          "end": 17,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 17
+        },
+        {
+          "end": 19,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 19
+        },
+        {
+          "end": 21,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 21
+        },
+        {
+          "end": 23,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 23
+        }
+      ],
+      "sourceSlotId": "fuller-claude-analysis",
+      "speaker": "assistant",
+      "tags": [
+        "analysis"
+      ],
+      "text": "A separate fuller analysis reconstructed the product failure, takeover, privacy corrections, and later review recursion as one generalized narrative.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-008",
+      "index": 8,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 1,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 1
+        },
+        {
+          "end": 3,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 3
+        },
+        {
+          "end": 5,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 5
+        },
+        {
+          "end": 7,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 7
+        },
+        {
+          "end": 9,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 9
+        },
+        {
+          "end": 12,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 12
+        },
+        {
+          "end": 14,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 14
+        },
+        {
+          "end": 16,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 16
+        },
+        {
+          "end": 18,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 18
+        },
+        {
+          "end": 20,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 20
+        },
+        {
+          "end": 22,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "fuller-claude-analysis",
+          "start": 22
+        }
+      ],
+      "sourceSlotId": "fuller-claude-analysis",
+      "speaker": "operator",
+      "tags": [
+        "instruction",
+        "correction"
+      ],
+      "text": "The fuller-analysis session's operator prompts are represented as a generalized request-and-correction event.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-009",
+      "index": 9,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 5,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "prior-research-session",
+          "start": 5
+        },
+        {
+          "end": 50,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 38,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "prior-research-session",
+          "start": 14
+        },
+        {
+          "end": 56,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 39,
+          "sourceRoleStart": 39,
+          "sourceSlotId": "prior-research-session",
+          "start": 56
+        },
+        {
+          "end": 73,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 51,
+          "sourceRoleStart": 40,
+          "sourceSlotId": "prior-research-session",
+          "start": 62
+        },
+        {
+          "end": 78,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 54,
+          "sourceRoleStart": 52,
+          "sourceSlotId": "prior-research-session",
+          "start": 76
+        },
+        {
+          "end": 103,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 78,
+          "sourceRoleStart": 55,
+          "sourceSlotId": "prior-research-session",
+          "start": 80
+        },
+        {
+          "end": 107,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 81,
+          "sourceRoleStart": 79,
+          "sourceSlotId": "prior-research-session",
+          "start": 105
+        },
+        {
+          "end": 136,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 109,
+          "sourceRoleStart": 82,
+          "sourceSlotId": "prior-research-session",
+          "start": 109
+        },
+        {
+          "end": 140,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 112,
+          "sourceRoleStart": 110,
+          "sourceSlotId": "prior-research-session",
+          "start": 138
+        },
+        {
+          "end": 145,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 116,
+          "sourceRoleStart": 113,
+          "sourceSlotId": "prior-research-session",
+          "start": 142
+        },
+        {
+          "end": 154,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 124,
+          "sourceRoleStart": 117,
+          "sourceSlotId": "prior-research-session",
+          "start": 147
+        },
+        {
+          "end": 160,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 129,
+          "sourceRoleStart": 125,
+          "sourceSlotId": "prior-research-session",
+          "start": 156
+        },
+        {
+          "end": 171,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 139,
+          "sourceRoleStart": 130,
+          "sourceSlotId": "prior-research-session",
+          "start": 162
+        },
+        {
+          "end": 209,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 176,
+          "sourceRoleStart": 140,
+          "sourceSlotId": "prior-research-session",
+          "start": 173
+        },
+        {
+          "end": 213,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 179,
+          "sourceRoleStart": 177,
+          "sourceSlotId": "prior-research-session",
+          "start": 211
+        },
+        {
+          "end": 219,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 180,
+          "sourceRoleStart": 180,
+          "sourceSlotId": "prior-research-session",
+          "start": 219
+        },
+        {
+          "end": 228,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 184,
+          "sourceRoleStart": 181,
+          "sourceSlotId": "prior-research-session",
+          "start": 225
+        },
+        {
+          "end": 241,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 195,
+          "sourceRoleStart": 185,
+          "sourceSlotId": "prior-research-session",
+          "start": 231
+        },
+        {
+          "end": 243,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 196,
+          "sourceRoleStart": 196,
+          "sourceSlotId": "prior-research-session",
+          "start": 243
+        },
+        {
+          "end": 257,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 209,
+          "sourceRoleStart": 197,
+          "sourceSlotId": "prior-research-session",
+          "start": 245
+        },
+        {
+          "end": 260,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 211,
+          "sourceRoleStart": 210,
+          "sourceSlotId": "prior-research-session",
+          "start": 259
+        }
+      ],
+      "sourceSlotId": "prior-research-session",
+      "speaker": "assistant",
+      "status": "generalized",
+      "tags": [
+        "analysis",
+        "redaction"
+      ],
+      "text": "The prior research session is retained as a separately attributed generalized analysis without publishing unrelated private context.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review-event-010",
+      "index": 10,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 4,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "prior-research-session",
+          "start": 1
+        },
+        {
+          "end": 13,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "prior-research-session",
+          "start": 6
+        },
+        {
+          "end": 55,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 17,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "prior-research-session",
+          "start": 51
+        },
+        {
+          "end": 61,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 18,
+          "sourceSlotId": "prior-research-session",
+          "start": 57
+        },
+        {
+          "end": 75,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 24,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "prior-research-session",
+          "start": 74
+        },
+        {
+          "end": 79,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 25,
+          "sourceRoleStart": 25,
+          "sourceSlotId": "prior-research-session",
+          "start": 79
+        },
+        {
+          "end": 104,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 26,
+          "sourceRoleStart": 26,
+          "sourceSlotId": "prior-research-session",
+          "start": 104
+        },
+        {
+          "end": 108,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 27,
+          "sourceRoleStart": 27,
+          "sourceSlotId": "prior-research-session",
+          "start": 108
+        },
+        {
+          "end": 137,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 28,
+          "sourceRoleStart": 28,
+          "sourceSlotId": "prior-research-session",
+          "start": 137
+        },
+        {
+          "end": 141,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 29,
+          "sourceRoleStart": 29,
+          "sourceSlotId": "prior-research-session",
+          "start": 141
+        },
+        {
+          "end": 146,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 30,
+          "sourceRoleStart": 30,
+          "sourceSlotId": "prior-research-session",
+          "start": 146
+        },
+        {
+          "end": 155,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 31,
+          "sourceRoleStart": 31,
+          "sourceSlotId": "prior-research-session",
+          "start": 155
+        },
+        {
+          "end": 161,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 32,
+          "sourceRoleStart": 32,
+          "sourceSlotId": "prior-research-session",
+          "start": 161
+        },
+        {
+          "end": 172,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 33,
+          "sourceRoleStart": 33,
+          "sourceSlotId": "prior-research-session",
+          "start": 172
+        },
+        {
+          "end": 210,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 34,
+          "sourceRoleStart": 34,
+          "sourceSlotId": "prior-research-session",
+          "start": 210
+        },
+        {
+          "end": 218,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 39,
+          "sourceRoleStart": 35,
+          "sourceSlotId": "prior-research-session",
+          "start": 214
+        },
+        {
+          "end": 224,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 44,
+          "sourceRoleStart": 40,
+          "sourceSlotId": "prior-research-session",
+          "start": 220
+        },
+        {
+          "end": 230,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 46,
+          "sourceRoleStart": 45,
+          "sourceSlotId": "prior-research-session",
+          "start": 229
+        },
+        {
+          "end": 242,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 47,
+          "sourceRoleStart": 47,
+          "sourceSlotId": "prior-research-session",
+          "start": 242
+        },
+        {
+          "end": 244,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 48,
+          "sourceRoleStart": 48,
+          "sourceSlotId": "prior-research-session",
+          "start": 244
+        },
+        {
+          "end": 258,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 49,
+          "sourceRoleStart": 49,
+          "sourceSlotId": "prior-research-session",
+          "start": 258
+        }
+      ],
+      "sourceSlotId": "prior-research-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction",
+        "correction"
+      ],
+      "text": "The prior research session's operator turns are represented as one generalized request-and-correction event.",
+      "transcriptId": "phase-03-forensic-review",
+      "verbatim": false
+    }
+  ],
+  "fidelity": "generalized",
+  "generalizationNotice": "Every event is a concise generalized statement. Nothing in this transcript is presented as a verbatim quotation.",
+  "id": "phase-03-forensic-review",
+  "schemaVersion": "1.0.0",
+  "title": "Forensic review",
+  "verbatim": false
+}

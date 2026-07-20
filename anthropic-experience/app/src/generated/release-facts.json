@@ -1,0 +1,65 @@
+[
+  {
+    "id": "fact-content",
+    "label": "Content",
+    "status": "verified",
+    "claimId": "claim-release-verified",
+    "receiptId": "receipt-prologue",
+    "evidence": [
+      "verification/release-verification.json#content-schema",
+      "verification/release-verification.json#content-links",
+      "verification/release-verification.json#public-evidence-adapter"
+    ]
+  },
+  {
+    "id": "fact-application",
+    "label": "Application",
+    "status": "verified",
+    "claimId": "claim-release-verified",
+    "receiptId": "receipt-build-this-website",
+    "evidence": [
+      "verification/release-verification.json#unit-tests",
+      "verification/release-verification.json#typecheck",
+      "verification/release-verification.json#lint",
+      "verification/release-verification.json#canonical-build",
+      "verification/release-verification.json#artifact-build",
+      "verification/release-verification.json#parity"
+    ]
+  },
+  {
+    "id": "fact-accessibility",
+    "label": "Accessibility",
+    "status": "verified",
+    "claimId": "claim-release-verified",
+    "receiptId": "receipt-evidence-room",
+    "evidence": [
+      "verification/release-verification.json#playwright-axe",
+      "verification/release-verification.json#keyboard",
+      "verification/release-verification.json#mobile-320-390",
+      "verification/release-verification.json#reduced-motion"
+    ]
+  },
+  {
+    "id": "fact-privacy",
+    "label": "Privacy",
+    "status": "verified",
+    "claimId": "claim-release-verified",
+    "receiptId": "receipt-correction-loop",
+    "evidence": [
+      "verification/release-verification.json#source-privacy",
+      "verification/release-verification.json#bundle-privacy",
+      "verification/release-verification.json#artifact-bundle-privacy",
+      "verification/release-verification.json#remote-runtime"
+    ]
+  },
+  {
+    "id": "fact-owner-review",
+    "label": "Owner review",
+    "status": "pending",
+    "claimId": "claim-release-pending",
+    "receiptId": "receipt-finale",
+    "evidence": [
+      "verification/release-verification.json#owner-review"
+    ]
+  }
+]

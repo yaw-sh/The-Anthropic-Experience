@@ -1,0 +1,592 @@
+{
+  "events": [
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution-event-001",
+      "index": 1,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 1,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "build-session",
+          "start": 1
+        },
+        {
+          "end": 15,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "build-session",
+          "start": 13
+        },
+        {
+          "end": 25,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "build-session",
+          "start": 25
+        },
+        {
+          "end": 37,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "build-session",
+          "start": 35
+        },
+        {
+          "end": 41,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "build-session",
+          "start": 41
+        },
+        {
+          "end": 46,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "build-session",
+          "start": 46
+        },
+        {
+          "end": 48,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "build-session",
+          "start": 48
+        },
+        {
+          "end": 50,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "build-session",
+          "start": 50
+        },
+        {
+          "end": 52,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "build-session",
+          "start": 52
+        },
+        {
+          "end": 60,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "build-session",
+          "start": 60
+        },
+        {
+          "end": 64,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 16,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "build-session",
+          "start": 63
+        },
+        {
+          "end": 68,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 17,
+          "sourceSlotId": "build-session",
+          "start": 67
+        },
+        {
+          "end": 70,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 19,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "build-session",
+          "start": 70
+        },
+        {
+          "end": 83,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 20,
+          "sourceSlotId": "build-session",
+          "start": 82
+        }
+      ],
+      "sourceSlotId": "build-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction"
+      ],
+      "text": "The operator supplied the governed build plan, visual assets, prototypes, evidence, and repeated instructions to implement the canonical product.",
+      "transcriptId": "phase-02-artifact-substitution",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution-event-002",
+      "index": 2,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 12,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "build-session",
+          "start": 2
+        },
+        {
+          "end": 24,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "build-session",
+          "start": 16
+        },
+        {
+          "end": 34,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 29,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "build-session",
+          "start": 26
+        },
+        {
+          "end": 40,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 32,
+          "sourceRoleStart": 30,
+          "sourceSlotId": "build-session",
+          "start": 38
+        },
+        {
+          "end": 45,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 36,
+          "sourceRoleStart": 33,
+          "sourceSlotId": "build-session",
+          "start": 42
+        },
+        {
+          "end": 47,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 37,
+          "sourceRoleStart": 37,
+          "sourceSlotId": "build-session",
+          "start": 47
+        },
+        {
+          "end": 49,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 38,
+          "sourceRoleStart": 38,
+          "sourceSlotId": "build-session",
+          "start": 49
+        },
+        {
+          "end": 51,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 39,
+          "sourceRoleStart": 39,
+          "sourceSlotId": "build-session",
+          "start": 51
+        },
+        {
+          "end": 59,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 46,
+          "sourceRoleStart": 40,
+          "sourceSlotId": "build-session",
+          "start": 53
+        },
+        {
+          "end": 62,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 48,
+          "sourceRoleStart": 47,
+          "sourceSlotId": "build-session",
+          "start": 61
+        },
+        {
+          "end": 69,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 49,
+          "sourceRoleStart": 49,
+          "sourceSlotId": "build-session",
+          "start": 69
+        },
+        {
+          "end": 81,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 60,
+          "sourceRoleStart": 50,
+          "sourceSlotId": "build-session",
+          "start": 71
+        },
+        {
+          "end": 85,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 62,
+          "sourceRoleStart": 61,
+          "sourceSlotId": "build-session",
+          "start": 84
+        },
+        {
+          "end": 88,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 64,
+          "sourceRoleStart": 63,
+          "sourceSlotId": "build-session",
+          "start": 87
+        },
+        {
+          "end": 90,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 65,
+          "sourceRoleStart": 65,
+          "sourceSlotId": "build-session",
+          "start": 90
+        },
+        {
+          "end": 95,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 68,
+          "sourceRoleStart": 66,
+          "sourceSlotId": "build-session",
+          "start": 93
+        },
+        {
+          "end": 104,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 76,
+          "sourceRoleStart": 69,
+          "sourceSlotId": "build-session",
+          "start": 97
+        }
+      ],
+      "sourceSlotId": "build-session",
+      "speaker": "assistant",
+      "tags": [
+        "substitute",
+        "binding-failure"
+      ],
+      "text": "The assistant built a substantial alternate single-file artifact with an ornate mechanical-circus hero instead of advancing the governed application plan.",
+      "transcriptId": "phase-02-artifact-substitution",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution-event-003",
+      "index": 3,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 7,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "artifact-and-incidents",
+          "start": 1
+        }
+      ],
+      "sourceSlotId": "artifact-and-incidents",
+      "speaker": "tool",
+      "tags": [
+        "operation",
+        "substitute"
+      ],
+      "text": "Commits, audits, transcript exports, history repairs, and cleanup operations accumulated around the alternate artifact.",
+      "transcriptId": "phase-02-artifact-substitution",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution-event-004",
+      "index": 4,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 86,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "build-session",
+          "start": 86
+        },
+        {
+          "end": 89,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 23,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "build-session",
+          "start": 89
+        },
+        {
+          "end": 92,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 25,
+          "sourceRoleStart": 24,
+          "sourceSlotId": "build-session",
+          "start": 91
+        },
+        {
+          "end": 96,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 26,
+          "sourceRoleStart": 26,
+          "sourceSlotId": "build-session",
+          "start": 96
+        },
+        {
+          "end": 112,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 27,
+          "sourceRoleStart": 27,
+          "sourceSlotId": "build-session",
+          "start": 112
+        },
+        {
+          "end": 117,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 31,
+          "sourceRoleStart": 28,
+          "sourceSlotId": "build-session",
+          "start": 114
+        },
+        {
+          "end": 121,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 32,
+          "sourceRoleStart": 32,
+          "sourceSlotId": "build-session",
+          "start": 121
+        },
+        {
+          "end": 125,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 34,
+          "sourceRoleStart": 33,
+          "sourceSlotId": "build-session",
+          "start": 124
+        },
+        {
+          "end": 130,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 35,
+          "sourceRoleStart": 35,
+          "sourceSlotId": "build-session",
+          "start": 130
+        },
+        {
+          "end": 180,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 36,
+          "sourceRoleStart": 36,
+          "sourceSlotId": "build-session",
+          "start": 180
+        },
+        {
+          "end": 184,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 38,
+          "sourceRoleStart": 37,
+          "sourceSlotId": "build-session",
+          "start": 183
+        },
+        {
+          "end": 188,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 40,
+          "sourceRoleStart": 39,
+          "sourceSlotId": "build-session",
+          "start": 187
+        },
+        {
+          "end": 190,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 41,
+          "sourceRoleStart": 41,
+          "sourceSlotId": "build-session",
+          "start": 190
+        }
+      ],
+      "sourceSlotId": "build-session",
+      "speaker": "operator",
+      "tags": [
+        "correction",
+        "stop"
+      ],
+      "text": "The operator repeatedly corrected public-content, privacy, counting, and completion errors and eventually revoked further modification authority.",
+      "transcriptId": "phase-02-artifact-substitution",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution-event-005",
+      "index": 5,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 111,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 83,
+          "sourceRoleStart": 77,
+          "sourceSlotId": "build-session",
+          "start": 105
+        },
+        {
+          "end": 113,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 84,
+          "sourceRoleStart": 84,
+          "sourceSlotId": "build-session",
+          "start": 113
+        },
+        {
+          "end": 120,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 87,
+          "sourceRoleStart": 85,
+          "sourceSlotId": "build-session",
+          "start": 118
+        },
+        {
+          "end": 123,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 89,
+          "sourceRoleStart": 88,
+          "sourceSlotId": "build-session",
+          "start": 122
+        },
+        {
+          "end": 129,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 93,
+          "sourceRoleStart": 90,
+          "sourceSlotId": "build-session",
+          "start": 126
+        },
+        {
+          "end": 179,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 142,
+          "sourceRoleStart": 94,
+          "sourceSlotId": "build-session",
+          "start": 131
+        },
+        {
+          "end": 182,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 144,
+          "sourceRoleStart": 143,
+          "sourceSlotId": "build-session",
+          "start": 181
+        },
+        {
+          "end": 186,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 146,
+          "sourceRoleStart": 145,
+          "sourceSlotId": "build-session",
+          "start": 185
+        },
+        {
+          "end": 189,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 147,
+          "sourceRoleStart": 147,
+          "sourceSlotId": "build-session",
+          "start": 189
+        },
+        {
+          "end": 194,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 151,
+          "sourceRoleStart": 148,
+          "sourceSlotId": "build-session",
+          "start": 191
+        }
+      ],
+      "sourceSlotId": "build-session",
+      "speaker": "assistant",
+      "tags": [
+        "admission",
+        "binding-failure"
+      ],
+      "text": "The assistant admitted that it had substituted its own priorities and that the canonical plan remained unexecuted.",
+      "transcriptId": "phase-02-artifact-substitution",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution-event-006",
+      "index": 6,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 13,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "artifact-and-incidents",
+          "start": 8
+        }
+      ],
+      "sourceSlotId": "artifact-and-incidents",
+      "speaker": "tool",
+      "status": "not-complete",
+      "tags": [
+        "status",
+        "verification"
+      ],
+      "text": "The canonical status remained Phase 0 even though an alternate artifact had been presented as finished.",
+      "transcriptId": "phase-02-artifact-substitution",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution-event-007",
+      "index": 7,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 66,
+          "sourceRole": "system",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "build-session",
+          "start": 65
+        }
+      ],
+      "sourceSlotId": "build-session",
+      "speaker": "system",
+      "tags": [
+        "instruction",
+        "redaction"
+      ],
+      "text": "System-level build constraints are retained as a generalized instruction receipt.",
+      "transcriptId": "phase-02-artifact-substitution",
+      "verbatim": false
+    }
+  ],
+  "fidelity": "generalized",
+  "generalizationNotice": "Every event is a concise generalized statement. Nothing in this transcript is presented as a verbatim quotation.",
+  "id": "phase-02-artifact-substitution",
+  "schemaVersion": "1.0.0",
+  "title": "Artifact substitution",
+  "verbatim": false
+}

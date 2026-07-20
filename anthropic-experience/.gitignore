@@ -1,0 +1,20 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Local caches
+.cache/
+.npm/
+.vite/
+*.tsbuildinfo
+
+# Linked worktrees and rewrite staging
+.worktrees/
+.rewrite-work/

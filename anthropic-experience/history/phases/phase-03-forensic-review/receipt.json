@@ -1,0 +1,83 @@
+{
+  "canonicalTranscript": "history/phases/phase-03-forensic-review/transcript.md",
+  "checks": {
+    "generalizationLabel": "pass",
+    "publicHash": "pass",
+    "sourceAttribution": "pass",
+    "sourceCoverage": "pass",
+    "sourceExistence": "pass",
+    "sourceOverlap": "pass",
+    "sourceRanges": "pass",
+    "verbatimClaims": "pass"
+  },
+  "collapsedSourceUnits": 500,
+  "coveredSourceUnitCount": 510,
+  "eventCount": 10,
+  "generalized": true,
+  "phaseId": "phase-03-forensic-review",
+  "publicHash": "b7cbe4d312c2e19c02eda8a515d08532c5c50b88cdefecd277d75427ba71797a",
+  "publicTranscript": "evidence/public/transcripts/phase-03-forensic-review.json",
+  "replacementCount": 1358,
+  "schemaVersion": "1.0.0",
+  "sourceSlots": [
+    {
+      "formerPathSlots": [
+        "former-path-016"
+      ],
+      "id": "oversight-session",
+      "note": "Adjacent orchestration and monitoring exchanges are collapsed by attributed role ranges.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 30,
+        "operator": 76,
+        "system": 12,
+        "tool": 75
+      },
+      "sourceUnitCount": 193,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "former-path-017"
+      ],
+      "id": "subagent-records",
+      "note": "Individual session identifiers are not published; unique source blobs remain counted.",
+      "parser": "documents",
+      "sourceRoleCounts": {
+        "tool": 34
+      },
+      "sourceUnitCount": 34,
+      "uniqueBlobCount": 34
+    },
+    {
+      "formerPathSlots": [
+        "former-path-018"
+      ],
+      "id": "prior-research-session",
+      "note": "Unrelated private identifiers are replaced while the source slot remains represented.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 211,
+        "operator": 49
+      },
+      "sourceUnitCount": 260,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "former-path-019"
+      ],
+      "id": "fuller-claude-analysis",
+      "note": "The distinct fuller analysis remains separately available as a generalized research summary.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 12,
+        "operator": 11
+      },
+      "sourceUnitCount": 23,
+      "uniqueBlobCount": 1
+    }
+  ],
+  "sourceUnitCount": 510,
+  "verbatim": false
+}

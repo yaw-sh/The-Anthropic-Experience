@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "Track A application verification",
+  "generator": "app/scripts/verify-release.mjs",
+  "checks": [
+    { "id": "content-schema", "status": "pass", "evidencePath": "tests/schema.test.ts", "evidenceExists": true, "command": "npm test -- --run" },
+    { "id": "content-links", "status": "pass", "evidencePath": "tests/schema.test.ts", "evidenceExists": true, "command": "npm test -- --run" },
+    { "id": "public-evidence-adapter", "status": "pass", "evidencePath": "tests/final-audit-blockers.test.tsx", "evidenceExists": true, "command": "npm test -- --run" },
+    { "id": "unit-tests", "status": "pass", "evidencePath": "tests", "evidenceExists": true, "command": "npm test -- --run" },
+    { "id": "typecheck", "status": "pass", "evidencePath": "tsconfig.json", "evidenceExists": true, "command": "npm run typecheck" },
+    { "id": "lint", "status": "pass", "evidencePath": "eslint.config.js", "evidenceExists": true, "command": "npm run lint" },
+    { "id": "canonical-build", "status": "pass", "evidencePath": "verification/canonical-build-parity.json", "evidenceExists": true, "command": "npm run build" },
+    { "id": "artifact-build", "status": "pass", "evidencePath": "verification/artifact-build-parity.json", "evidenceExists": true, "command": "npm run build:artifact" },
+    { "id": "parity", "status": "pass", "evidencePath": "scripts/verify-parity.mjs", "evidenceExists": true, "command": "npm run verify:parity" },
+    { "id": "playwright-axe", "status": "pass", "evidencePath": "tests/e2e/review-slice.spec.ts", "evidenceExists": true, "command": "npm run test:e2e" },
+    { "id": "keyboard", "status": "pass", "evidencePath": "tests/e2e/task2-surfaces.spec.ts", "evidenceExists": true, "command": "npm run test:e2e" },
+    { "id": "mobile-320-390", "status": "pass", "evidencePath": "tests/e2e/task2-surfaces.spec.ts", "evidenceExists": true, "command": "npm run test:e2e" },
+    { "id": "reduced-motion", "status": "pass", "evidencePath": "tests/e2e/task2-surfaces.spec.ts", "evidenceExists": true, "command": "npm run test:e2e" },
+    { "id": "source-privacy", "status": "pass", "evidencePath": "verification/source-privacy.json", "evidenceExists": true, "command": "npm run privacy" },
+    { "id": "bundle-privacy", "status": "pass", "evidencePath": "verification/canonical-bundle-privacy.json", "evidenceExists": true, "command": "npm run build" },
+    { "id": "artifact-bundle-privacy", "status": "pass", "evidencePath": "verification/artifact-bundle-privacy.json", "evidenceExists": true, "command": "npm run build:artifact" },
+    { "id": "remote-runtime", "status": "pass", "evidencePath": "tests/privacy.test.ts", "evidenceExists": true, "command": "npm test -- --run" },
+    { "id": "owner-review", "status": "pending", "evidencePath": null, "evidenceExists": false, "command": "Owner acceptance" }
+  ]
+}

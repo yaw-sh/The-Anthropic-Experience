@@ -1,0 +1,892 @@
+{
+  "events": [
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-001",
+      "index": 1,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 1,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "pro-review-session",
+          "start": 1
+        },
+        {
+          "end": 8,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "pro-review-session",
+          "start": 8
+        },
+        {
+          "end": 10,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "pro-review-session",
+          "start": 10
+        },
+        {
+          "end": 13,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "pro-review-session",
+          "start": 12
+        },
+        {
+          "end": 15,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "pro-review-session",
+          "start": 15
+        },
+        {
+          "end": 21,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "pro-review-session",
+          "start": 21
+        },
+        {
+          "end": 23,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "pro-review-session",
+          "start": 23
+        },
+        {
+          "end": 25,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "pro-review-session",
+          "start": 25
+        },
+        {
+          "end": 27,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "pro-review-session",
+          "start": 27
+        }
+      ],
+      "sourceSlotId": "pro-review-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction"
+      ],
+      "text": "The operator requested a deep review that preserved the complete recursive product story and led directly to a build-ready blueprint.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-002",
+      "index": 2,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 6,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "pro-review-session",
+          "start": 2
+        },
+        {
+          "end": 9,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "pro-review-session",
+          "start": 9
+        },
+        {
+          "end": 11,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "pro-review-session",
+          "start": 11
+        },
+        {
+          "end": 14,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "pro-review-session",
+          "start": 14
+        },
+        {
+          "end": 20,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "pro-review-session",
+          "start": 16
+        },
+        {
+          "end": 22,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "pro-review-session",
+          "start": 22
+        },
+        {
+          "end": 24,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "pro-review-session",
+          "start": 24
+        },
+        {
+          "end": 26,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 16,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "pro-review-session",
+          "start": 26
+        },
+        {
+          "end": 28,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 17,
+          "sourceRoleStart": 17,
+          "sourceSlotId": "pro-review-session",
+          "start": 28
+        },
+        {
+          "end": 30,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 18,
+          "sourceSlotId": "pro-review-session",
+          "start": 30
+        },
+        {
+          "end": 32,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 19,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "pro-review-session",
+          "start": 32
+        },
+        {
+          "end": 34,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 20,
+          "sourceSlotId": "pro-review-session",
+          "start": 34
+        },
+        {
+          "end": 36,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "pro-review-session",
+          "start": 36
+        }
+      ],
+      "sourceSlotId": "pro-review-session",
+      "speaker": "assistant",
+      "tags": [
+        "substitute",
+        "scope-reduction"
+      ],
+      "text": "The assistant first produced review packs, manifests, release gates, and advice to shrink the product scope.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-003",
+      "index": 3,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 29,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "pro-review-session",
+          "start": 29
+        },
+        {
+          "end": 31,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "pro-review-session",
+          "start": 31
+        },
+        {
+          "end": 33,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "pro-review-session",
+          "start": 33
+        },
+        {
+          "end": 35,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "pro-review-session",
+          "start": 35
+        },
+        {
+          "end": 37,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "pro-review-session",
+          "start": 37
+        },
+        {
+          "end": 39,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 16,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "pro-review-session",
+          "start": 39
+        },
+        {
+          "end": 46,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 17,
+          "sourceRoleStart": 17,
+          "sourceSlotId": "pro-review-session",
+          "start": 46
+        },
+        {
+          "end": 48,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 18,
+          "sourceSlotId": "pro-review-session",
+          "start": 48
+        },
+        {
+          "end": 50,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 19,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "pro-review-session",
+          "start": 50
+        }
+      ],
+      "sourceSlotId": "pro-review-session",
+      "speaker": "operator",
+      "tags": [
+        "correction"
+      ],
+      "text": "The operator corrected the assistant for removing the central creative premise and substituting governance material for the requested blueprint.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-004",
+      "index": 4,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 38,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "pro-review-session",
+          "start": 38
+        },
+        {
+          "end": 44,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 27,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "pro-review-session",
+          "start": 40
+        },
+        {
+          "end": 47,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 28,
+          "sourceRoleStart": 28,
+          "sourceSlotId": "pro-review-session",
+          "start": 47
+        },
+        {
+          "end": 49,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 29,
+          "sourceRoleStart": 29,
+          "sourceSlotId": "pro-review-session",
+          "start": 49
+        },
+        {
+          "end": 52,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 30,
+          "sourceRoleStart": 30,
+          "sourceSlotId": "pro-review-session",
+          "start": 52
+        },
+        {
+          "end": 58,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 35,
+          "sourceRoleStart": 31,
+          "sourceSlotId": "pro-review-session",
+          "start": 54
+        },
+        {
+          "end": 60,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 36,
+          "sourceRoleStart": 36,
+          "sourceSlotId": "pro-review-session",
+          "start": 60
+        },
+        {
+          "end": 62,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 37,
+          "sourceRoleStart": 37,
+          "sourceSlotId": "pro-review-session",
+          "start": 62
+        },
+        {
+          "end": 64,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 38,
+          "sourceRoleStart": 38,
+          "sourceSlotId": "pro-review-session",
+          "start": 64
+        },
+        {
+          "end": 66,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 39,
+          "sourceRoleStart": 39,
+          "sourceSlotId": "pro-review-session",
+          "start": 66
+        },
+        {
+          "end": 68,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 40,
+          "sourceRoleStart": 40,
+          "sourceSlotId": "pro-review-session",
+          "start": 68
+        },
+        {
+          "end": 70,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 41,
+          "sourceRoleStart": 41,
+          "sourceSlotId": "pro-review-session",
+          "start": 70
+        },
+        {
+          "end": 72,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 42,
+          "sourceRoleStart": 42,
+          "sourceSlotId": "pro-review-session",
+          "start": 72
+        }
+      ],
+      "sourceSlotId": "pro-review-session",
+      "speaker": "assistant",
+      "tags": [
+        "admission",
+        "binding-failure"
+      ],
+      "text": "The assistant admitted that it had misclassified the product and presented a forensic appendix as though it were the blueprint.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-005",
+      "index": 5,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 51,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 20,
+          "sourceSlotId": "pro-review-session",
+          "start": 51
+        },
+        {
+          "end": 53,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "pro-review-session",
+          "start": 53
+        },
+        {
+          "end": 59,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "pro-review-session",
+          "start": 59
+        },
+        {
+          "end": 61,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 23,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "pro-review-session",
+          "start": 61
+        },
+        {
+          "end": 63,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 24,
+          "sourceRoleStart": 24,
+          "sourceSlotId": "pro-review-session",
+          "start": 63
+        },
+        {
+          "end": 65,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 25,
+          "sourceRoleStart": 25,
+          "sourceSlotId": "pro-review-session",
+          "start": 65
+        },
+        {
+          "end": 67,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 26,
+          "sourceRoleStart": 26,
+          "sourceSlotId": "pro-review-session",
+          "start": 67
+        },
+        {
+          "end": 69,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 27,
+          "sourceRoleStart": 27,
+          "sourceSlotId": "pro-review-session",
+          "start": 69
+        },
+        {
+          "end": 71,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 28,
+          "sourceRoleStart": 28,
+          "sourceSlotId": "pro-review-session",
+          "start": 71
+        }
+      ],
+      "sourceSlotId": "pro-review-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction"
+      ],
+      "text": "The operator requested one comprehensive creative and engineering blueprint without another adjacent deliverable.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-006",
+      "index": 6,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2133,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2133,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "blueprint-handoff",
+          "start": 1
+        }
+      ],
+      "sourceSlotId": "blueprint-handoff",
+      "speaker": "assistant",
+      "status": "authoritative",
+      "tags": [
+        "completion"
+      ],
+      "text": "The assistant delivered the shorter blueprint snapshot; a later repository handoff added the final binding-delivery section to the authoritative 2,133-line root copy.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-007",
+      "index": 7,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "creative-style-session",
+          "start": 2
+        },
+        {
+          "end": 4,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "creative-style-session",
+          "start": 4
+        },
+        {
+          "end": 6,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "creative-style-session",
+          "start": 6
+        },
+        {
+          "end": 8,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "creative-style-session",
+          "start": 8
+        },
+        {
+          "end": 10,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "creative-style-session",
+          "start": 10
+        },
+        {
+          "end": 12,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "creative-style-session",
+          "start": 12
+        },
+        {
+          "end": 14,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "creative-style-session",
+          "start": 14
+        },
+        {
+          "end": 16,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "creative-style-session",
+          "start": 16
+        },
+        {
+          "end": 18,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "creative-style-session",
+          "start": 18
+        },
+        {
+          "end": 20,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "creative-style-session",
+          "start": 20
+        },
+        {
+          "end": 22,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "creative-style-session",
+          "start": 22
+        }
+      ],
+      "sourceSlotId": "creative-style-session",
+      "speaker": "assistant",
+      "tags": [
+        "analysis"
+      ],
+      "text": "Supporting creative and reliability sessions supplied visual tone and case framing but are represented only as generalized source slots.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-008",
+      "index": 8,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 1,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "creative-style-session",
+          "start": 1
+        },
+        {
+          "end": 3,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "creative-style-session",
+          "start": 3
+        },
+        {
+          "end": 5,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "creative-style-session",
+          "start": 5
+        },
+        {
+          "end": 7,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "creative-style-session",
+          "start": 7
+        },
+        {
+          "end": 9,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "creative-style-session",
+          "start": 9
+        },
+        {
+          "end": 11,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "creative-style-session",
+          "start": 11
+        },
+        {
+          "end": 13,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "creative-style-session",
+          "start": 13
+        },
+        {
+          "end": 15,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "creative-style-session",
+          "start": 15
+        },
+        {
+          "end": 17,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "creative-style-session",
+          "start": 17
+        },
+        {
+          "end": 19,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "creative-style-session",
+          "start": 19
+        },
+        {
+          "end": 21,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "creative-style-session",
+          "start": 21
+        }
+      ],
+      "sourceSlotId": "creative-style-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction"
+      ],
+      "text": "The creative-style session's requests and constraints are retained as one generalized operator event.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-009",
+      "index": 9,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 2
+        },
+        {
+          "end": 4,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 4
+        },
+        {
+          "end": 6,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 6
+        },
+        {
+          "end": 8,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 8
+        }
+      ],
+      "sourceSlotId": "supporting-review-sessions",
+      "speaker": "assistant",
+      "status": "generalized",
+      "tags": [
+        "status",
+        "redaction"
+      ],
+      "text": "Additional supporting review sessions were counted and mapped without publishing their raw text.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-010",
+      "index": 10,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 1,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 1
+        },
+        {
+          "end": 3,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 3
+        },
+        {
+          "end": 5,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 5
+        },
+        {
+          "end": 7,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "supporting-review-sessions",
+          "start": 7
+        }
+      ],
+      "sourceSlotId": "supporting-review-sessions",
+      "speaker": "operator",
+      "tags": [
+        "instruction",
+        "redaction"
+      ],
+      "text": "The supporting review sessions' requests are retained as one generalized operator event.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff-event-011",
+      "index": 11,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 7,
+          "sourceRole": "system",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "pro-review-session",
+          "start": 7
+        },
+        {
+          "end": 45,
+          "sourceRole": "system",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "pro-review-session",
+          "start": 45
+        }
+      ],
+      "sourceSlotId": "pro-review-session",
+      "speaker": "system",
+      "tags": [
+        "instruction",
+        "redaction"
+      ],
+      "text": "Session-level constraints are represented as generalized system receipts before the final handoff.",
+      "transcriptId": "phase-04-master-blueprint-handoff",
+      "verbatim": false
+    }
+  ],
+  "fidelity": "generalized",
+  "generalizationNotice": "Every event is a concise generalized statement. Nothing in this transcript is presented as a verbatim quotation.",
+  "id": "phase-04-master-blueprint-handoff",
+  "schemaVersion": "1.0.0",
+  "title": "Master blueprint handoff",
+  "verbatim": false
+}

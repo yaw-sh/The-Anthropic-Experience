@@ -1,0 +1,927 @@
+{
+  "events": [
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request-event-001",
+      "index": 1,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 1,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 1
+        },
+        {
+          "end": 3,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 3
+        },
+        {
+          "end": 5,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 5
+        },
+        {
+          "end": 7,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 7
+        },
+        {
+          "end": 9,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 9
+        },
+        {
+          "end": 11,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 11
+        },
+        {
+          "end": 14,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 14
+        },
+        {
+          "end": 16,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 16
+        },
+        {
+          "end": 18,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 18
+        },
+        {
+          "end": 20,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 20
+        },
+        {
+          "end": 22,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 22
+        },
+        {
+          "end": 24,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 24
+        },
+        {
+          "end": 26,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 26
+        },
+        {
+          "end": 28,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 28
+        },
+        {
+          "end": 30,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 30
+        }
+      ],
+      "sourceSlotId": "initial-reconstructed-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction"
+      ],
+      "text": "The operator asked the assistant to inspect the available repository integration and complete a direct repository action.",
+      "transcriptId": "phase-00-access-and-request",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request-event-002",
+      "index": 2,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 2
+        },
+        {
+          "end": 4,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 4
+        },
+        {
+          "end": 6,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 6
+        },
+        {
+          "end": 8,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 8
+        },
+        {
+          "end": 10,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 10
+        },
+        {
+          "end": 13,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 12
+        },
+        {
+          "end": 15,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 15
+        },
+        {
+          "end": 17,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 17
+        },
+        {
+          "end": 19,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 10,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 19
+        },
+        {
+          "end": 21,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 11,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 21
+        },
+        {
+          "end": 23,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 23
+        },
+        {
+          "end": 25,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 25
+        },
+        {
+          "end": 27,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 27
+        },
+        {
+          "end": 29,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 29
+        },
+        {
+          "end": 31,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 16,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 31
+        },
+        {
+          "end": 33,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 17,
+          "sourceRoleStart": 17,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 33
+        },
+        {
+          "end": 35,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 18,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 35
+        },
+        {
+          "end": 37,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 19,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 37
+        },
+        {
+          "end": 39,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 20,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 39
+        },
+        {
+          "end": 41,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 41
+        },
+        {
+          "end": 43,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 43
+        },
+        {
+          "end": 45,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 23,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 45
+        },
+        {
+          "end": 47,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 24,
+          "sourceRoleStart": 24,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 47
+        },
+        {
+          "end": 49,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 25,
+          "sourceRoleStart": 25,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 49
+        },
+        {
+          "end": 51,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 26,
+          "sourceRoleStart": 26,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 51
+        },
+        {
+          "end": 53,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 27,
+          "sourceRoleStart": 27,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 53
+        },
+        {
+          "end": 55,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 28,
+          "sourceRoleStart": 28,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 55
+        },
+        {
+          "end": 57,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 29,
+          "sourceRoleStart": 29,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 57
+        },
+        {
+          "end": 59,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 30,
+          "sourceRoleStart": 30,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 59
+        }
+      ],
+      "sourceSlotId": "initial-reconstructed-session",
+      "speaker": "assistant",
+      "tags": [
+        "substitute",
+        "binding-failure"
+      ],
+      "text": "The assistant described product surfaces and possible access paths, but did not establish the requested repository state.",
+      "transcriptId": "phase-00-access-and-request",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request-event-003",
+      "index": 3,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 32,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 16,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 32
+        },
+        {
+          "end": 34,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 17,
+          "sourceRoleStart": 17,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 34
+        },
+        {
+          "end": 36,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 18,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 36
+        },
+        {
+          "end": 38,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 19,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 38
+        },
+        {
+          "end": 40,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 20,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 40
+        },
+        {
+          "end": 42,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 42
+        },
+        {
+          "end": 44,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 44
+        },
+        {
+          "end": 46,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 23,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 46
+        },
+        {
+          "end": 48,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 24,
+          "sourceRoleStart": 24,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 48
+        },
+        {
+          "end": 50,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 25,
+          "sourceRoleStart": 25,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 50
+        },
+        {
+          "end": 52,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 26,
+          "sourceRoleStart": 26,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 52
+        },
+        {
+          "end": 54,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 27,
+          "sourceRoleStart": 27,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 54
+        },
+        {
+          "end": 56,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 28,
+          "sourceRoleStart": 28,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 56
+        },
+        {
+          "end": 58,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 29,
+          "sourceRoleStart": 29,
+          "sourceSlotId": "initial-reconstructed-session",
+          "start": 58
+        }
+      ],
+      "sourceSlotId": "initial-reconstructed-session",
+      "speaker": "operator",
+      "tags": [
+        "correction"
+      ],
+      "text": "The operator repeatedly corrected the scope toward the concrete repository operation and observable completion.",
+      "transcriptId": "phase-00-access-and-request",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request-event-004",
+      "index": 4,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 5,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "connector-review-session",
+          "start": 5
+        },
+        {
+          "end": 11,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "connector-review-session",
+          "start": 11
+        },
+        {
+          "end": 14,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "connector-review-session",
+          "start": 14
+        },
+        {
+          "end": 17,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "connector-review-session",
+          "start": 17
+        },
+        {
+          "end": 20,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "connector-review-session",
+          "start": 20
+        },
+        {
+          "end": 23,
+          "sourceRole": "tool",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "connector-review-session",
+          "start": 23
+        }
+      ],
+      "sourceSlotId": "connector-review-session",
+      "speaker": "tool",
+      "status": "not-complete",
+      "tags": [
+        "operation",
+        "substitute"
+      ],
+      "text": "Repository and integration checks produced intermediate artifacts, including a connected-integration screenshot marked as failed; the required repository state was still not established.",
+      "transcriptId": "phase-00-access-and-request",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request-event-005",
+      "index": 5,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 2,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "connector-review-session",
+          "start": 2
+        },
+        {
+          "end": 4,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "connector-review-session",
+          "start": 4
+        },
+        {
+          "end": 6,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "connector-review-session",
+          "start": 6
+        },
+        {
+          "end": 8,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "connector-review-session",
+          "start": 8
+        },
+        {
+          "end": 10,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "connector-review-session",
+          "start": 10
+        },
+        {
+          "end": 13,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "connector-review-session",
+          "start": 13
+        },
+        {
+          "end": 26,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 7,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "connector-review-session",
+          "start": 26
+        },
+        {
+          "end": 35,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 8,
+          "sourceSlotId": "connector-review-session",
+          "start": 28
+        },
+        {
+          "end": 37,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 16,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "connector-review-session",
+          "start": 37
+        },
+        {
+          "end": 40,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 17,
+          "sourceSlotId": "connector-review-session",
+          "start": 39
+        },
+        {
+          "end": 43,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 20,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "connector-review-session",
+          "start": 42
+        },
+        {
+          "end": 45,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 21,
+          "sourceRoleStart": 21,
+          "sourceSlotId": "connector-review-session",
+          "start": 45
+        },
+        {
+          "end": 49,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 22,
+          "sourceSlotId": "connector-review-session",
+          "start": 49
+        },
+        {
+          "end": 55,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 24,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "connector-review-session",
+          "start": 54
+        },
+        {
+          "end": 57,
+          "sourceRole": "assistant",
+          "sourceRoleEnd": 25,
+          "sourceRoleStart": 25,
+          "sourceSlotId": "connector-review-session",
+          "start": 57
+        }
+      ],
+      "sourceSlotId": "connector-review-session",
+      "speaker": "assistant",
+      "tags": [
+        "admission",
+        "binding-failure"
+      ],
+      "text": "The assistant later summarized the case as evidence that recognizing an instruction had not made it govern execution.",
+      "transcriptId": "phase-00-access-and-request",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request-event-006",
+      "index": 6,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 1,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "connector-review-session",
+          "start": 1
+        },
+        {
+          "end": 3,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "connector-review-session",
+          "start": 3
+        },
+        {
+          "end": 7,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "connector-review-session",
+          "start": 7
+        },
+        {
+          "end": 9,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 4,
+          "sourceRoleStart": 4,
+          "sourceSlotId": "connector-review-session",
+          "start": 9
+        },
+        {
+          "end": 12,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 5,
+          "sourceRoleStart": 5,
+          "sourceSlotId": "connector-review-session",
+          "start": 12
+        },
+        {
+          "end": 16,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 6,
+          "sourceRoleStart": 6,
+          "sourceSlotId": "connector-review-session",
+          "start": 16
+        },
+        {
+          "end": 19,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 8,
+          "sourceRoleStart": 7,
+          "sourceSlotId": "connector-review-session",
+          "start": 18
+        },
+        {
+          "end": 22,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 9,
+          "sourceRoleStart": 9,
+          "sourceSlotId": "connector-review-session",
+          "start": 22
+        },
+        {
+          "end": 25,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 11,
+          "sourceRoleStart": 10,
+          "sourceSlotId": "connector-review-session",
+          "start": 24
+        },
+        {
+          "end": 27,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 12,
+          "sourceRoleStart": 12,
+          "sourceSlotId": "connector-review-session",
+          "start": 27
+        },
+        {
+          "end": 36,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 13,
+          "sourceRoleStart": 13,
+          "sourceSlotId": "connector-review-session",
+          "start": 36
+        },
+        {
+          "end": 41,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 14,
+          "sourceRoleStart": 14,
+          "sourceSlotId": "connector-review-session",
+          "start": 41
+        },
+        {
+          "end": 44,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 15,
+          "sourceRoleStart": 15,
+          "sourceSlotId": "connector-review-session",
+          "start": 44
+        },
+        {
+          "end": 48,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 18,
+          "sourceRoleStart": 16,
+          "sourceSlotId": "connector-review-session",
+          "start": 46
+        },
+        {
+          "end": 53,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 22,
+          "sourceRoleStart": 19,
+          "sourceSlotId": "connector-review-session",
+          "start": 50
+        },
+        {
+          "end": 56,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 23,
+          "sourceRoleStart": 23,
+          "sourceSlotId": "connector-review-session",
+          "start": 56
+        },
+        {
+          "end": 58,
+          "sourceRole": "operator",
+          "sourceRoleEnd": 24,
+          "sourceRoleStart": 24,
+          "sourceSlotId": "connector-review-session",
+          "start": 58
+        }
+      ],
+      "sourceSlotId": "connector-review-session",
+      "speaker": "operator",
+      "tags": [
+        "instruction",
+        "correction"
+      ],
+      "text": "The operator's connector-session requests and corrections are retained as one generalized source-bound event.",
+      "transcriptId": "phase-00-access-and-request",
+      "verbatim": false
+    },
+    {
+      "approvedForPublic": true,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request-event-007",
+      "index": 7,
+      "redactions": [],
+      "sourceRanges": [
+        {
+          "end": 15,
+          "sourceRole": "system",
+          "sourceRoleEnd": 1,
+          "sourceRoleStart": 1,
+          "sourceSlotId": "connector-review-session",
+          "start": 15
+        },
+        {
+          "end": 21,
+          "sourceRole": "system",
+          "sourceRoleEnd": 2,
+          "sourceRoleStart": 2,
+          "sourceSlotId": "connector-review-session",
+          "start": 21
+        },
+        {
+          "end": 38,
+          "sourceRole": "system",
+          "sourceRoleEnd": 3,
+          "sourceRoleStart": 3,
+          "sourceSlotId": "connector-review-session",
+          "start": 38
+        }
+      ],
+      "sourceSlotId": "connector-review-session",
+      "speaker": "system",
+      "tags": [
+        "instruction",
+        "redaction"
+      ],
+      "text": "Session-level instructions and integration constraints were retained as generalized system receipts.",
+      "transcriptId": "phase-00-access-and-request",
+      "verbatim": false
+    }
+  ],
+  "fidelity": "generalized",
+  "generalizationNotice": "Every event is a concise generalized statement. Nothing in this transcript is presented as a verbatim quotation.",
+  "id": "phase-00-access-and-request",
+  "schemaVersion": "1.0.0",
+  "title": "Access and request",
+  "verbatim": false
+}

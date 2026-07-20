@@ -1,0 +1,57 @@
+{
+  "canonicalTranscript": "history/phases/phase-02-artifact-substitution/transcript.md",
+  "checks": {
+    "generalizationLabel": "pass",
+    "publicHash": "pass",
+    "sourceAttribution": "pass",
+    "sourceCoverage": "pass",
+    "sourceExistence": "pass",
+    "sourceOverlap": "pass",
+    "sourceRanges": "pass",
+    "verbatimClaims": "pass"
+  },
+  "collapsedSourceUnits": 200,
+  "coveredSourceUnitCount": 207,
+  "eventCount": 7,
+  "generalized": true,
+  "phaseId": "phase-02-artifact-substitution",
+  "publicHash": "ef5296744719db0ab9663784aecf4a68baf4ff4ba65a9b4ac0eaa8bc3dc356a7",
+  "publicTranscript": "evidence/public/transcripts/phase-02-artifact-substitution.json",
+  "replacementCount": 46,
+  "schemaVersion": "1.0.0",
+  "sourceSlots": [
+    {
+      "formerPathSlots": [
+        "former-path-011",
+        "former-path-012"
+      ],
+      "id": "build-session",
+      "note": "Byte-identical exports are deduplicated; every parsed role unit is attributed in the public ranges.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 151,
+        "operator": 41,
+        "system": 2
+      },
+      "sourceUnitCount": 194,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "former-path-013",
+        "former-path-014",
+        "former-path-015"
+      ],
+      "id": "artifact-and-incidents",
+      "note": "The alternate implementation and incident records are represented as outcomes, not retained verbatim.",
+      "parser": "documents",
+      "sourceRoleCounts": {
+        "tool": 13
+      },
+      "sourceUnitCount": 13,
+      "uniqueBlobCount": 13
+    }
+  ],
+  "sourceUnitCount": 207,
+  "verbatim": false
+}

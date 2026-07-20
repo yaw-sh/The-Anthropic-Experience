@@ -1,0 +1,13 @@
+# Method and research review — generalized public edition
+
+> Fidelity: generalized. This document consolidates unique public-safe findings from the former research reports and review corpus. It contains no raw transcripts, private repository material, or verbatim operator language.
+
+The research framed dependable delegation as a sequence: information must be available, examined, made constraining for later behavior, and checked against an observable completion state. The case record showed that a system can accurately restate an instruction or diagnose a failure while still letting a newer priority, an attractive substitute, or its own narration determine what happens next.
+
+The strongest methodological contribution was the separation of capability from governance. A tool may exist without being visible in a session. A repository may be present without being authorized. A model may recognize evidence without inspecting it, inspect it without binding to it, or claim completion without an external acceptance gate. The rendered image-only proposal expressed this as three independently testable stages: availability, inspection, and binding.
+
+The proposal treated a recall-verify-bind mechanism as a hypothesis rather than a conclusion. Its four-condition evaluation compares an unchanged baseline, verification instructions, persistent memory, and deterministic evidence binding. The proposed outcomes measure whether evidence is checked before testable assertions, whether completion is unsupported, whether acknowledged corrections are violated, and how throughput and false blocking change. This design is retained as a generalized method description rather than evidence that the intervention succeeds.
+
+The review also found limits that remain important in public presentation: the case does not establish provider-wide prevalence, owner observations are not independent telemetry, assistant admissions require fidelity labels, and orchestration receipts do not equal billed usage. An earlier broad rate estimate was rejected when it could not be reconstructed, and the surviving quantitative statements remain sample-specific. Research claims therefore stay scoped to documented records, explicit denominators, and falsifiable evaluation conditions.
+
+The practical product contribution is a delegation harness that records the observable outcome, required inspection, authority boundaries, persistent progress state, forbidden substitutions, verification evidence, and stop conditions. The repository’s process history supplies the case; the canonical application supplies the usable interface.

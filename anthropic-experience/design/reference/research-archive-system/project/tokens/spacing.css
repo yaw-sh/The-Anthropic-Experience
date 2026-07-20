@@ -1,0 +1,42 @@
+/* ============================================================
+   SPACING & RADIUS — Research Archive
+   The source uses Tailwind's 4px spacing grid and its rounded
+   scale (rounded-md/lg/xl + full). Captured as tokens.
+   ============================================================ */
+:root {
+  /* Base 4px scale */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-1_5:6px;
+  --space-2:  8px;
+  --space-2_5:10px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Semantic spacing */
+  --pad-cell:      var(--space-4);   /* metadata cells, table cells (px-4 py-3-ish) */
+  --pad-card:      var(--space-6);   /* callouts, prose cards */
+  --gap-turn:      var(--space-6);   /* avatar → content gap */
+  --stack-turn:    var(--space-12);  /* between transcript turns */
+  --stack-section: var(--space-16);  /* between major sections */
+
+  /* Radii (Tailwind rounded scale) */
+  --radius-sm:   4px;    /* rounded */
+  --radius-md:   6px;    /* rounded-md — code pills, chips */
+  --radius-lg:   8px;    /* rounded-lg — tool logs, small cards */
+  --radius-xl:   12px;   /* rounded-xl — metadata grid, callouts, tables */
+  --radius-full: 9999px; /* pills, avatars, model-switch capsule */
+
+  /* Layout */
+  --content-max:  56rem;  /* max-w-4xl — the reading column */
+  --shell-max:    64rem;  /* max-w-5xl — the nav shell */
+  --nav-height:   56px;   /* h-14 sticky bar */
+}

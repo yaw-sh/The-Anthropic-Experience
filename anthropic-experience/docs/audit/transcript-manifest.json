@@ -1,0 +1,113 @@
+{
+  "generatedOn": "2026-07-19",
+  "schemaVersion": "1.0.0",
+  "transcripts": [
+    {
+      "canonicalPath": "history/phases/phase-00-access-and-request/transcript.md",
+      "collapsedSourceUnits": 110,
+      "coveredSourceUnitCount": 117,
+      "eventCount": 7,
+      "formerPathSlots": [
+        "former-path-001",
+        "former-path-002",
+        "former-path-003",
+        "former-path-004"
+      ],
+      "id": "phase-00-access-and-request",
+      "publicHash": "12ba223714e1f9a5dbf251263206c41ffa606d1a59f891db13fa9a28dd93ee7f",
+      "publicPath": "evidence/public/transcripts/phase-00-access-and-request.json",
+      "replacementCount": 50,
+      "sourceUnitCount": 117
+    },
+    {
+      "canonicalPath": "history/phases/phase-01-planning-and-scaffold/transcript.md",
+      "collapsedSourceUnits": 6,
+      "coveredSourceUnitCount": 11,
+      "eventCount": 5,
+      "formerPathSlots": [
+        "former-path-005",
+        "former-path-006",
+        "former-path-007",
+        "former-path-008",
+        "former-path-009",
+        "former-path-010"
+      ],
+      "id": "phase-01-planning-and-scaffold",
+      "publicHash": "432a6ae1fe059f37cf4da8028df0e330744e8ec05c0dcf596d4879b75d6ab8a7",
+      "publicPath": "evidence/public/transcripts/phase-01-planning-and-scaffold.json",
+      "replacementCount": 11,
+      "sourceUnitCount": 11
+    },
+    {
+      "canonicalPath": "history/phases/phase-02-artifact-substitution/transcript.md",
+      "collapsedSourceUnits": 200,
+      "coveredSourceUnitCount": 207,
+      "eventCount": 7,
+      "formerPathSlots": [
+        "former-path-011",
+        "former-path-012",
+        "former-path-013",
+        "former-path-014",
+        "former-path-015"
+      ],
+      "id": "phase-02-artifact-substitution",
+      "publicHash": "ef5296744719db0ab9663784aecf4a68baf4ff4ba65a9b4ac0eaa8bc3dc356a7",
+      "publicPath": "evidence/public/transcripts/phase-02-artifact-substitution.json",
+      "replacementCount": 46,
+      "sourceUnitCount": 207
+    },
+    {
+      "canonicalPath": "history/phases/phase-03-forensic-review/transcript.md",
+      "collapsedSourceUnits": 500,
+      "coveredSourceUnitCount": 510,
+      "eventCount": 10,
+      "formerPathSlots": [
+        "former-path-016",
+        "former-path-017",
+        "former-path-018",
+        "former-path-019"
+      ],
+      "id": "phase-03-forensic-review",
+      "publicHash": "b7cbe4d312c2e19c02eda8a515d08532c5c50b88cdefecd277d75427ba71797a",
+      "publicPath": "evidence/public/transcripts/phase-03-forensic-review.json",
+      "replacementCount": 1358,
+      "sourceUnitCount": 510
+    },
+    {
+      "canonicalPath": "history/phases/phase-04-master-blueprint-handoff/transcript.md",
+      "collapsedSourceUnits": 2224,
+      "coveredSourceUnitCount": 2235,
+      "eventCount": 11,
+      "formerPathSlots": [
+        "former-path-020",
+        "former-path-021",
+        "former-path-022",
+        "former-path-023",
+        "former-path-024",
+        "former-path-025",
+        "former-path-026"
+      ],
+      "id": "phase-04-master-blueprint-handoff",
+      "publicHash": "d41de6bc693a073724f58c9739013e56df04587ceaae604c6447a86c88ddf35f",
+      "publicPath": "evidence/public/transcripts/phase-04-master-blueprint-handoff.json",
+      "replacementCount": 100,
+      "sourceUnitCount": 2235
+    },
+    {
+      "canonicalPath": "history/phases/phase-05-codex-build/transcript.md",
+      "collapsedSourceUnits": 3337,
+      "coveredSourceUnitCount": 3375,
+      "eventCount": 38,
+      "formerPathSlots": [
+        "current-source-001",
+        "private-session-slot-001",
+        "private-session-slot-002"
+      ],
+      "id": "phase-05-codex-build",
+      "publicHash": "ff5e8f96bccc85c1911f23adb6841aa16969a6aa4709296ed3ff154c16e4bdf7",
+      "publicPath": "evidence/public/transcripts/phase-05-codex-build.json",
+      "replacementCount": 5669,
+      "sourceUnitCount": 3375
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "allowedSpeakers": [
+    "operator",
+    "assistant",
+    "system",
+    "tool"
+  ],
+  "contentModel": "generalized-public-process",
+  "generalizationNotice": "All transcript content is generalized and public-safe; no event is a verbatim quotation.",
+  "generatedOn": "2026-07-19",
+  "schemaVersion": "1.0.0",
+  "transcripts": [
+    {
+      "eventCount": 7,
+      "fidelity": "generalized",
+      "id": "phase-00-access-and-request",
+      "path": "transcripts/phase-00-access-and-request.json",
+      "phase": "phase-00-access-and-request",
+      "publicHash": "12ba223714e1f9a5dbf251263206c41ffa606d1a59f891db13fa9a28dd93ee7f",
+      "title": "Access and request",
+      "verbatim": false
+    },
+    {
+      "eventCount": 5,
+      "fidelity": "generalized",
+      "id": "phase-01-planning-and-scaffold",
+      "path": "transcripts/phase-01-planning-and-scaffold.json",
+      "phase": "phase-01-planning-and-scaffold",
+      "publicHash": "432a6ae1fe059f37cf4da8028df0e330744e8ec05c0dcf596d4879b75d6ab8a7",
+      "title": "Planning and scaffold",
+      "verbatim": false
+    },
+    {
+      "eventCount": 7,
+      "fidelity": "generalized",
+      "id": "phase-02-artifact-substitution",
+      "path": "transcripts/phase-02-artifact-substitution.json",
+      "phase": "phase-02-artifact-substitution",
+      "publicHash": "ef5296744719db0ab9663784aecf4a68baf4ff4ba65a9b4ac0eaa8bc3dc356a7",
+      "title": "Artifact substitution",
+      "verbatim": false
+    },
+    {
+      "eventCount": 10,
+      "fidelity": "generalized",
+      "id": "phase-03-forensic-review",
+      "path": "transcripts/phase-03-forensic-review.json",
+      "phase": "phase-03-forensic-review",
+      "publicHash": "b7cbe4d312c2e19c02eda8a515d08532c5c50b88cdefecd277d75427ba71797a",
+      "title": "Forensic review",
+      "verbatim": false
+    },
+    {
+      "eventCount": 11,
+      "fidelity": "generalized",
+      "id": "phase-04-master-blueprint-handoff",
+      "path": "transcripts/phase-04-master-blueprint-handoff.json",
+      "phase": "phase-04-master-blueprint-handoff",
+      "publicHash": "d41de6bc693a073724f58c9739013e56df04587ceaae604c6447a86c88ddf35f",
+      "title": "Master blueprint handoff",
+      "verbatim": false
+    },
+    {
+      "eventCount": 38,
+      "fidelity": "generalized",
+      "id": "phase-05-codex-build",
+      "path": "transcripts/phase-05-codex-build.json",
+      "phase": "phase-05-codex-build",
+      "publicHash": "ff5e8f96bccc85c1911f23adb6841aa16969a6aa4709296ed3ff154c16e4bdf7",
+      "title": "Codex build",
+      "verbatim": false
+    }
+  ]
+}

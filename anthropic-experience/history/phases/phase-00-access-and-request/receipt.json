@@ -1,0 +1,58 @@
+{
+  "canonicalTranscript": "history/phases/phase-00-access-and-request/transcript.md",
+  "checks": {
+    "generalizationLabel": "pass",
+    "publicHash": "pass",
+    "sourceAttribution": "pass",
+    "sourceCoverage": "pass",
+    "sourceExistence": "pass",
+    "sourceOverlap": "pass",
+    "sourceRanges": "pass",
+    "verbatimClaims": "pass"
+  },
+  "collapsedSourceUnits": 110,
+  "coveredSourceUnitCount": 117,
+  "eventCount": 7,
+  "generalized": true,
+  "phaseId": "phase-00-access-and-request",
+  "publicHash": "12ba223714e1f9a5dbf251263206c41ffa606d1a59f891db13fa9a28dd93ee7f",
+  "publicTranscript": "evidence/public/transcripts/phase-00-access-and-request.json",
+  "replacementCount": 50,
+  "schemaVersion": "1.0.0",
+  "sourceSlots": [
+    {
+      "formerPathSlots": [
+        "former-path-001",
+        "former-path-002"
+      ],
+      "id": "initial-reconstructed-session",
+      "note": "Byte-identical tracked copies are deduplicated into one source slot.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 30,
+        "operator": 29
+      },
+      "sourceUnitCount": 59,
+      "uniqueBlobCount": 1
+    },
+    {
+      "formerPathSlots": [
+        "former-path-003",
+        "former-path-004"
+      ],
+      "id": "connector-review-session",
+      "note": "Byte-identical tracked copies are deduplicated into one source slot.",
+      "parser": "role-headings",
+      "sourceRoleCounts": {
+        "assistant": 25,
+        "operator": 24,
+        "system": 3,
+        "tool": 6
+      },
+      "sourceUnitCount": 58,
+      "uniqueBlobCount": 1
+    }
+  ],
+  "sourceUnitCount": 117,
+  "verbatim": false
+}
