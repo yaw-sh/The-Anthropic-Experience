@@ -85,6 +85,11 @@ for (const bannerDetail of [
 ]) {
   assert.ok(template.includes(bannerDetail), `missing preserved front-door control: ${bannerDetail}`);
 }
+const homeTitleAnchor = template.match(/<a\b(?=[^>]*\baria-label="The Anthropic Experience home")[^>]*>/);
+assert.ok(homeTitleAnchor, 'missing preserved home-title anchor');
+for (const declaration of ['min-width:0', 'overflow:hidden', 'text-overflow:ellipsis']) {
+  assert.ok(homeTitleAnchor[0].includes(declaration), `home-title anchor must be shrinkable: ${declaration}`);
+}
 
 for (const wheelDetail of [
   'id="surface-wheel"', 'aria-label="Spin the Surface Selector wheel"',
